@@ -1,6 +1,6 @@
 [project]
 name = "pylahman"
-version = "0.1.2"
+version = "0.1.3"
 authors = [
   { name="David Dalpiaz", email="dalpiaz2@illinois.edu" },
 ]
@@ -22,6 +22,8 @@ include = [
     "src/pylahman/**/*.py",
     "data/**/*.parquet"
 ]
+
+[tool.uv.sources]
 
 [build-system]
 requires = ["hatchling"]
