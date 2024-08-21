@@ -1,3 +1,4 @@
+on: [push]
 name: Publish Package
 jobs:
   uv-example-linux:
