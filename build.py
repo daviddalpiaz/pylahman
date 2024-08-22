@@ -1,8 +1,5 @@
 import subprocess
 import sys
-import shutil
-import os
-import time
 
 
 def run_process_script():
@@ -12,8 +9,28 @@ def run_process_script():
 
 def run_build_command():
     print("Building package...")
-    subprocess.check_call(["uvx", "--from", "build", "pyproject-build", "--sdist", "--installer", "uv"])
-    subprocess.check_call(["uvx", "--from", "build", "pyproject-build", "--wheel", "--installer", "uv"])
+    subprocess.check_call(
+        [
+            "uvx",
+            "--from",
+            "build",
+            "pyproject-build",
+            "--sdist",
+            "--installer",
+            "uv",
+        ]
+    )
+    subprocess.check_call(
+        [
+            "uvx",
+            "--from",
+            "build",
+            "pyproject-build",
+            "--wheel",
+            "--installer",
+            "uv",
+        ]
+    )
 
 
 def main():

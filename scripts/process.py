@@ -77,13 +77,31 @@ def process_all_files():
         if file_name.endswith(".csv"):
             csv_path = os.path.join(raw_data_dir, file_name)
             if file_name == "Schools.csv":
-                preprocessed_csv = os.path.join(raw_data_dir, file_name.replace(".csv", "_preprocessed.csv"))
+                preprocessed_csv = os.path.join(
+                    raw_data_dir,
+                    file_name.replace(
+                        ".csv",
+                        "_preprocessed.csv",
+                    ),
+                )
                 preprocess_csv(csv_path, preprocessed_csv)
-                parquet_path = os.path.join(processed_data_dir, file_name.replace(".csv", ".parquet"))
+                parquet_path = os.path.join(
+                    processed_data_dir,
+                    file_name.replace(
+                        ".csv",
+                        ".parquet",
+                    ),
+                )
                 convert_csv_to_parquet(preprocessed_csv, parquet_path)
                 os.remove(preprocessed_csv)
             else:
-                parquet_path = os.path.join(processed_data_dir, file_name.replace(".csv", ".parquet"))
+                parquet_path = os.path.join(
+                    processed_data_dir,
+                    file_name.replace(
+                        ".csv",
+                        ".parquet",
+                    ),
+                )
                 convert_csv_to_parquet(csv_path, parquet_path)
 
 
