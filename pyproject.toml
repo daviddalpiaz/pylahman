@@ -29,3 +29,8 @@ packages = ["src/pylahman"]
 
 [tool.hatch.build.targets.sdist]
 packages = ["src/pylahman"]
+
+[tool.uv]
+dev-dependencies = [
+    "pytest>=8.3.2",
+]
