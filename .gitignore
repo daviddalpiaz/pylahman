@@ -24,8 +24,5 @@ MANIFEST
 # virtual environment
 .venv
 
-# data to be created during build process
-data/
-
 # local vscode workspace settings
 .vscode

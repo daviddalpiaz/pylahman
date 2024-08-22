@@ -2,7 +2,7 @@ import os
 import pandas as pd
 
 raw_data_dir = os.path.join(os.path.dirname(__file__), "..", "data-raw")
-processed_data_dir = os.path.join(os.path.dirname(__file__), "..", "data")
+processed_data_dir = os.path.join(os.path.dirname(__file__), "..", "src/pylahman/data")
 
 
 def ensure_directory_exists(directory):
