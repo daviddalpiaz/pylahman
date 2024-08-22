@@ -12,7 +12,8 @@ def run_process_script():
 
 def run_build_command():
     print("Building package...")
-    subprocess.check_call(["uvx", "--from", "build", "pyproject-build", "--installer", "uv"])
+    subprocess.check_call(["uvx", "--from", "build", "pyproject-build", "--sdist", "--installer", "uv"])
+    subprocess.check_call(["uvx", "--from", "build", "pyproject-build", "--wheel", "--installer", "uv"])
 
 
 def main():
