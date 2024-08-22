@@ -1,8 +1,9 @@
-on: [push]
+on: 
+  workflow_dispatch:
 name: Publish Package
 jobs:
-  uv-example-linux:
-    name: python-linux
+  publish-package:
+    name: publish-package
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
