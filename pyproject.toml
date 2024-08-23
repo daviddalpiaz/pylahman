@@ -1,9 +1,10 @@
 [project]
 name = "pylahman"
-version = "0.1.7"
+version = "0.1.8"
 authors = [
   { name="David Dalpiaz", email="dalpiaz2@illinois.edu" },
 ]
+license = { text = "MIT" }
 description = "Python Package for Sean Lahman's Baseball Database"
 readme = "README.md"
 requires-python = ">=3.10"
