@@ -185,7 +185,7 @@ wheels = [
 
 [[package]]
 name = "pylahman"
-version = "0.1.8"
+version = "0.1.9"
 source = { editable = "." }
 dependencies = [
     { name = "importlib" },
@@ -201,8 +201,8 @@ dev = [
 [package.metadata]
 requires-dist = [
     { name = "importlib", specifier = ">=1.0.4" },
-    { name = "pandas", specifier = ">=2.0.0" },
-    { name = "pyarrow", specifier = ">=10.0.1" },
+    { name = "pandas", specifier = ">=2.2.2" },
+    { name = "pyarrow", specifier = ">=17.0.0" },
 ]
 
 [package.metadata.requires-dev]

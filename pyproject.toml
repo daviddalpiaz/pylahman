@@ -1,6 +1,6 @@
 [project]
 name = "pylahman"
-version = "0.1.8"
+version = "0.1.9"
 authors = [
   { name="David Dalpiaz", email="dalpiaz2@illinois.edu" },
 ]
@@ -9,9 +9,9 @@ description = "Python Package for Sean Lahman's Baseball Database"
 readme = "README.md"
 requires-python = ">=3.10"
 dependencies = [
-    "pandas>=2.0.0",
-    "pyarrow>=10.0.1",
+    "pandas>=2.2.2",
     "importlib>=1.0.4",
+    "pyarrow>=17.0.0",
 ]
 
 [project.urls]
@@ -33,5 +33,5 @@ packages = ["src/pylahman"]
 
 [tool.uv]
 dev-dependencies = [
-    "pytest>=7.0.0",
+    "pytest>=8.3.2",
 ]
