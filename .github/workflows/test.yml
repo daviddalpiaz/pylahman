@@ -30,6 +30,6 @@ jobs:
       - name: Set up Python ${{ matrix.python-version }}
         run: uv python install ${{ matrix.python-version }}
       - name: Install the project
-        run: uv sync --all-extras --dev --exclude-newer {{ matrix.package-date }}
+        run: uv sync --all-extras --dev --exclude-newer ${{ matrix.package-date }}
       - name: Test package
         run: uv run pytest
