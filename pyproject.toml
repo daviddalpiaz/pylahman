@@ -33,5 +33,6 @@ packages = ["src/pylahman"]
 
 [tool.uv]
 dev-dependencies = [
+    "jupyter>=1.1.1",
     "pytest>=8.3.2",
 ]
