@@ -3,7 +3,8 @@ ID,parkalias,parkkey,parkname,city,state,country
 257,,ALT01,Columbia Park,Altoona,PA,US
 258,Edison Field; Anaheim Stadium,ANA01,Angel Stadium of Anaheim,Anaheim,CA,US
 259,,ARL01,Arlington Stadium,Arlington,TX,US
-260,The Ballpark in Arlington; Ameriquest Fl,ARL02,Rangers Ballpark in Arlington,Arlington,TX,US
+260,The Ballpark in Arlington; Ameriquest Field in Arlington; Rangers Ballpark in Arlington,ARL02,Globe Life Park in Arlington,Arlington,TX,US
+515,,ARL03,Globe Life Field,Arlington,TX,US
 261,,ATL01,Atlanta-Fulton County Stadium,Atlanta,GA,US
 262,,ATL02,Turner Field,Atlanta,GA,US
 263,,ATL03,Suntrust Park,Atlanta,GA,US
@@ -18,6 +19,7 @@ ID,parkalias,parkkey,parkname,city,state,country
 272,Oriole Park V,BAL10,Terrapin Park,Baltimore,MD,US
 273,,BAL11,Memorial Stadium,Baltimore,MD,US
 274,,BAL12,Oriole Park at Camden Yards,Baltimore,MD,US
+517,,BIR01,Rickwood Field,Birmingham,AL,USA
 275,Walpole Street Grounds,BOS01,South End Grounds I,Boston,MA,US
 276,Union Park,BOS02,Dartmouth Grounds,Boston,MA,US
 277,,BOS03,South End Grounds II,Boston,MA,US
@@ -30,6 +32,7 @@ ID,parkalias,parkkey,parkname,city,state,country
 284,,BUF02,Olympic Park I,Buffalo,NY,US
 285,,BUF03,Olympic Park II,Buffalo,NY,US
 286,Federal League Park,BUF04,International Fair Association Grounds,Buffalo,NY,US
+514,Pilot Field; Downtown Ballpark; North AmeriCare Park; Dunn Tire Park; Coca-Cola Field,BUF05,Sahlen Field,Buffalo,NY,US
 287,Pastime Park,CAN01,Mahaffey Park,Canton,OH,US
 288,,CAN02,Pastime Park,Canton,OH,US
 289,Union Base-ball Grounds,CHI01,Lake Front Park I,Chicago,IL,US
@@ -76,6 +79,8 @@ ID,parkalias,parkkey,parkname,city,state,country
 330,Navin Field; Briggs Stadium,DET04,Tiger Stadium,Detroit,MI,US
 331,,DET05,Comerica Park,Detroit,MI,US
 332,,DOV01,Fairview Park Fair Grounds,Dover,DE,US
+513,Dunedin Stadium at Grant Field; Knology Park; Florida Auto Exchange Stadium,DUN01,TD Ballpark,Dunedin,FL,US
+512,,DYE01,Field of Dreams,Dyersville,IA,US
 333,,ELM01,Maple Avenue Driving Park,Elmira,NY,US
 334,Hamilton Field,FOR01,Grand Duchess,Fort Wayne,IN,US
 335,,FOR03,Jailhouse Flats,Fort Wayne,IN,US
@@ -121,6 +126,7 @@ ID,parkalias,parkkey,parkname,city,state,country
 375,,LOU04,Eclipse Park III,Louisville,KY,US
 376,,LUD01,Ludlow Baseball Park,Ludlow,KY,US
 377,,MAS01,Long Island Grounds,Maspeth,NY,US
+511,Estadio Alfredo Harp HelÃº,MEX02,Alfredo Harp HelÃº Stadium,Mexico City,CDMX,MX
 378,JoeRobbie; ProPlayer; Dolphin; LandShark,MIA01,Sun Life Stadium,Miami,FL,US
 379,,MIA02,Marlins Park,Miami,FL,US
 380,,MID01,Mansfield Club Grounds,Middletown,CT,US
@@ -202,6 +208,7 @@ ID,parkalias,parkkey,parkname,city,state,country
 456,,SEA01,Sick's Stadium,Seattle,WA,US
 457,,SEA02,Kingdome,Seattle,WA,US
 458,T-Mobile Park,SEA03,Safeco Field,Seattle,WA,US
+516,,SEO01,Gocheok Sky Dome,Seoul,Seoul,South Korea
 459,,SFO01,Seals Stadium,San Francisco,CA,US
 460,3Com Park,SFO02,Candlestick Park,San Francisco,CA,US
 461,Pacific Bell Park; SBC Park,SFO03,AT&T Park,San Francisco,CA,US
@@ -254,8 +261,3 @@ ID,parkalias,parkkey,parkname,city,state,country
 508,,WOR01,Agricultural County Fair Grounds I,Worcester,MA,US
 509,,WOR02,Agricultural County Fair Grounds II,Worcester,MA,US
 510,,WOR03,Worcester Driving Park Grounds,Worcester,MA,US
-511,Estadio Alfredo Harp Helú,MEX02,Alfredo Harp Helú Stadium,Mexico City,CDMX,MX
-512,,DYE01,Field of Dreams,Dyersville,IA,US
-513,Dunedin Stadium at Grant Field; Knology Park; Florida Auto Exchange Stadium,DUN01,TD Ballpark,Dunedin,FL,US
-514,Pilot Field; Downtown Ballpark; North AmeriCare Park; Dunn Tire Park; Coca-Cola Field,BUF05,Sahlen Field,Buffalo,NY,US
-515,,ARL03,Field of Dreams,Arlington,TX,US

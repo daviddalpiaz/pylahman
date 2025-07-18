@@ -1,6 +1,5 @@
-The Lahman Baseball Database 1871-2023
-Release Date: April 4, 2024
-
+The SABR Lahman Baseball Database 1871-2024
+Release Date: July 1, 2025
 
 --------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -21,19 +20,19 @@ README CONTENTS
 
 0.1 Copyright Notice & Limited Use License
 
-This database is copyright 1996-2024 by Sean Lahman. 
+This database is copyright 1996-2025 by SABR, via generious donation from Sean Lahman. 
 
 This work is licensed under a Creative Commons Attribution-ShareAlike 3.0 
 Unported License. For details see: http://creativecommons.org/licenses/by-sa/3.0/
 
-For licensing information or further information, contact Sean Lahman at: seanlahman@gmail.com
+For licensing information or further information, contact Scott Bush at: sbush@sabr.org
 
 --------------------------------------------------------------------------------------------------------------------------------------------
 
 0.2 Contact Information
 
-Web site: http://www.baseball1.com
-E-Mail : seanlahman@gmail.com
+Web site: https://sabr.org/lahman-database/
+E-Mail:   jpomrenke@sabr.org
 
 --------------------------------------------------------------------------------------------------------------------------------------------
 1.0  Release Contents
@@ -41,10 +40,13 @@ E-Mail : seanlahman@gmail.com
 This release of the database can be downloaded in several formats. The contents of each version are listed below.
 
 MS Access Versions:
-      lahman_1871-2023.mdb 
-      readme2023.txt 
+      lahman_1871-2024.mdb 
+      readme2024.txt 
 
-       
+MSSQL Versions:
+      lahman2024.bak
+      readme2024.txt 
+   
 Comma Delimited Version:
       readme.txt     
       AllStarFull.csv
@@ -68,7 +70,7 @@ Comma Delimited Version:
       People.csv
       Pitching.csv
       PitchingPost.csv
-      readme2023.txt
+      readme2024.txt
       Salaries.csv
       Schools.csv
       SeriesPost.csv
@@ -79,8 +81,8 @@ Comma Delimited Version:
 --------------------------------------------------------------------------------------------------------------------------------------------
 1.1 Introduction
 
-This database contains pitching, hitting, and fielding statistics for Major League Baseball from 1871 through 2023.  It includes data from
-the two current leagues (American and National), the four other "major" leagues (American Association, Union Association, Players League, and
+This database contains pitching, hitting, and fielding statistics for Major League Baseball from 1871 through 2024.  It includes data from
+the two current leagues (American and National), the four other white "major" leagues (American Association, Union Association, Players League, and
 Federal League), and the National Association of 1871-1875. 
 
 This database was created by Sean Lahman, who pioneered the effort to make baseball statistics freely available to the general public. What
@@ -100,20 +102,45 @@ If you have any problems or find any errors, please let us know.  Any feedback i
 
 Player stats have been updated through the latest season. Supplemental tables except CollegePlaying, Salaries, and Schools have been updated.  
 
-Corrected 2022 catcher fielding for SB and CS.
+Researched retirements from 2020-2025 to better identify players that should have their last game updated.
 
-Normalized award names across award tables.
+Updated biographical information for people where it differed in Retrosheet and Chadwick.
 
-Added non-appearing players to 2022 All-Star data.
+Corrected 2023 team data for DP and SHO, which were mistakenly presented as sums of the player totals and not team level stats.
 
-Replaced #INF numeric data in PitchingPost table.
+Corrected team data where the stadium was incorrect for some clubs between 2019-2023.
 
-The HallOfFame table data has been expanded with the permission of Graham Womack and his fantastic research into Known Veterans and 
-Era Committee candidates, 1953-current, with some additional data researched and deduced by Bryan Walko. This provides us valuable
-insight into not just the people who were voted in by these committees, but also what we know about those who were considered
-over time.
+Corrected park data for ARL03, which was mistakenly named Field of Dreams and not Globe Life Field.
 
-Extended length of needed_note on HallOfFame table so additional information could be included.
+Removed 2023 data from FieldingOF, which was only intended to go until 1955.
+
+Standardized all state/province data for US, Canada, and Australia to use the postal codes only.
+
+Filled in state data with known state/province/department/county/etc. data for all places of birth and death.
+
+Corrected data where City, State, Country were misplaced in the fields.
+
+Foreign placenames will now have diacritics for cities and states.
+
+Standardized states for foreign countries (ex: Baden-Württemberg will always be Baden-Württemberg, not BR, Baden Württemberg, Baden-Wurttemberg, 
+Baden, or Württemberg, etc.)
+
+Added historical data for the following awards: 
+   All-MLB Team awards
+   Bob Feller Act of Valor Awards 
+   MLB Players Choice awards
+   Pitcher of the Month
+   Player of the Month
+   Player of the Week
+   Reliever of the Month
+   Rookie of the Month
+   This Year in Baseball (MLB.com / Esurance) awards (now defunct)
+   TSN Comeback Player of the Year
+   TSN Pitcher of the Year
+   TSN Reliever of the Year
+   TSN Rookie of the Year
+   TSN Rookie Pitcher of the Year
+   TSN Rookie Player of the Year
 
 --------------------------------------------------------------------------------------------------------------------------------------------
 1.3 Acknowledgements
@@ -179,6 +206,9 @@ Era Committee candidates, 1953-current, with some additional data researched and
 insight into not just the people who were voted in by these committees, but also what we know about those who were considered
 over time.
 
+Thank you Sean, for donating the database to SABR, for overseeing the database for three decades, and for providing our first steps
+into research during the internet era.
+
 Thanks to all contributors great and small. What you have created is a wonderful thing.
 
 --------------------------------------------------------------------------------------------------------------------------------------------
@@ -239,10 +269,40 @@ in section 2.0 of this document to import the data into your database applicatio
        2020     February 2021     Updated for 2020
        2021     February 2022     Updated for 2021
        2022     February 2023     Updated for 2022
-       2023     April 2024        Updated for 2023, corrected 2022 catcher fielding SB and CS, normalized award names across award tables
+       2023     April 2024        Updated for 2023, corrected 2022 catcher fielding SB and CS, standardized award names across award tables
 	                              Added non-appearing players to 2022 All-Star data, replaced #INF data in some tables, extended length
 								  of needed_note on HallOfFame table so additional information could be included.
-
+       2024     July 2025         Updated for 2024
+	                              Researched retirements from 2020-2025 to better identify players that should have their last game updated
+								  Updated biographical information for people where it differed in Retrosheet and Chadwick
+								  Corrected 2023 team data for DP and SHO, which were mistakenly presented as sums of the player totals and
+								  not team level stats
+								  Corrected team data where the stadium was incorrect for some clubs between 2019-2023
+								  Corrected park data for ARL03, which was mistakenly named Field of Dreams and not Globe Life Field
+								  Removed 2023 data from FieldingOF, which was only intended to go until 1955
+								  Standardized all state/province data for US, Canada, and Australia to use the postal codes only
+								  Filled in state data with known state/province/department/county/etc. data for all places of birth and death
+								  Corrected data where City, State, Country were misplaced in the fields
+								  Foreign placenames will now have diacritics for cities and states
+								  Standardized states for foreign countries (ex: Baden-Württemberg will always be Baden-Württemberg, not BR,
+								  Baden Württemberg, Baden-Wurttemberg, Baden, or Württemberg, etc.)
+								  Added historical data for the following awards: All-MLB Team awards, Bob Feller Act of Valor Awards, 
+								  MLB Players Choice awards, Pitcher of the Month, Player of the Month, Player of the Week, Reliever of the Month, 
+								  Rookie of the Month, This Year in Baseball (MLB.com / Esurance) awards, TSN Comeback Player of the Year, 
+								  TSN Pitcher of the Year, TSN Reliever of the Year, TSN Rookie of the Year, TSN Rookie Pitcher of the Year, 
+								  TSN Rookie Player of the Year
+       2024.01  July 2025         Corrected extended characters in Access People table. Corrected Rob Thomson's 2022 season with Phillies.
+	                              Removed comma from Bob Troy's deathCity field.
+       2024.02  July 2025         Corrected 2024 data where teams were incorrectly mapped to their franchiseID. Corrected AllStarFull data that 
+	                              mapped Milwaukee Braves to non-existent ID teamID. Fixed Appearances and FieldingOF for Frank Thompson that
+								  were still aligned to the phantom player Andrew Thompson.
+       2024.03  July 2025         Corrected 2024 data where LAA was miskeyed as ANA. (Thank you Mark K.)
+	   2024.04  July 2-25         Corrected duplication in AllStarFull for 1962 and 2022. Corrected teamIDs for Angels (1997-2004) and 
+	                              Brewers (1970-1997). Corrected duplicates for Billy Herman (1934), Dave Freese (2012), and Shohei
+								  Ohtani (2021). Ohtani's 2021 record records starting position as 1;10, since he started two positions
+								  in that game per the MLB. Corrected Angels in Appearances to the correct teamID for 2023. Added new
+								  records to People that were in the HallOfFame file but missing from People. This includes Bud Fowler,
+								  along with baseball executives, owners, and umpires.
 --------------------------------------------------------------------------------------------------------------------------------------------
 2.0 Data Tables
 
@@ -260,10 +320,10 @@ The database is comprised of the following main tables:
   Batting                Batting statistics
   Pitching               Pitching statistics
   Fielding               Fielding statistics
-  FieldingOF             Outfield position data for years where LF/CF/RF fielding data is available
+  FieldingOF             Outfield position data for years where LF/CF/RF fielding data is available, until 1955
   FieldingOFsplit        LF/CF/RF game played splits for all years, including those where LF/CF/RF fielding data is not available
 
-  Appearances            Details on the positions a player appeared at
+  Appearances            Details on the positions a player appeared during a season
   Managers               Managerial statistics
 
 It is supplemented by these tables:
@@ -314,7 +374,7 @@ height         Player's height in inches
 bats           Player's batting hand (left, right, or both)         
 throws         Player's throwing hand (left or right)
 debut          Date that player made first major league appearance
-finalGame      Date that player made first major league appearance (includes date of last played game even if still active)
+finalGame      Date that player made first major league appearance
 retroID        ID used by Retrosheet
 bbrefID        ID used by Baseball Reference website
 
@@ -333,7 +393,7 @@ W              Wins
 L              Losses
 DivWin         Division Winner (Y or N)
 WCWin          Wild Card Winner (Y or N)
-LgWin          League Champion(Y or N)
+LgWin          League Champion (Y or N)
 WSWin          World Series Winner (Y or N)
 R              Runs scored
 AB             At bats
@@ -351,7 +411,7 @@ RA             Opponents runs scored
 ER             Earned runs allowed
 ERA            Earned run average
 CG             Complete games
-SHO            Shutouts
+SHO            Shutouts (team level)
 SV             Saves
 IPOuts         Outs Pitched (innings pitched x 3)
 HA             Hits allowed
@@ -359,7 +419,7 @@ HRA            Homeruns allowed
 BBA            Walks allowed
 SOA            Strikeouts by pitchers
 E              Errors
-DP             Double Plays
+DP             Double Plays (team level)
 FP             Fielding  percentage
 name           Team's full name
 park           Name of team's home ballpark
@@ -517,7 +577,7 @@ G_ss           Games as shortstop
 G_lf           Games as left fielder
 G_cf           Games as center fielder
 G_rf           Games as right fielder
-G_of           Games as outfielder
+G_of           Games as outfielder (if a player appeared in a single game at multiple OF positions, this will count as one g_OF game)
 G_dh           Games as designated hitter
 G_ph           Games as pinch hitter
 G_pr           Games as pinch runner
@@ -536,26 +596,17 @@ L              Losses
 rank           Team's final position in standings that year
 plyrMgr        Player Manager (denoted by 'Y')
 
-
-
-
-
 --------------------------------------------------------------------------------------------------------------------------------------------
 ALL STAR FULL TABLE
 
 playerID       Player ID code
 YearID         Year
 gameNum        Game number (zero if only one All-Star game played that season)
-gameID         Retrosheet ID for the game idea
+gameID         Retrosheet ID for the game
 teamID         Team
 lgID           League
 GP             1 if Played in the game
 startingPos    If player was game starter, the position played
-
-
-
-
-
 
 --------------------------------------------------------------------------------------------------------------------------------------------
 BATTING POST TABLE
@@ -651,10 +702,6 @@ wins           Wins by team that won the series
 losses         Losses by team that won the series
 ties           Tie games
 
-
-
-
-
 --------------------------------------------------------------------------------------------------------------------------------------------
 HOME GAMES TABLE
 
@@ -665,7 +712,7 @@ parkkey        Ballpark ID
 spanfirst      Date of first game played
 spanlast       Date of last game played
 games          Total number of games
-openings       Total number of paid dates played (games with attendance)
+openings       Total number of paid dates played (games with attendance, note that doubleheaders may make the openings less than games)
 attendance     Total attendance
 
 --------------------------------------------------------------------------------------------------------------------------------------------
@@ -675,7 +722,7 @@ playerID       Manager ID code
 yearID         Year
 teamID         Team
 lgID           League
-inseason       Managerial order, in order of appearance during the year.  One if the individual managed the team the entire year. 
+inseason       Managerial order, in order of appearance during the year, 1 if the individual managed the team the entire year
 half           First or second half of season
 G              Games managed
 W              Wins
@@ -695,10 +742,6 @@ rank           Team's position in standings for the half
 G              Games played
 W              Wins
 L              Losses
-
-
-
-
 
 --------------------------------------------------------------------------------------------------------------------------------------------
 AWARDS MANAGERS TABLE
@@ -755,10 +798,6 @@ inducted       Whether player was inducted by that vote or not (Y or N)
 category       Category in which candidate was honored
 needed_note    Explanation of qualifiers for special elections, revised in 2023 to include important notes about the record.
 
-
-
-
-
 --------------------------------------------------------------------------------------------------------------------------------------------
 COLLEGE PLAYING TABLE
 
@@ -783,9 +822,6 @@ schoolName     School name
 schoolCity     City where school is located
 schoolState    State where school's city is located
 schoolNick     Nickname for school's baseball team
-
-
-
 
 <end of file>
      
