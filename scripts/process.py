@@ -1,9 +1,9 @@
 import os
 import pandas as pd
 
-
-raw_data_dir = os.path.join(os.path.dirname(__file__), "..", "data-raw")
-processed_data_dir = os.path.join(os.path.dirname(__file__), "..", "src/pylahman/data")
+script_path = os.path.dirname(__file__)
+raw_data_dir = os.path.join(script_path, "..", "data-raw")
+processed_data_dir = os.path.join(script_path, "..", "src/pylahman/data")
 
 
 def process_raw_csv_files():
