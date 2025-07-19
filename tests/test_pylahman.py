@@ -40,11 +40,18 @@ def test_returns_dataframe(func):
     assert isinstance(df, pd.DataFrame)
 
 
-def test_batting_includes_2024():
+def test_Batting_includes_2024():
     df = pylahman.Batting()
     assert 2024 in df["yearID"].values, "2024 not found in Batting table yearID column"
 
 
-def test_pitching_includes_2024():
+def test_Pitching_includes_2024():
     df = pylahman.Pitching()
     assert 2024 in df["yearID"].values, "2024 not found in Pitching table yearID column"
+
+
+def test_people_birthYear_is_int64():
+    df = pylahman.People()
+    assert (
+        df["birthYear"].dtype == "int64[pyarrow]"
+    ), f"birthYear dtype is {df['birthYear'].dtype}, expected int64[pyarrow]"

@@ -59,7 +59,7 @@ def convert_csv_to_parquet(csv_file, parquet_file):
     encodings = ["utf-8", "ISO-8859-1"]
     for encoding in encodings:
         try:
-            df = pd.read_csv(csv_file, encoding=encoding)
+            df = pd.read_csv(csv_file, encoding=encoding, low_memory=False, dtype_backend="pyarrow")
             df.to_parquet(parquet_file, index=False)
             print(f"Converted {csv_file} to {parquet_file} using {encoding}")
             break
