@@ -6,33 +6,33 @@ import pytest
 @pytest.mark.parametrize(
     "func",
     [
-        pylahman.allstar_full,
-        pylahman.appearances,
-        pylahman.awards_managers,
-        pylahman.awards_players,
-        pylahman.awards_share_managers,
-        pylahman.awards_share_players,
-        pylahman.batting,
-        pylahman.batting_post,
-        pylahman.college_playing,
-        pylahman.fielding,
-        pylahman.fielding_of,
-        pylahman.fielding_of_split,
+        pylahman.AllstarFull,
+        pylahman.Appearances,
+        pylahman.AwardsManagers,
+        pylahman.AwardsPlayers,
+        pylahman.AwardsShareManagers,
+        pylahman.AwardsSharePlayers,
+        pylahman.Batting,
+        pylahman.BattingPost,
+        pylahman.CollegePlaying,
+        pylahman.Fielding,
+        pylahman.FieldingOF,
+        pylahman.FieldingOFsplit,
         pylahman.fielding_post,
-        pylahman.hall_of_fame,
-        pylahman.home_games,
-        pylahman.managers,
-        pylahman.managers_half,
-        pylahman.parks,
-        pylahman.people,
-        pylahman.pitching,
-        pylahman.pitching_post,
-        pylahman.salaries,
-        pylahman.schools,
-        pylahman.series_post,
-        pylahman.teams,
-        pylahman.teams_franchises,
-        pylahman.teams_half,
+        pylahman.HallOfFame,
+        pylahman.HomeGames,
+        pylahman.Managers,
+        pylahman.ManagersHalf,
+        pylahman.Parks,
+        pylahman.People,
+        pylahman.Pitching,
+        pylahman.PitchingPost,
+        pylahman.Salaries,
+        pylahman.Schools,
+        pylahman.SeriesPost,
+        pylahman.Teams,
+        pylahman.TeamsFranchises,
+        pylahman.TeamsHalf,
     ],
 )
 def test_returns_dataframe(func):
@@ -41,14 +41,10 @@ def test_returns_dataframe(func):
 
 
 def test_batting_includes_2024():
-    df = pylahman.batting()
-    assert (
-        2024 in df["yearID"].values
-    ), "2024 not found in batting table yearID column"
+    df = pylahman.Batting()
+    assert 2024 in df["yearID"].values, "2024 not found in Batting table yearID column"
 
 
 def test_pitching_includes_2024():
-    df = pylahman.pitching()
-    assert (
-        2024 in df["yearID"].values
-    ), "2024 not found in pitching table yearID column"
+    df = pylahman.Pitching()
+    assert 2024 in df["yearID"].values, "2024 not found in Pitching table yearID column"

@@ -15,51 +15,51 @@ def read_parquet(filename: str) -> pd.DataFrame:
         raise
 
 
-def allstar_full() -> pd.DataFrame:
+def AllstarFull() -> pd.DataFrame:
     return read_parquet("AllstarFull.parquet")
 
 
-def appearances() -> pd.DataFrame:
+def Appearances() -> pd.DataFrame:
     return read_parquet("Appearances.parquet")
 
 
-def awards_managers() -> pd.DataFrame:
+def AwardsManagers() -> pd.DataFrame:
     return read_parquet("AwardsManagers.parquet")
 
 
-def awards_players() -> pd.DataFrame:
+def AwardsPlayers() -> pd.DataFrame:
     return read_parquet("AwardsPlayers.parquet")
 
 
-def awards_share_managers() -> pd.DataFrame:
+def AwardsShareManagers() -> pd.DataFrame:
     return read_parquet("AwardsShareManagers.parquet")
 
 
-def awards_share_players() -> pd.DataFrame:
+def AwardsSharePlayers() -> pd.DataFrame:
     return read_parquet("AwardsSharePlayers.parquet")
 
 
-def batting() -> pd.DataFrame:
+def Batting() -> pd.DataFrame:
     return read_parquet("Batting.parquet")
 
 
-def batting_post() -> pd.DataFrame:
+def BattingPost() -> pd.DataFrame:
     return read_parquet("BattingPost.parquet")
 
 
-def college_playing() -> pd.DataFrame:
+def CollegePlaying() -> pd.DataFrame:
     return read_parquet("CollegePlaying.parquet")
 
 
-def fielding() -> pd.DataFrame:
+def Fielding() -> pd.DataFrame:
     return read_parquet("Fielding.parquet")
 
 
-def fielding_of() -> pd.DataFrame:
+def FieldingOF() -> pd.DataFrame:
     return read_parquet("FieldingOF.parquet")
 
 
-def fielding_of_split() -> pd.DataFrame:
+def FieldingOFsplit() -> pd.DataFrame:
     return read_parquet("FieldingOFsplit.parquet")
 
 
@@ -67,57 +67,57 @@ def fielding_post() -> pd.DataFrame:
     return read_parquet("FieldingPost.parquet")
 
 
-def hall_of_fame() -> pd.DataFrame:
+def HallOfFame() -> pd.DataFrame:
     return read_parquet("HallOfFame.parquet")
 
 
-def home_games() -> pd.DataFrame:
+def HomeGames() -> pd.DataFrame:
     return read_parquet("HomeGames.parquet")
 
 
-def managers() -> pd.DataFrame:
+def Managers() -> pd.DataFrame:
     return read_parquet("Managers.parquet")
 
 
-def managers_half() -> pd.DataFrame:
+def ManagersHalf() -> pd.DataFrame:
     return read_parquet("ManagersHalf.parquet")
 
 
-def parks() -> pd.DataFrame:
+def Parks() -> pd.DataFrame:
     return read_parquet("Parks.parquet")
 
 
-def people() -> pd.DataFrame:
+def People() -> pd.DataFrame:
     return read_parquet("People.parquet")
 
 
-def pitching() -> pd.DataFrame:
+def Pitching() -> pd.DataFrame:
     return read_parquet("Pitching.parquet")
 
 
-def pitching_post() -> pd.DataFrame:
+def PitchingPost() -> pd.DataFrame:
     return read_parquet("PitchingPost.parquet")
 
 
-def salaries() -> pd.DataFrame:
+def Salaries() -> pd.DataFrame:
     return read_parquet("Salaries.parquet")
 
 
-def schools() -> pd.DataFrame:
+def Schools() -> pd.DataFrame:
     return read_parquet("Schools.parquet")
 
 
-def series_post() -> pd.DataFrame:
+def SeriesPost() -> pd.DataFrame:
     return read_parquet("SeriesPost.parquet")
 
 
-def teams() -> pd.DataFrame:
+def Teams() -> pd.DataFrame:
     return read_parquet("Teams.parquet")
 
 
-def teams_franchises() -> pd.DataFrame:
+def TeamsFranchises() -> pd.DataFrame:
     return read_parquet("TeamsFranchises.parquet")
 
 
-def teams_half() -> pd.DataFrame:
+def TeamsHalf() -> pd.DataFrame:
     return read_parquet("TeamsHalf.parquet")
