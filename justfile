@@ -10,4 +10,4 @@ build-wheel:
     @echo "Building wheel..."
     uvx --from build pyproject-build --wheel --installer uv
 
-build: build-sdist build-wheel
+build: process build-sdist build-wheel

@@ -29,7 +29,7 @@ def process_raw_csv_files():
                     dtype_backend="pyarrow",
                     engine="pyarrow",
                 )
-            df.to_parquet(parquet_path, index=False)
+            df.to_parquet(parquet_path, index=False, engine="pyarrow", compression="zstd")
             print(f"Converted {csv_path} to {parquet_path}")
 
 
