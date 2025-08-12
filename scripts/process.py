@@ -29,6 +29,12 @@ def process_raw_csv_files():
                     dtype_backend="numpy_nullable",
                     engine="pyarrow",
                 )
+            if filename == "People.csv":
+                pass
+                df[["debut", "finalGame"]] = df[["debut", "finalGame"]].apply(pd.to_datetime)
+            if filename == "HomeGames.csv":
+                pass
+                df[["spanfirst", "spanlast"]] = df[["spanfirst", "spanlast"]].apply(pd.to_datetime)
             df.to_parquet(parquet_path, index=False, engine="pyarrow", compression="zstd")
             print(f"Converted {csv_path} to {parquet_path}")
 

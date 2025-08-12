@@ -58,3 +58,10 @@ def test_people_birthYear_is_int64():
     assert (
         df["deathYear"].dtype == "Int64"
     ), f"deathYear dtype is {df['deathYear'].dtype}, expected Int64"
+
+
+def test_dates_are_dates():
+    df = pylahman.People()
+    assert (
+        df["debut"].dtype == "datetime64[ns]"
+    ), f"debut dtype is {df['deathYear'].dtype}, expected datetime64[ns]"
