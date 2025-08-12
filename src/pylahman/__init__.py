@@ -6,7 +6,7 @@ def read_parquet(filename: str) -> pd.DataFrame:
     try:
         data_path = importlib.resources.files(__package__) / "data" / filename
         with importlib.resources.as_file(data_path) as f:
-            return pd.read_parquet(f)
+            return pd.read_parquet(f, engine="pyarrow")
     except FileNotFoundError:
         print(f"File data/{filename} not found.")
         raise

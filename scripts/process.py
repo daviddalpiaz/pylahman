@@ -20,13 +20,13 @@ def process_raw_csv_files():
                 df = pd.read_csv(
                     csv_path,
                     quotechar='"',
-                    dtype_backend="pyarrow",
+                    dtype_backend="numpy_nullable",
                     engine="pyarrow",
                 )
             else:
                 df = pd.read_csv(
                     csv_path,
-                    dtype_backend="pyarrow",
+                    dtype_backend="numpy_nullable",
                     engine="pyarrow",
                 )
             df.to_parquet(parquet_path, index=False, engine="pyarrow", compression="zstd")

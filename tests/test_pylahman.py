@@ -53,5 +53,8 @@ def test_Pitching_includes_2024():
 def test_people_birthYear_is_int64():
     df = pylahman.People()
     assert (
-        df["birthYear"].dtype == "int64[pyarrow]"
-    ), f"birthYear dtype is {df['birthYear'].dtype}, expected int64[pyarrow]"
+        df["birthYear"].dtype == "Int64"
+    ), f"birthYear dtype is {df['birthYear'].dtype}, expected Int64"
+    assert (
+        df["deathYear"].dtype == "Int64"
+    ), f"deathYear dtype is {df['deathYear'].dtype}, expected Int64"
