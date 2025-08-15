@@ -30,11 +30,13 @@ def process_raw_csv_files():
                     engine="pyarrow",
                 )
             if filename == "People.csv":
-                pass
                 df[["debut", "finalGame"]] = df[["debut", "finalGame"]].apply(pd.to_datetime)
             if filename == "HomeGames.csv":
-                pass
                 df[["spanfirst", "spanlast"]] = df[["spanfirst", "spanlast"]].apply(pd.to_datetime)
+            if filename == "Batting.csv":
+                cols_to_drop = [col for col in ["G_batting", "G_old"] if col in df.columns]
+                if cols_to_drop:
+                    df = df.drop(columns=cols_to_drop)
             df.to_parquet(parquet_path, index=False, engine="pyarrow", compression="zstd")
             print(f"Converted {csv_path} to {parquet_path}")
 
