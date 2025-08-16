@@ -65,3 +65,22 @@ def test_dates_are_dates():
     assert (
         df["debut"].dtype == "datetime64[ns]"
     ), f"debut dtype is {df['deathYear'].dtype}, expected datetime64[ns]"
+
+
+def test_get_player_name():
+    player_id = "aaronha01"
+    first = "Hank"
+    last = "Aaron"
+    assert pylahman.get_player_name(player_id) == f"{first} {last}"
+    assert pylahman.get_player_name(player_id, last_only=True) == last
+    with pytest.raises(ValueError, match="not found in People table"):
+        pylahman.get_player_name("not_a_real_id")
+
+
+def test_get_player_id():
+    player_id = "bondsba01"
+    first = "Barry"
+    last = "Bonds"
+    assert pylahman.get_player_id(last, first) == player_id
+    with pytest.raises(ValueError, match="not found in People table"):
+        pylahman.get_player_id("NotARealLastName", "NotARealFirstName")
