@@ -123,9 +123,17 @@ def TeamsHalf() -> pd.DataFrame:
     return _read_parquet("TeamsHalf.parquet")
 
 
-def get_player_name(player_id, last_only=False):
-    people_df = People()
-    row = people_df[people_df["playerID"] == player_id]
+_people_df = People()[["playerID", "nameFirst", "nameLast"]]
+
+
+def get_player_names(player_ids, last_only=False):
+    if isinstance(player_ids, str):
+        return _get_player_name(player_ids, last_only=last_only)
+    return [_get_player_name(pid, last_only=last_only) for pid in player_ids]
+
+
+def _get_player_name(player_id, last_only=False):
+    row = _people_df[_people_df["playerID"] == player_id]
     if row.empty:
         raise ValueError(f"playerID '{player_id}' not found in People table.")
     if last_only:
@@ -133,9 +141,16 @@ def get_player_name(player_id, last_only=False):
     return f"{row['nameFirst'].iloc[0]} {row['nameLast'].iloc[0]}"
 
 
-def get_player_id(last_name, first_name):
-    people_df = People()
-    row = people_df[(people_df["nameFirst"] == first_name) & (people_df["nameLast"] == last_name)]
+def get_player_ids(last_name, first_name):
+    if isinstance(last_name, str) and isinstance(first_name, str):
+        return _get_player_id(last_name, first_name)
+    return [_get_player_id(ln, fn) for ln, fn in zip(last_name, first_name)]
+
+
+def _get_player_id(last_name, first_name):
+    row = _people_df[
+        (_people_df["nameFirst"] == first_name) & (_people_df["nameLast"] == last_name)
+    ]
     if row.empty:
         raise ValueError(f"Player '{first_name} {last_name}' not found in People table.")
     return row["playerID"].iloc[0]

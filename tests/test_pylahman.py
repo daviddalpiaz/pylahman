@@ -67,20 +67,42 @@ def test_dates_are_dates():
     ), f"debut dtype is {df['deathYear'].dtype}, expected datetime64[ns]"
 
 
-def test_get_player_name():
+def test__get_player_name():
     player_id = "aaronha01"
     first = "Hank"
     last = "Aaron"
-    assert pylahman.get_player_name(player_id) == f"{first} {last}"
-    assert pylahman.get_player_name(player_id, last_only=True) == last
+    assert pylahman._get_player_name(player_id) == f"{first} {last}"
+    assert pylahman._get_player_name(player_id, last_only=True) == last
     with pytest.raises(ValueError, match="not found in People table"):
-        pylahman.get_player_name("not_a_real_id")
+        pylahman._get_player_name("not_a_real_id")
 
 
-def test_get_player_id():
+def test__get_player_id():
     player_id = "bondsba01"
     first = "Barry"
     last = "Bonds"
-    assert pylahman.get_player_id(last, first) == player_id
+    assert pylahman._get_player_id(last, first) == player_id
     with pytest.raises(ValueError, match="not found in People table"):
-        pylahman.get_player_id("NotARealLastName", "NotARealFirstName")
+        pylahman._get_player_id("NotARealLastName", "NotARealFirstName")
+
+
+def test_get_player_names():
+    assert pylahman.get_player_names("aaronha01") == "Hank Aaron"
+    assert pylahman.get_player_names("aaronha01", last_only=True) == "Aaron"
+    ids = ["aaronha01", "bondsba01"]
+    names = pylahman.get_player_names(ids)
+    assert names == ["Hank Aaron", "Barry Bonds"]
+    last_names = pylahman.get_player_names(ids, last_only=True)
+    assert last_names == ["Aaron", "Bonds"]
+    with pytest.raises(ValueError):
+        pylahman.get_player_names("not_a_real_id")
+
+
+def test_get_player_ids():
+    assert pylahman.get_player_ids("Aaron", "Hank") == "aaronha01"
+    last_names = ["Aaron", "Bonds"]
+    first_names = ["Hank", "Barry"]
+    ids = pylahman.get_player_ids(last_names, first_names)
+    assert ids == ["aaronha01", "bondsba01"]
+    with pytest.raises(ValueError):
+        pylahman.get_player_ids("NotARealLastName", "NotARealFirstName")
