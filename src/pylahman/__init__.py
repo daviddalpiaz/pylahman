@@ -121,3 +121,21 @@ def TeamsFranchises() -> pd.DataFrame:
 
 def TeamsHalf() -> pd.DataFrame:
     return _read_parquet("TeamsHalf.parquet")
+
+
+def get_player_name(player_id, last_only=False):
+    people_df = People()
+    row = people_df[people_df["playerID"] == player_id]
+    if row.empty:
+        raise ValueError(f"playerID '{player_id}' not found in People table.")
+    if last_only:
+        return row["nameLast"].iloc[0]
+    return f"{row['nameFirst'].iloc[0]} {row['nameLast'].iloc[0]}"
+
+
+def get_player_id(last_name, first_name):
+    people_df = People()
+    row = people_df[(people_df["nameFirst"] == first_name) & (people_df["nameLast"] == last_name)]
+    if row.empty:
+        raise ValueError(f"Player '{first_name} {last_name}' not found in People table.")
+    return row["playerID"].iloc[0]
