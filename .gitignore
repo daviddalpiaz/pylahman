@@ -29,3 +29,8 @@ MANIFEST
 
 # pytest
 .pytest_cache
+
+.quarto/
+_site/
+objects.json
+reference/

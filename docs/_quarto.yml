@@ -1,0 +1,70 @@
+project:
+  type: website
+
+# tell quarto to read the generated sidebar
+metadata-files:
+  - reference/_sidebar.yml
+
+# tell quarto to read the generated styles
+format:
+  html:
+    css:
+      - reference/_styles-quartodoc.css
+
+
+website:
+  title: "pylahman"
+  page-navigation: true
+  navbar:
+    search: true
+    right:
+      - text: "API"
+        href: reference/index.qmd
+  sidebar:
+    - id: reference
+      contents: "_sidebar.yml"
+quartodoc:
+  # the name used to import the package you want to create reference docs for
+  package: pylahman
+
+  # write sidebar and style data
+  sidebar: reference/_sidebar.yml
+  css: reference/_styles-quartodoc.css
+  title: "API Reference"
+
+  sections:
+    - title: Player Identification
+      desc: Functions to lookup player identifiers or names.
+      contents:
+        - get_player_names
+        - get_player_ids
+    - title: Data Loading
+      desc: Functions to load tables from the Lahman database.
+      contents:
+        - AllstarFull
+        - Appearances
+        - AwardsManagers
+        - AwardsPlayers
+        - AwardsShareManagers
+        - AwardsSharePlayers
+        - Batting
+        - BattingPost
+        - CollegePlaying
+        - Fielding
+        - FieldingOF
+        - FieldingOFsplit
+        - fielding_post
+        - HallOfFame
+        - HomeGames
+        - Managers
+        - ManagersHalf
+        - Parks
+        - People
+        - Pitching
+        - PitchingPost
+        - Salaries
+        - Schools
+        - SeriesPost
+        - Teams
+        - TeamsFranchises
+        - TeamsHalf
