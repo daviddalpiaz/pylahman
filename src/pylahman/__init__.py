@@ -88,6 +88,36 @@ def Parks() -> pd.DataFrame:
 
 
 def People() -> pd.DataFrame:
+    """
+    Returns the `People` table as a `pandas` `DataFrame`.
+
+    | Column         | Description                                                        |
+    |----------------|--------------------------------------------------------------------|
+    | `playerID`     | A unique code assigned to each player. Links data across files.    |
+    | `birthYear`    | Year player was born                                               |
+    | `birthMonth`   | Month player was born                                              |
+    | `birthDay`     | Day player was born                                                |
+    | `birthCountry` | Country where player was born                                      |
+    | `birthState`   | State where player was born                                        |
+    | `birthCity`    | City where player was born                                         |
+    | `deathYear`    | Year player died                                                   |
+    | `deathMonth`   | Month player died                                                  |
+    | `deathDay`     | Day player died                                                    |
+    | `deathCountry` | Country where player died                                          |
+    | `deathState`   | State where player died                                            |
+    | `deathCity`    | City where player died                                             |
+    | `nameFirst`    | Player's first name                                                |
+    | `nameLast`     | Player's last name                                                 |
+    | `nameGiven`    | Player's given name (typically first and middle)                   |
+    | `weight`       | Player's weight in pounds                                          |
+    | `height`       | Player's height in inches                                          |
+    | `bats`         | Player's batting hand (left, right, or both)                       |
+    | `throws`       | Player's throwing hand (left or right)                             |
+    | `debut`        | Date that player made first major league appearance                |
+    | `finalGame`    | Date that player made last major league appearance                 |
+    | `retroID`      | ID used by Retrosheet                                              |
+    | `bbrefID`      | ID used by Baseball Reference website                              |
+    """
     return _read_parquet("People.parquet")
 
 
