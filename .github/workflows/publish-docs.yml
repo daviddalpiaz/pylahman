@@ -10,7 +10,6 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Setup uv
-        if: ${{ matrix.os == 'ubuntu-latest' || matrix.os == 'macos-latest' }}
         run: curl -LsSf https://astral.sh/uv/install.sh | sh
       - name: Set up Python
         run: uv python install 3.12
