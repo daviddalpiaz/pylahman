@@ -11,3 +11,8 @@ build-wheel:
     uvx --from build pyproject-build --wheel --installer uv
 
 build: process build-sdist build-wheel
+
+docs:
+    quartodoc build --config docs/_quarto.yml
+    quarto render docs
+    quarto preview docs
