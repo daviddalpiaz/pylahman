@@ -27,3 +27,4 @@ jobs:
         with:
           render: false
           target: gh-pages
+          path: docs
