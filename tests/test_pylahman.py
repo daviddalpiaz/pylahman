@@ -18,7 +18,7 @@ import pytest
         pylahman.Fielding,
         pylahman.FieldingOF,
         pylahman.FieldingOFsplit,
-        pylahman.fielding_post,
+        pylahman.FieldingPost,
         pylahman.HallOfFame,
         pylahman.HomeGames,
         pylahman.Managers,
