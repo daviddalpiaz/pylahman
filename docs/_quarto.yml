@@ -53,7 +53,7 @@ quartodoc:
         - Fielding
         - FieldingOF
         - FieldingOFsplit
-        - fielding_post
+        - FieldingPost
         - HallOfFame
         - HomeGames
         - Managers

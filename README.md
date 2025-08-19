@@ -46,7 +46,7 @@ The full list of available functions is:
 - `Fielding`
 - `FieldingOF`
 - `FieldingOFsplit`
-- `fielding_post`
+- `FieldingPost`
 - `HallOfFame`
 - `HomeGames`
 - `Managers`
