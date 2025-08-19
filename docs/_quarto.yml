@@ -1,5 +1,7 @@
 project:
   type: website
+  resources:
+    - ".nojekyll"
 
 metadata-files:
   - reference/_sidebar.yml
