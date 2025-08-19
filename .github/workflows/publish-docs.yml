@@ -1,0 +1,28 @@
+on: [push]
+name: Publish Documentation
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    env:
+      GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
+    steps:
+      - uses: actions/checkout@v4
+      - name: Setup uv
+        if: ${{ matrix.os == 'ubuntu-latest' || matrix.os == 'macos-latest' }}
+        run: curl -LsSf https://astral.sh/uv/install.sh | sh
+      - name: Set up Python
+        run: uv python install 3.12
+      - name: Install the package
+        run: uv sync --all-extras --dev
+      - name: Build documentation
+        run: |
+          uv run quartodoc build --config docs/_quarto.yml
+          uv run quarto render docs
+          touch docs/_site/.nojekyll
+      - name: Publish to GitHub Pages
+        uses: quarto-dev/quarto-actions/publish@v2
+        with:
+          render: false
+          target: gh-pages
