@@ -2,9 +2,23 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "pylahman",
+    "title": "PyLahman",
     "section": "",
-    "text": "pylahman"
+    "text": "pylahman is a Python package for accessing the Lahman Baseball Database via pandas."
+  },
+  {
+    "objectID": "index.html#installation",
+    "href": "index.html#installation",
+    "title": "PyLahman",
+    "section": "Installation",
+    "text": "Installation\npylahman can be installed via pip.\npip install pylahman"
+  },
+  {
+    "objectID": "index.html#usage",
+    "href": "index.html#usage",
+    "title": "PyLahman",
+    "section": "Usage",
+    "text": "Usage\n\nimport pylahman as lahman\n\nPitching = lahman.Pitching()\nprint(Pitching.head())\n\n    playerID  yearID  stint teamID lgID  W  L   G  GS  CG  ...  IBB  WP  HBP  \\\n0  aardsda01    2004      1    SFN   NL  1  0  11   0   0  ...    0   0    2   \n1  aardsda01    2006      1    CHN   NL  3  0  45   0   0  ...    0   1    1   \n2  aardsda01    2007      1    CHA   AL  2  1  25   0   0  ...    3   2    1   \n3  aardsda01    2008      1    BOS   AL  4  2  47   0   0  ...    2   3    5   \n4  aardsda01    2009      1    SEA   AL  3  6  73   0   0  ...    3   2    0   \n\n   BK  BFP  GF   R  SH  SF  GIDP  \n0   0   61   5   8   0   1     1  \n1   0  225   9  25   1   3     2  \n2   0  151   7  24   2   1     1  \n3   0  228   7  32   3   2     4  \n4   0  296  53  23   2   1     2  \n\n[5 rows x 30 columns]"
   },
   {
     "objectID": "reference/TeamsHalf.html",
@@ -47,7 +61,7 @@
     "href": "reference/index.html",
     "title": "API Reference",
     "section": "",
-    "text": "Functions to lookup player identifiers or names.\n\n\n\nget_player_names\n\n\n\nget_player_ids\n\n\n\n\n\n\n\nFunctions to load tables from the Lahman database.\n\n\n\nAllstarFull\n\n\n\nAppearances\n\n\n\nAwardsManagers\n\n\n\nAwardsPlayers\n\n\n\nAwardsShareManagers\n\n\n\nAwardsSharePlayers\n\n\n\nBatting\n\n\n\nBattingPost\n\n\n\nCollegePlaying\n\n\n\nFielding\n\n\n\nFieldingOF\n\n\n\nFieldingOFsplit\n\n\n\nfielding_post\n\n\n\nHallOfFame\n\n\n\nHomeGames\n\n\n\nManagers\n\n\n\nManagersHalf\n\n\n\nParks\n\n\n\nPeople\nReturns the People table as a pandas DataFrame.\n\n\nPitching\n\n\n\nPitchingPost\n\n\n\nSalaries\n\n\n\nSchools\n\n\n\nSeriesPost\n\n\n\nTeams\n\n\n\nTeamsFranchises\n\n\n\nTeamsHalf",
+    "text": "Functions to lookup player identifiers or names.\n\n\n\nget_player_names\n\n\n\nget_player_ids\n\n\n\n\n\n\n\nFunctions to load tables from the Lahman database.\n\n\n\nAllstarFull\n\n\n\nAppearances\n\n\n\nAwardsManagers\n\n\n\nAwardsPlayers\n\n\n\nAwardsShareManagers\n\n\n\nAwardsSharePlayers\n\n\n\nBatting\n\n\n\nBattingPost\n\n\n\nCollegePlaying\n\n\n\nFielding\n\n\n\nFieldingOF\n\n\n\nFieldingOFsplit\n\n\n\nFieldingPost\n\n\n\nHallOfFame\n\n\n\nHomeGames\n\n\n\nManagers\n\n\n\nManagersHalf\n\n\n\nParks\n\n\n\nPeople\nReturns the People table as a pandas DataFrame.\n\n\nPitching\n\n\n\nPitchingPost\n\n\n\nSalaries\n\n\n\nSchools\n\n\n\nSeriesPost\n\n\n\nTeams\n\n\n\nTeamsFranchises\n\n\n\nTeamsHalf",
     "crumbs": [
       "API",
       "API Reference"
@@ -69,7 +83,7 @@
     "href": "reference/index.html#data-loading",
     "title": "API Reference",
     "section": "",
-    "text": "Functions to load tables from the Lahman database.\n\n\n\nAllstarFull\n\n\n\nAppearances\n\n\n\nAwardsManagers\n\n\n\nAwardsPlayers\n\n\n\nAwardsShareManagers\n\n\n\nAwardsSharePlayers\n\n\n\nBatting\n\n\n\nBattingPost\n\n\n\nCollegePlaying\n\n\n\nFielding\n\n\n\nFieldingOF\n\n\n\nFieldingOFsplit\n\n\n\nfielding_post\n\n\n\nHallOfFame\n\n\n\nHomeGames\n\n\n\nManagers\n\n\n\nManagersHalf\n\n\n\nParks\n\n\n\nPeople\nReturns the People table as a pandas DataFrame.\n\n\nPitching\n\n\n\nPitchingPost\n\n\n\nSalaries\n\n\n\nSchools\n\n\n\nSeriesPost\n\n\n\nTeams\n\n\n\nTeamsFranchises\n\n\n\nTeamsHalf",
+    "text": "Functions to load tables from the Lahman database.\n\n\n\nAllstarFull\n\n\n\nAppearances\n\n\n\nAwardsManagers\n\n\n\nAwardsPlayers\n\n\n\nAwardsShareManagers\n\n\n\nAwardsSharePlayers\n\n\n\nBatting\n\n\n\nBattingPost\n\n\n\nCollegePlaying\n\n\n\nFielding\n\n\n\nFieldingOF\n\n\n\nFieldingOFsplit\n\n\n\nFieldingPost\n\n\n\nHallOfFame\n\n\n\nHomeGames\n\n\n\nManagers\n\n\n\nManagersHalf\n\n\n\nParks\n\n\n\nPeople\nReturns the People table as a pandas DataFrame.\n\n\nPitching\n\n\n\nPitchingPost\n\n\n\nSalaries\n\n\n\nSchools\n\n\n\nSeriesPost\n\n\n\nTeams\n\n\n\nTeamsFranchises\n\n\n\nTeamsHalf",
     "crumbs": [
       "API",
       "API Reference"
@@ -112,63 +126,63 @@
     ]
   },
   {
-    "objectID": "reference/fielding_post.html",
-    "href": "reference/fielding_post.html",
-    "title": "fielding_post",
+    "objectID": "reference/HallOfFame.html",
+    "href": "reference/HallOfFame.html",
+    "title": "HallOfFame",
     "section": "",
-    "text": "fielding_post\nfielding_post()",
+    "text": "HallOfFame\nHallOfFame()",
     "crumbs": [
       "API",
       "Data Loading",
-      "fielding_post"
+      "HallOfFame"
     ]
   },
   {
-    "objectID": "reference/get_player_ids.html",
-    "href": "reference/get_player_ids.html",
-    "title": "get_player_ids",
+    "objectID": "reference/TeamsFranchises.html",
+    "href": "reference/TeamsFranchises.html",
+    "title": "TeamsFranchises",
     "section": "",
-    "text": "get_player_ids\nget_player_ids(last_name, first_name)",
-    "crumbs": [
-      "API",
-      "Player Identification",
-      "get_player_ids"
-    ]
-  },
-  {
-    "objectID": "reference/Teams.html",
-    "href": "reference/Teams.html",
-    "title": "Teams",
-    "section": "",
-    "text": "Teams\nTeams()",
+    "text": "TeamsFranchises\nTeamsFranchises()",
     "crumbs": [
       "API",
       "Data Loading",
-      "Teams"
+      "TeamsFranchises"
     ]
   },
   {
-    "objectID": "reference/AllstarFull.html",
-    "href": "reference/AllstarFull.html",
-    "title": "AllstarFull",
+    "objectID": "reference/BattingPost.html",
+    "href": "reference/BattingPost.html",
+    "title": "BattingPost",
     "section": "",
-    "text": "AllstarFull\nAllstarFull()",
+    "text": "BattingPost\nBattingPost()",
     "crumbs": [
       "API",
       "Data Loading",
-      "AllstarFull"
+      "BattingPost"
     ]
   },
   {
-    "objectID": "reference/AwardsShareManagers.html",
-    "href": "reference/AwardsShareManagers.html",
-    "title": "AwardsShareManagers",
+    "objectID": "reference/AwardsPlayers.html",
+    "href": "reference/AwardsPlayers.html",
+    "title": "AwardsPlayers",
     "section": "",
-    "text": "AwardsShareManagers\nAwardsShareManagers()",
+    "text": "AwardsPlayers\nAwardsPlayers()",
     "crumbs": [
       "API",
       "Data Loading",
-      "AwardsShareManagers"
+      "AwardsPlayers"
+    ]
+  },
+  {
+    "objectID": "reference/FieldingPost.html",
+    "href": "reference/FieldingPost.html",
+    "title": "FieldingPost",
+    "section": "",
+    "text": "FieldingPost\nFieldingPost()",
+    "crumbs": [
+      "API",
+      "Data Loading",
+      "FieldingPost"
     ]
   },
   {
@@ -212,7 +226,7 @@
     "href": "reference/get_player_names.html",
     "title": "get_player_names",
     "section": "",
-    "text": "get_player_names\nget_player_names(player_ids, last_only=False)",
+    "text": "get_player_names\nget_player_names(player_ids, last_only)",
     "crumbs": [
       "API",
       "Player Identification",
@@ -244,51 +258,51 @@
     ]
   },
   {
-    "objectID": "reference/AwardsPlayers.html",
-    "href": "reference/AwardsPlayers.html",
-    "title": "AwardsPlayers",
+    "objectID": "reference/AwardsShareManagers.html",
+    "href": "reference/AwardsShareManagers.html",
+    "title": "AwardsShareManagers",
     "section": "",
-    "text": "AwardsPlayers\nAwardsPlayers()",
+    "text": "AwardsShareManagers\nAwardsShareManagers()",
     "crumbs": [
       "API",
       "Data Loading",
-      "AwardsPlayers"
+      "AwardsShareManagers"
     ]
   },
   {
-    "objectID": "reference/BattingPost.html",
-    "href": "reference/BattingPost.html",
-    "title": "BattingPost",
+    "objectID": "reference/AllstarFull.html",
+    "href": "reference/AllstarFull.html",
+    "title": "AllstarFull",
     "section": "",
-    "text": "BattingPost\nBattingPost()",
+    "text": "AllstarFull\nAllstarFull()",
     "crumbs": [
       "API",
       "Data Loading",
-      "BattingPost"
+      "AllstarFull"
     ]
   },
   {
-    "objectID": "reference/TeamsFranchises.html",
-    "href": "reference/TeamsFranchises.html",
-    "title": "TeamsFranchises",
+    "objectID": "reference/Teams.html",
+    "href": "reference/Teams.html",
+    "title": "Teams",
     "section": "",
-    "text": "TeamsFranchises\nTeamsFranchises()",
+    "text": "Teams\nTeams()",
     "crumbs": [
       "API",
       "Data Loading",
-      "TeamsFranchises"
+      "Teams"
     ]
   },
   {
-    "objectID": "reference/HallOfFame.html",
-    "href": "reference/HallOfFame.html",
-    "title": "HallOfFame",
+    "objectID": "reference/get_player_ids.html",
+    "href": "reference/get_player_ids.html",
+    "title": "get_player_ids",
     "section": "",
-    "text": "HallOfFame\nHallOfFame()",
+    "text": "get_player_ids\nget_player_ids(last_name, first_name)",
     "crumbs": [
       "API",
-      "Data Loading",
-      "HallOfFame"
+      "Player Identification",
+      "get_player_ids"
     ]
   },
   {
