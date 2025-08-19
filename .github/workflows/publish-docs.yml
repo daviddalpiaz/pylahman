@@ -9,6 +9,8 @@ jobs:
       GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
     steps:
       - uses: actions/checkout@v4
+      - name: Setup Quarto
+        uses: quarto-dev/quarto-actions/setup@v2
       - name: Setup uv
         run: curl -LsSf https://astral.sh/uv/install.sh | sh
       - name: Set up Python
