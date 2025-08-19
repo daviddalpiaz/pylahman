@@ -22,7 +22,7 @@ jobs:
           uv run quartodoc build --config docs/_quarto.yml
           uv run quarto render docs
           touch .nojekyll
-          tocuh docs/.nojekyll
+          touch docs/.nojekyll
           touch docs/_site/.nojekyll
       - name: Publish to GitHub Pages
         uses: quarto-dev/quarto-actions/publish@v2
