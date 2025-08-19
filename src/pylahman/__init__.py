@@ -1,6 +1,8 @@
 import pandas as pd
 import importlib.resources
 
+# functions to load the tables as data frames ----------------------------------
+
 
 def _read_parquet(filename: str) -> pd.DataFrame:
     try:
@@ -63,7 +65,7 @@ def FieldingOFsplit() -> pd.DataFrame:
     return _read_parquet("FieldingOFsplit.parquet")
 
 
-def fielding_post() -> pd.DataFrame:
+def FieldingPost() -> pd.DataFrame:
     return _read_parquet("FieldingPost.parquet")
 
 
@@ -152,6 +154,8 @@ def TeamsFranchises() -> pd.DataFrame:
 def TeamsHalf() -> pd.DataFrame:
     return _read_parquet("TeamsHalf.parquet")
 
+
+# functions to get player names from id and vice versa -------------------------
 
 _people_df = People()[["playerID", "nameFirst", "nameLast"]]
 
