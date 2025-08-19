@@ -1,5 +1,5 @@
 on: [push]
-name: Publish Documentation
+name: publish-documentation
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -17,8 +17,8 @@ jobs:
         run: uv sync --all-extras --dev
       - name: Build documentation
         run: |
-          quartodoc build --config docs/_quarto.yml
-          quarto render docs
+          uv run quartodoc build --config docs/_quarto.yml
+          uv run quarto render docs
           touch docs/_site/.nojekyll
       - name: Publish to GitHub Pages
         uses: quarto-dev/quarto-actions/publish@v2
