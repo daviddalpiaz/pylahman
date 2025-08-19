@@ -1,19 +1,16 @@
 project:
   type: website
 
-# tell quarto to read the generated sidebar
 metadata-files:
   - reference/_sidebar.yml
 
-# tell quarto to read the generated styles
 format:
   html:
     css:
       - reference/_styles-quartodoc.css
 
-
 website:
-  title: "pylahman"
+  title: "PyLahman"
   page-navigation: true
   navbar:
     search: true
@@ -23,11 +20,14 @@ website:
   sidebar:
     - id: reference
       contents: "_sidebar.yml"
-quartodoc:
-  # the name used to import the package you want to create reference docs for
-  package: pylahman
 
-  # write sidebar and style data
+quartodoc:
+  package: pylahman
+  renderer:
+    style: markdown
+    table_style: description-list
+    show_signature_annotations: true
+    display_name: relative
   sidebar: reference/_sidebar.yml
   css: reference/_styles-quartodoc.css
   title: "API Reference"
