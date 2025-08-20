@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>get_player_ids – PyLahman</title>
+<title>examples – PyLahman</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -58,25 +58,23 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </style>
 
 
-<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../site_libs/quarto-nav/headroom.min.js"></script>
-<script src="../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="../site_libs/quarto-search/fuse.min.js"></script>
-<script src="../site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="../">
-<link href="../reference/AllstarFull.html" rel="next">
-<link href="../reference/get_player_names.html" rel="prev">
-<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="../site_libs/quarto-html/popper.min.js"></script>
-<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-ea385d0e468b0dd5ea5bf0780b1290d9.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-6ef52b30d4130b5a8a6bc02bcd7e7872.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script><script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-ea385d0e468b0dd5ea5bf0780b1290d9.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-6ef52b30d4130b5a8a6bc02bcd7e7872.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -104,19 +102,22 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     "search-label": "Search"
   }
 }</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.min.js" integrity="sha512-c3Nl8+7g4LMSTdrm621y7kf9v3SDPnhxLNhcjFJbKECVnmZHTdo+IRO05sNLTH/D3vA6u1X32ehoLC7WFVdheg==" crossorigin="anonymous"></script>
+
+<script type="application/javascript">define('jquery', [],function() {return window.jQuery;})</script>
 
 
-<link rel="stylesheet" href="../reference/_styles-quartodoc.css">
+<link rel="stylesheet" href="reference/_styles-quartodoc.css">
 </head>
 
-<body class="nav-sidebar floating nav-fixed fullcontent quarto-light">
+<body class="nav-fixed fullcontent quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="../index.html">
+    <a class="navbar-brand" href="./index.html">
     <span class="navbar-title">PyLahman</span>
     </a>
   </div>
@@ -127,7 +128,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="../reference/index.html" aria-current="page"> 
+    <a class="nav-link" href="./reference/index.html"> 
 <span class="menu-text">API</span></a>
   </li>  
 </ul>
@@ -143,275 +144,344 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
       </div> <!-- /container-fluid -->
     </nav>
-  <nav class="quarto-secondary-nav">
-    <div class="container-fluid d-flex">
-      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
-        <i class="bi bi-layout-text-sidebar-reverse"></i>
-      </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../reference/get_player_names.html">Player Identification</a></li><li class="breadcrumb-item"><a href="../reference/get_player_ids.html">get_player_ids</a></li></ol></nav>
-        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
-        </a>
-    </div>
-  </nav>
 </header>
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
-    <div class="sidebar-menu-container"> 
-    <ul class="list-unstyled mt-1">
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../reference/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">API Reference</span></a>
-  </div>
-</li>
-        <li class="sidebar-item sidebar-item-section">
-      <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
- <span class="menu-text">Player Identification</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
-      </div>
-      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../reference/get_player_names.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">get_player_names</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../reference/get_player_ids.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">get_player_ids</span></a>
-  </div>
-</li>
-      </ul>
-  </li>
-        <li class="sidebar-item sidebar-item-section">
-      <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
- <span class="menu-text">Data Loading</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
-      </div>
-      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../reference/AllstarFull.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">AllstarFull</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../reference/Appearances.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Appearances</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../reference/AwardsManagers.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">AwardsManagers</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../reference/AwardsPlayers.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">AwardsPlayers</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../reference/AwardsShareManagers.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">AwardsShareManagers</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../reference/AwardsSharePlayers.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">AwardsSharePlayers</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../reference/Batting.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Batting</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../reference/BattingPost.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">BattingPost</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../reference/CollegePlaying.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">CollegePlaying</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../reference/Fielding.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Fielding</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../reference/FieldingOF.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">FieldingOF</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../reference/FieldingOFsplit.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">FieldingOFsplit</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../reference/FieldingPost.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">FieldingPost</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../reference/HallOfFame.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">HallOfFame</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../reference/HomeGames.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">HomeGames</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../reference/Managers.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Managers</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../reference/ManagersHalf.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">ManagersHalf</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../reference/Parks.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Parks</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../reference/People.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">People</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../reference/Pitching.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Pitching</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../reference/PitchingPost.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">PitchingPost</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../reference/Salaries.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Salaries</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../reference/Schools.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Schools</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../reference/SeriesPost.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">SeriesPost</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../reference/Teams.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Teams</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../reference/TeamsFranchises.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">TeamsFranchises</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../reference/TeamsHalf.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">TeamsHalf</span></a>
-  </div>
-</li>
-      </ul>
-  </li>
-    </ul>
-    </div>
-</nav>
-<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     
 <!-- main -->
-<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../reference/get_player_names.html">Player Identification</a></li><li class="breadcrumb-item"><a href="../reference/get_player_ids.html">get_player_ids</a></li></ol></nav></header>
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Examples</h1>
+</div>
 
 
 
+<div class="quarto-title-meta">
 
-<section id="pylahman.get_player_ids" class="level1">
-<h1>get_player_ids</h1>
-<div class="sourceCode" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>get_player_ids(last_name, first_name)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>Get player IDs from player names.</p>
-<section id="parameters" class="level2 doc-section doc-section-parameters">
-<h2 class="doc-section doc-section-parameters anchored" data-anchor-id="parameters">Parameters</h2>
-<dl>
-<dt><code><span class="parameter-name"><strong>last_name</strong></span> <span class="parameter-annotation-sep">:</span> <span class="parameter-annotation">str or list of str</span></code></dt>
-<dd>
-<p>Player’s last name(s)</p>
-</dd>
-<dt><code><span class="parameter-name"><strong>first_name</strong></span> <span class="parameter-annotation-sep">:</span> <span class="parameter-annotation">str or list of str</span></code></dt>
-<dd>
-<p>Player’s first name(s)</p>
-</dd>
-</dl>
-</section>
-<section id="returns" class="level2 doc-section doc-section-returns">
-<h2 class="doc-section doc-section-returns anchored" data-anchor-id="returns">Returns</h2>
-<dl>
-<dt><code><span class="parameter-name"></span> <span class="parameter-annotation-sep">:</span> <span class="parameter-annotation">str or list of str</span></code></dt>
-<dd>
-<p>Player ID(s) corresponding to the input name(s)</p>
-</dd>
-</dl>
-</section>
-<section id="raises" class="level2 doc-section doc-section-raises">
-<h2 class="doc-section doc-section-raises anchored" data-anchor-id="raises">Raises</h2>
-<dl>
-<dt><code><span class="parameter-annotation-sep">:</span> <span class="parameter-annotation">ValueError</span></code></dt>
-<dd>
-<p>If a player name combination is not found in the People table</p>
-</dd>
-</dl>
+    
+  
+    
+  </div>
+  
 
 
-</section>
-</section>
+</header>
+
+
+<div id="e2f4ab1f" class="cell" data-execution_count="1">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pylahman</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div id="28bbca5d" class="cell" data-execution_count="2">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>pylahman.People()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="2">
+<div>
+
+
+<table class="dataframe caption-top table table-sm table-striped small" data-quarto-postprocess="true" data-border="1">
+<thead>
+<tr class="header">
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th">ID</th>
+<th data-quarto-table-cell-role="th">playerID</th>
+<th data-quarto-table-cell-role="th">birthYear</th>
+<th data-quarto-table-cell-role="th">birthMonth</th>
+<th data-quarto-table-cell-role="th">birthDay</th>
+<th data-quarto-table-cell-role="th">birthCity</th>
+<th data-quarto-table-cell-role="th">birthCountry</th>
+<th data-quarto-table-cell-role="th">birthState</th>
+<th data-quarto-table-cell-role="th">deathYear</th>
+<th data-quarto-table-cell-role="th">deathMonth</th>
+<th data-quarto-table-cell-role="th">...</th>
+<th data-quarto-table-cell-role="th">nameLast</th>
+<th data-quarto-table-cell-role="th">nameGiven</th>
+<th data-quarto-table-cell-role="th">weight</th>
+<th data-quarto-table-cell-role="th">height</th>
+<th data-quarto-table-cell-role="th">bats</th>
+<th data-quarto-table-cell-role="th">throws</th>
+<th data-quarto-table-cell-role="th">debut</th>
+<th data-quarto-table-cell-role="th">bbrefID</th>
+<th data-quarto-table-cell-role="th">finalGame</th>
+<th data-quarto-table-cell-role="th">retroID</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">0</td>
+<td>1</td>
+<td>aardsda01</td>
+<td>1981</td>
+<td>12</td>
+<td>27</td>
+<td>Denver</td>
+<td>USA</td>
+<td>CO</td>
+<td>&lt;NA&gt;</td>
+<td>&lt;NA&gt;</td>
+<td>...</td>
+<td>Aardsma</td>
+<td>David Allan</td>
+<td>215</td>
+<td>75</td>
+<td>R</td>
+<td>R</td>
+<td>2004-04-06</td>
+<td>aardsda01</td>
+<td>2015-08-23</td>
+<td>aardd001</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">1</td>
+<td>2</td>
+<td>aaronha01</td>
+<td>1934</td>
+<td>2</td>
+<td>5</td>
+<td>Mobile</td>
+<td>USA</td>
+<td>AL</td>
+<td>2021</td>
+<td>1</td>
+<td>...</td>
+<td>Aaron</td>
+<td>Henry Louis</td>
+<td>180</td>
+<td>72</td>
+<td>R</td>
+<td>R</td>
+<td>1954-04-13</td>
+<td>aaronha01</td>
+<td>1976-10-03</td>
+<td>aaroh101</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">2</td>
+<td>3</td>
+<td>aaronto01</td>
+<td>1939</td>
+<td>8</td>
+<td>5</td>
+<td>Mobile</td>
+<td>USA</td>
+<td>AL</td>
+<td>1984</td>
+<td>8</td>
+<td>...</td>
+<td>Aaron</td>
+<td>Tommie Lee</td>
+<td>190</td>
+<td>75</td>
+<td>R</td>
+<td>R</td>
+<td>1962-04-10</td>
+<td>aaronto01</td>
+<td>1971-09-26</td>
+<td>aarot101</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">3</td>
+<td>4</td>
+<td>aasedo01</td>
+<td>1954</td>
+<td>9</td>
+<td>8</td>
+<td>Orange</td>
+<td>USA</td>
+<td>CA</td>
+<td>&lt;NA&gt;</td>
+<td>&lt;NA&gt;</td>
+<td>...</td>
+<td>Aase</td>
+<td>Donald William</td>
+<td>190</td>
+<td>75</td>
+<td>R</td>
+<td>R</td>
+<td>1977-07-26</td>
+<td>aasedo01</td>
+<td>1990-10-03</td>
+<td>aased001</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">4</td>
+<td>5</td>
+<td>abadan01</td>
+<td>1972</td>
+<td>8</td>
+<td>25</td>
+<td>Palm Beach</td>
+<td>USA</td>
+<td>FL</td>
+<td>&lt;NA&gt;</td>
+<td>&lt;NA&gt;</td>
+<td>...</td>
+<td>Abad</td>
+<td>Fausto Andres</td>
+<td>184</td>
+<td>73</td>
+<td>L</td>
+<td>L</td>
+<td>2001-09-10</td>
+<td>abadan01</td>
+<td>2006-04-13</td>
+<td>abada001</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">21266</td>
+<td>20672</td>
+<td>zupofr01</td>
+<td>1939</td>
+<td>8</td>
+<td>29</td>
+<td>San Francisco</td>
+<td>USA</td>
+<td>CA</td>
+<td>2005</td>
+<td>3</td>
+<td>...</td>
+<td>Zupo</td>
+<td>Frank Joseph</td>
+<td>182</td>
+<td>71</td>
+<td>L</td>
+<td>R</td>
+<td>1957-07-01</td>
+<td>zupofr01</td>
+<td>1961-05-09</td>
+<td>zupof101</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">21267</td>
+<td>20673</td>
+<td>zuvelpa01</td>
+<td>1958</td>
+<td>10</td>
+<td>31</td>
+<td>San Mateo</td>
+<td>USA</td>
+<td>CA</td>
+<td>&lt;NA&gt;</td>
+<td>&lt;NA&gt;</td>
+<td>...</td>
+<td>Zuvella</td>
+<td>Paul</td>
+<td>173</td>
+<td>72</td>
+<td>R</td>
+<td>R</td>
+<td>1982-09-04</td>
+<td>zuvelpa01</td>
+<td>1991-05-02</td>
+<td>zuvep001</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">21268</td>
+<td>20674</td>
+<td>zuverge01</td>
+<td>1924</td>
+<td>8</td>
+<td>20</td>
+<td>Holland</td>
+<td>USA</td>
+<td>MI</td>
+<td>2014</td>
+<td>9</td>
+<td>...</td>
+<td>Zuverink</td>
+<td>George</td>
+<td>195</td>
+<td>76</td>
+<td>R</td>
+<td>R</td>
+<td>1951-04-21</td>
+<td>zuverge01</td>
+<td>1959-06-15</td>
+<td>zuveg101</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">21269</td>
+<td>20675</td>
+<td>zwilldu01</td>
+<td>1888</td>
+<td>11</td>
+<td>2</td>
+<td>St. Louis</td>
+<td>USA</td>
+<td>MO</td>
+<td>1978</td>
+<td>3</td>
+<td>...</td>
+<td>Zwilling</td>
+<td>Edward Harrison</td>
+<td>160</td>
+<td>66</td>
+<td>L</td>
+<td>L</td>
+<td>1910-08-14</td>
+<td>zwilldu01</td>
+<td>1916-07-12</td>
+<td>zwild101</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">21270</td>
+<td>20676</td>
+<td>zychto01</td>
+<td>1990</td>
+<td>8</td>
+<td>7</td>
+<td>Monee</td>
+<td>USA</td>
+<td>IL</td>
+<td>&lt;NA&gt;</td>
+<td>&lt;NA&gt;</td>
+<td>...</td>
+<td>Zych</td>
+<td>Anthony Aaron</td>
+<td>190</td>
+<td>75</td>
+<td>R</td>
+<td>R</td>
+<td>2015-09-04</td>
+<td>zychto01</td>
+<td>2017-08-19</td>
+<td>zycht001</td>
+</tr>
+</tbody>
+</table>
+
+<p>21271 rows × 25 columns</p>
+</div>
+</div>
+</div>
+
+
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -813,18 +883,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     }
   });
   </script>
-<nav class="page-navigation">
-  <div class="nav-page nav-page-previous">
-      <a href="../reference/get_player_names.html" class="pagination-link" aria-label="get_player_names">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">get_player_names</span>
-      </a>          
-  </div>
-  <div class="nav-page nav-page-next">
-      <a href="../reference/AllstarFull.html" class="pagination-link" aria-label="AllstarFull">
-        <span class="nav-page-text">AllstarFull</span> <i class="bi bi-arrow-right-short"></i>
-      </a>
-  </div>
-</nav>
 </div> <!-- /content -->
 
 
