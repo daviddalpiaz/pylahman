@@ -370,8 +370,51 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="pylahman.SeriesPost" class="level1">
 <h1>SeriesPost</h1>
 <div class="sourceCode" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>SeriesPost()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Returns the <code>SeriesPost</code> table as a <code>DataFrame</code>.</p>
+<p>The <code>SeriesPost</code> table contains information about postseason series results. The columns of the table are documented as the function returns.</p>
+<section id="returns" class="level2 doc-section doc-section-returns">
+<h2 class="doc-section doc-section-returns anchored" data-anchor-id="returns">Returns</h2>
+<dl>
+<dt><code><span class="parameter-name"><strong>yearID</strong></span> <span class="parameter-annotation-sep">:</span> <span class="parameter-annotation">int</span></code></dt>
+<dd>
+<p>Year</p>
+</dd>
+<dt><code><span class="parameter-name"><strong>round</strong></span> <span class="parameter-annotation-sep">:</span> <span class="parameter-annotation">str</span></code></dt>
+<dd>
+<p>Level of playoffs</p>
+</dd>
+<dt><code><span class="parameter-name"><strong>teamIDwinner</strong></span> <span class="parameter-annotation-sep">:</span> <span class="parameter-annotation">str</span></code></dt>
+<dd>
+<p>Team ID of the team that won the series</p>
+</dd>
+<dt><code><span class="parameter-name"><strong>lgIDwinner</strong></span> <span class="parameter-annotation-sep">:</span> <span class="parameter-annotation">str</span></code></dt>
+<dd>
+<p>League ID of the team that won the series</p>
+</dd>
+<dt><code><span class="parameter-name"><strong>teamIDloser</strong></span> <span class="parameter-annotation-sep">:</span> <span class="parameter-annotation">str</span></code></dt>
+<dd>
+<p>Team ID of the team that lost the series</p>
+</dd>
+<dt><code><span class="parameter-name"><strong>lgIDloser</strong></span> <span class="parameter-annotation-sep">:</span> <span class="parameter-annotation">str</span></code></dt>
+<dd>
+<p>League ID of the team that lost the series</p>
+</dd>
+<dt><code><span class="parameter-name"><strong>wins</strong></span> <span class="parameter-annotation-sep">:</span> <span class="parameter-annotation">int</span></code></dt>
+<dd>
+<p>Wins by team that won the series</p>
+</dd>
+<dt><code><span class="parameter-name"><strong>losses</strong></span> <span class="parameter-annotation-sep">:</span> <span class="parameter-annotation">int</span></code></dt>
+<dd>
+<p>Losses by team that won the series</p>
+</dd>
+<dt><code><span class="parameter-name"><strong>ties</strong></span> <span class="parameter-annotation-sep">:</span> <span class="parameter-annotation">int</span></code></dt>
+<dd>
+<p>Tie games</p>
+</dd>
+</dl>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->

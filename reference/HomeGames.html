@@ -370,8 +370,51 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="pylahman.HomeGames" class="level1">
 <h1>HomeGames</h1>
 <div class="sourceCode" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>HomeGames()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Returns the <code>HomeGames</code> table as a <code>DataFrame</code>.</p>
+<p>The <code>HomeGames</code> table contains information about home games played by teams. The columns of the table are documented as the function returns.</p>
+<section id="returns" class="level2 doc-section doc-section-returns">
+<h2 class="doc-section doc-section-returns anchored" data-anchor-id="returns">Returns</h2>
+<dl>
+<dt><code><span class="parameter-name"><strong>yearkey</strong></span> <span class="parameter-annotation-sep">:</span> <span class="parameter-annotation">int</span></code></dt>
+<dd>
+<p>Year</p>
+</dd>
+<dt><code><span class="parameter-name"><strong>leaguekey</strong></span> <span class="parameter-annotation-sep">:</span> <span class="parameter-annotation">str</span></code></dt>
+<dd>
+<p>League</p>
+</dd>
+<dt><code><span class="parameter-name"><strong>teamkey</strong></span> <span class="parameter-annotation-sep">:</span> <span class="parameter-annotation">str</span></code></dt>
+<dd>
+<p>Team ID</p>
+</dd>
+<dt><code><span class="parameter-name"><strong>parkkey</strong></span> <span class="parameter-annotation-sep">:</span> <span class="parameter-annotation">str</span></code></dt>
+<dd>
+<p>Ballpark ID</p>
+</dd>
+<dt><code><span class="parameter-name"><strong>spanfirst</strong></span> <span class="parameter-annotation-sep">:</span> <span class="parameter-annotation">datetime</span></code></dt>
+<dd>
+<p>First date of operation (yyyy-mm-dd)</p>
+</dd>
+<dt><code><span class="parameter-name"><strong>spanlast</strong></span> <span class="parameter-annotation-sep">:</span> <span class="parameter-annotation">datetime</span></code></dt>
+<dd>
+<p>Last date of operation (yyyy-mm-dd)</p>
+</dd>
+<dt><code><span class="parameter-name"><strong>games</strong></span> <span class="parameter-annotation-sep">:</span> <span class="parameter-annotation">int</span></code></dt>
+<dd>
+<p>Total number of games</p>
+</dd>
+<dt><code><span class="parameter-name"><strong>openings</strong></span> <span class="parameter-annotation-sep">:</span> <span class="parameter-annotation">int</span></code></dt>
+<dd>
+<p>Total number of paid dates played (games with attendance, note that doubleheaders may make the openings less than games)</p>
+</dd>
+<dt><code><span class="parameter-name"><strong>attendance</strong></span> <span class="parameter-annotation-sep">:</span> <span class="parameter-annotation">int</span></code></dt>
+<dd>
+<p>Total attendance</p>
+</dd>
+</dl>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->

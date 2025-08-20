@@ -370,8 +370,135 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="pylahman.Pitching" class="level1">
 <h1>Pitching</h1>
 <div class="sourceCode" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>Pitching()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Returns the <code>Pitching</code> table as a <code>DataFrame</code>.</p>
+<p>The <code>Pitching</code> table contains yearly pitching statistics for all players. The columns of the table are documented as the function returns.</p>
+<section id="returns" class="level2 doc-section doc-section-returns">
+<h2 class="doc-section doc-section-returns anchored" data-anchor-id="returns">Returns</h2>
+<dl>
+<dt><code><span class="parameter-name"><strong>playerID</strong></span> <span class="parameter-annotation-sep">:</span> <span class="parameter-annotation">str</span></code></dt>
+<dd>
+<p>Player ID code</p>
+</dd>
+<dt><code><span class="parameter-name"><strong>yearID</strong></span> <span class="parameter-annotation-sep">:</span> <span class="parameter-annotation">int</span></code></dt>
+<dd>
+<p>Year</p>
+</dd>
+<dt><code><span class="parameter-name"><strong>stint</strong></span> <span class="parameter-annotation-sep">:</span> <span class="parameter-annotation">int</span></code></dt>
+<dd>
+<p>Player’s stint (order of appearances within a season)</p>
+</dd>
+<dt><code><span class="parameter-name"><strong>teamID</strong></span> <span class="parameter-annotation-sep">:</span> <span class="parameter-annotation">str</span></code></dt>
+<dd>
+<p>Team</p>
+</dd>
+<dt><code><span class="parameter-name"><strong>lgID</strong></span> <span class="parameter-annotation-sep">:</span> <span class="parameter-annotation">str</span></code></dt>
+<dd>
+<p>League</p>
+</dd>
+<dt><code><span class="parameter-name"><strong>W</strong></span> <span class="parameter-annotation-sep">:</span> <span class="parameter-annotation">int</span></code></dt>
+<dd>
+<p>Wins</p>
+</dd>
+<dt><code><span class="parameter-name"><strong>L</strong></span> <span class="parameter-annotation-sep">:</span> <span class="parameter-annotation">int</span></code></dt>
+<dd>
+<p>Losses</p>
+</dd>
+<dt><code><span class="parameter-name"><strong>G</strong></span> <span class="parameter-annotation-sep">:</span> <span class="parameter-annotation">int</span></code></dt>
+<dd>
+<p>Games</p>
+</dd>
+<dt><code><span class="parameter-name"><strong>GS</strong></span> <span class="parameter-annotation-sep">:</span> <span class="parameter-annotation">int</span></code></dt>
+<dd>
+<p>Games Started</p>
+</dd>
+<dt><code><span class="parameter-name"><strong>CG</strong></span> <span class="parameter-annotation-sep">:</span> <span class="parameter-annotation">int</span></code></dt>
+<dd>
+<p>Complete Games</p>
+</dd>
+<dt><code><span class="parameter-name"><strong>SHO</strong></span> <span class="parameter-annotation-sep">:</span> <span class="parameter-annotation">int</span></code></dt>
+<dd>
+<p>Shutouts</p>
+</dd>
+<dt><code><span class="parameter-name"><strong>SV</strong></span> <span class="parameter-annotation-sep">:</span> <span class="parameter-annotation">int</span></code></dt>
+<dd>
+<p>Saves</p>
+</dd>
+<dt><code><span class="parameter-name"><strong>IPouts</strong></span> <span class="parameter-annotation-sep">:</span> <span class="parameter-annotation">int</span></code></dt>
+<dd>
+<p>Outs Pitched (innings pitched x 3)</p>
+</dd>
+<dt><code><span class="parameter-name"><strong>H</strong></span> <span class="parameter-annotation-sep">:</span> <span class="parameter-annotation">int</span></code></dt>
+<dd>
+<p>Hits</p>
+</dd>
+<dt><code><span class="parameter-name"><strong>ER</strong></span> <span class="parameter-annotation-sep">:</span> <span class="parameter-annotation">int</span></code></dt>
+<dd>
+<p>Earned Runs</p>
+</dd>
+<dt><code><span class="parameter-name"><strong>HR</strong></span> <span class="parameter-annotation-sep">:</span> <span class="parameter-annotation">int</span></code></dt>
+<dd>
+<p>Homeruns</p>
+</dd>
+<dt><code><span class="parameter-name"><strong>BB</strong></span> <span class="parameter-annotation-sep">:</span> <span class="parameter-annotation">int</span></code></dt>
+<dd>
+<p>Walks</p>
+</dd>
+<dt><code><span class="parameter-name"><strong>SO</strong></span> <span class="parameter-annotation-sep">:</span> <span class="parameter-annotation">int</span></code></dt>
+<dd>
+<p>Strikeouts</p>
+</dd>
+<dt><code><span class="parameter-name"><strong>BAOpp</strong></span> <span class="parameter-annotation-sep">:</span> <span class="parameter-annotation">float</span></code></dt>
+<dd>
+<p>Opponent’s Batting Average</p>
+</dd>
+<dt><code><span class="parameter-name"><strong>ERA</strong></span> <span class="parameter-annotation-sep">:</span> <span class="parameter-annotation">float</span></code></dt>
+<dd>
+<p>Earned Run Average</p>
+</dd>
+<dt><code><span class="parameter-name"><strong>IBB</strong></span> <span class="parameter-annotation-sep">:</span> <span class="parameter-annotation">int</span></code></dt>
+<dd>
+<p>Intentional Walks</p>
+</dd>
+<dt><code><span class="parameter-name"><strong>WP</strong></span> <span class="parameter-annotation-sep">:</span> <span class="parameter-annotation">int</span></code></dt>
+<dd>
+<p>Wild Pitches</p>
+</dd>
+<dt><code><span class="parameter-name"><strong>HBP</strong></span> <span class="parameter-annotation-sep">:</span> <span class="parameter-annotation">int</span></code></dt>
+<dd>
+<p>Batters Hit By Pitch</p>
+</dd>
+<dt><code><span class="parameter-name"><strong>BK</strong></span> <span class="parameter-annotation-sep">:</span> <span class="parameter-annotation">int</span></code></dt>
+<dd>
+<p>Balks</p>
+</dd>
+<dt><code><span class="parameter-name"><strong>BFP</strong></span> <span class="parameter-annotation-sep">:</span> <span class="parameter-annotation">int</span></code></dt>
+<dd>
+<p>Batters faced by Pitcher</p>
+</dd>
+<dt><code><span class="parameter-name"><strong>GF</strong></span> <span class="parameter-annotation-sep">:</span> <span class="parameter-annotation">int</span></code></dt>
+<dd>
+<p>Games Finished</p>
+</dd>
+<dt><code><span class="parameter-name"><strong>R</strong></span> <span class="parameter-annotation-sep">:</span> <span class="parameter-annotation">int</span></code></dt>
+<dd>
+<p>Runs Allowed</p>
+</dd>
+<dt><code><span class="parameter-name"><strong>SH</strong></span> <span class="parameter-annotation-sep">:</span> <span class="parameter-annotation">int</span></code></dt>
+<dd>
+<p>Sacrifices by opposing batters</p>
+</dd>
+<dt><code><span class="parameter-name"><strong>SF</strong></span> <span class="parameter-annotation-sep">:</span> <span class="parameter-annotation">int</span></code></dt>
+<dd>
+<p>Sacrifice flies by opposing batters</p>
+</dd>
+<dt><code><span class="parameter-name"><strong>GIDP</strong></span> <span class="parameter-annotation-sep">:</span> <span class="parameter-annotation">int</span></code></dt>
+<dd>
+<p>Grounded into double plays by opposing batter</p>
+</dd>
+</dl>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->

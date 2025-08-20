@@ -370,8 +370,99 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="pylahman.Appearances" class="level1">
 <h1>Appearances</h1>
 <div class="sourceCode" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>Appearances()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Returns the <code>Appearances</code> table as a <code>DataFrame</code>.</p>
+<p>The <code>Appearances</code> table contains information about player appearances by position. The columns of the table are documented as the function returns.</p>
+<section id="returns" class="level2 doc-section doc-section-returns">
+<h2 class="doc-section doc-section-returns anchored" data-anchor-id="returns">Returns</h2>
+<dl>
+<dt><code><span class="parameter-name"><strong>yearID</strong></span> <span class="parameter-annotation-sep">:</span> <span class="parameter-annotation">int</span></code></dt>
+<dd>
+<p>Year</p>
+</dd>
+<dt><code><span class="parameter-name"><strong>teamID</strong></span> <span class="parameter-annotation-sep">:</span> <span class="parameter-annotation">str</span></code></dt>
+<dd>
+<p>Team</p>
+</dd>
+<dt><code><span class="parameter-name"><strong>lgID</strong></span> <span class="parameter-annotation-sep">:</span> <span class="parameter-annotation">str</span></code></dt>
+<dd>
+<p>League</p>
+</dd>
+<dt><code><span class="parameter-name"><strong>playerID</strong></span> <span class="parameter-annotation-sep">:</span> <span class="parameter-annotation">str</span></code></dt>
+<dd>
+<p>Player ID code</p>
+</dd>
+<dt><code><span class="parameter-name"><strong>G_all</strong></span> <span class="parameter-annotation-sep">:</span> <span class="parameter-annotation">int</span></code></dt>
+<dd>
+<p>Total games played</p>
+</dd>
+<dt><code><span class="parameter-name"><strong>GS</strong></span> <span class="parameter-annotation-sep">:</span> <span class="parameter-annotation">int</span></code></dt>
+<dd>
+<p>Games started</p>
+</dd>
+<dt><code><span class="parameter-name"><strong>G_batting</strong></span> <span class="parameter-annotation-sep">:</span> <span class="parameter-annotation">int</span></code></dt>
+<dd>
+<p>Games in which player batted</p>
+</dd>
+<dt><code><span class="parameter-name"><strong>G_defense</strong></span> <span class="parameter-annotation-sep">:</span> <span class="parameter-annotation">int</span></code></dt>
+<dd>
+<p>Games in which player appeared on defense</p>
+</dd>
+<dt><code><span class="parameter-name"><strong>G_p</strong></span> <span class="parameter-annotation-sep">:</span> <span class="parameter-annotation">int</span></code></dt>
+<dd>
+<p>Games as pitcher</p>
+</dd>
+<dt><code><span class="parameter-name"><strong>G_c</strong></span> <span class="parameter-annotation-sep">:</span> <span class="parameter-annotation">int</span></code></dt>
+<dd>
+<p>Games as catcher</p>
+</dd>
+<dt><code><span class="parameter-name"><strong>G_1b</strong></span> <span class="parameter-annotation-sep">:</span> <span class="parameter-annotation">int</span></code></dt>
+<dd>
+<p>Games as first baseman</p>
+</dd>
+<dt><code><span class="parameter-name"><strong>G_2b</strong></span> <span class="parameter-annotation-sep">:</span> <span class="parameter-annotation">int</span></code></dt>
+<dd>
+<p>Games as second baseman</p>
+</dd>
+<dt><code><span class="parameter-name"><strong>G_3b</strong></span> <span class="parameter-annotation-sep">:</span> <span class="parameter-annotation">int</span></code></dt>
+<dd>
+<p>Games as third baseman</p>
+</dd>
+<dt><code><span class="parameter-name"><strong>G_ss</strong></span> <span class="parameter-annotation-sep">:</span> <span class="parameter-annotation">int</span></code></dt>
+<dd>
+<p>Games as shortstop</p>
+</dd>
+<dt><code><span class="parameter-name"><strong>G_lf</strong></span> <span class="parameter-annotation-sep">:</span> <span class="parameter-annotation">int</span></code></dt>
+<dd>
+<p>Games as left fielder</p>
+</dd>
+<dt><code><span class="parameter-name"><strong>G_cf</strong></span> <span class="parameter-annotation-sep">:</span> <span class="parameter-annotation">int</span></code></dt>
+<dd>
+<p>Games as center fielder</p>
+</dd>
+<dt><code><span class="parameter-name"><strong>G_rf</strong></span> <span class="parameter-annotation-sep">:</span> <span class="parameter-annotation">int</span></code></dt>
+<dd>
+<p>Games as right fielder</p>
+</dd>
+<dt><code><span class="parameter-name"><strong>G_of</strong></span> <span class="parameter-annotation-sep">:</span> <span class="parameter-annotation">int</span></code></dt>
+<dd>
+<p>Games as outfielder (if a player appeared in a single game at multiple OF positions, this will count as one g_OF game)</p>
+</dd>
+<dt><code><span class="parameter-name"><strong>G_dh</strong></span> <span class="parameter-annotation-sep">:</span> <span class="parameter-annotation">int</span></code></dt>
+<dd>
+<p>Games as designated hitter</p>
+</dd>
+<dt><code><span class="parameter-name"><strong>G_ph</strong></span> <span class="parameter-annotation-sep">:</span> <span class="parameter-annotation">int</span></code></dt>
+<dd>
+<p>Games as pinch hitter</p>
+</dd>
+<dt><code><span class="parameter-name"><strong>G_pr</strong></span> <span class="parameter-annotation-sep">:</span> <span class="parameter-annotation">int</span></code></dt>
+<dd>
+<p>Games as pinch runner</p>
+</dd>
+</dl>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->

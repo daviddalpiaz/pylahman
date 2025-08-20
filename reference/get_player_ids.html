@@ -370,8 +370,40 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="pylahman.get_player_ids" class="level1">
 <h1>get_player_ids</h1>
 <div class="sourceCode" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>get_player_ids(last_name, first_name)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Get player IDs from player names.</p>
+<section id="parameters" class="level2 doc-section doc-section-parameters">
+<h2 class="doc-section doc-section-parameters anchored" data-anchor-id="parameters">Parameters</h2>
+<dl>
+<dt><code><span class="parameter-name"><strong>last_name</strong></span> <span class="parameter-annotation-sep">:</span> <span class="parameter-annotation">str or list of str</span></code></dt>
+<dd>
+<p>Player’s last name(s)</p>
+</dd>
+<dt><code><span class="parameter-name"><strong>first_name</strong></span> <span class="parameter-annotation-sep">:</span> <span class="parameter-annotation">str or list of str</span></code></dt>
+<dd>
+<p>Player’s first name(s)</p>
+</dd>
+</dl>
+</section>
+<section id="returns" class="level2 doc-section doc-section-returns">
+<h2 class="doc-section doc-section-returns anchored" data-anchor-id="returns">Returns</h2>
+<dl>
+<dt><code><span class="parameter-name"></span> <span class="parameter-annotation-sep">:</span> <span class="parameter-annotation">str or list of str</span></code></dt>
+<dd>
+<p>Player ID(s) corresponding to the input name(s)</p>
+</dd>
+</dl>
+</section>
+<section id="raises" class="level2 doc-section doc-section-raises">
+<h2 class="doc-section doc-section-raises anchored" data-anchor-id="raises">Raises</h2>
+<dl>
+<dt><code><span class="parameter-annotation-sep">:</span> <span class="parameter-annotation">ValueError</span></code></dt>
+<dd>
+<p>If a player name combination is not found in the People table</p>
+</dd>
+</dl>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->

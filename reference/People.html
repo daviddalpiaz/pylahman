@@ -370,119 +370,115 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="pylahman.People" class="level1">
 <h1>People</h1>
 <div class="sourceCode" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>People()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>Returns the <code>People</code> table as a <code>pandas</code> <code>DataFrame</code>.</p>
-<table class="caption-top table">
-<colgroup>
-<col style="width: 19%">
-<col style="width: 80%">
-</colgroup>
-<thead>
-<tr class="header">
-<th>Column</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><code>playerID</code></td>
-<td>A unique code assigned to each player. Links data across files.</td>
-</tr>
-<tr class="even">
-<td><code>birthYear</code></td>
-<td>Year player was born</td>
-</tr>
-<tr class="odd">
-<td><code>birthMonth</code></td>
-<td>Month player was born</td>
-</tr>
-<tr class="even">
-<td><code>birthDay</code></td>
-<td>Day player was born</td>
-</tr>
-<tr class="odd">
-<td><code>birthCountry</code></td>
-<td>Country where player was born</td>
-</tr>
-<tr class="even">
-<td><code>birthState</code></td>
-<td>State where player was born</td>
-</tr>
-<tr class="odd">
-<td><code>birthCity</code></td>
-<td>City where player was born</td>
-</tr>
-<tr class="even">
-<td><code>deathYear</code></td>
-<td>Year player died</td>
-</tr>
-<tr class="odd">
-<td><code>deathMonth</code></td>
-<td>Month player died</td>
-</tr>
-<tr class="even">
-<td><code>deathDay</code></td>
-<td>Day player died</td>
-</tr>
-<tr class="odd">
-<td><code>deathCountry</code></td>
-<td>Country where player died</td>
-</tr>
-<tr class="even">
-<td><code>deathState</code></td>
-<td>State where player died</td>
-</tr>
-<tr class="odd">
-<td><code>deathCity</code></td>
-<td>City where player died</td>
-</tr>
-<tr class="even">
-<td><code>nameFirst</code></td>
-<td>Player’s first name</td>
-</tr>
-<tr class="odd">
-<td><code>nameLast</code></td>
-<td>Player’s last name</td>
-</tr>
-<tr class="even">
-<td><code>nameGiven</code></td>
-<td>Player’s given name (typically first and middle)</td>
-</tr>
-<tr class="odd">
-<td><code>weight</code></td>
-<td>Player’s weight in pounds</td>
-</tr>
-<tr class="even">
-<td><code>height</code></td>
-<td>Player’s height in inches</td>
-</tr>
-<tr class="odd">
-<td><code>bats</code></td>
-<td>Player’s batting hand (left, right, or both)</td>
-</tr>
-<tr class="even">
-<td><code>throws</code></td>
-<td>Player’s throwing hand (left or right)</td>
-</tr>
-<tr class="odd">
-<td><code>debut</code></td>
-<td>Date that player made first major league appearance</td>
-</tr>
-<tr class="even">
-<td><code>finalGame</code></td>
-<td>Date that player made last major league appearance</td>
-</tr>
-<tr class="odd">
-<td><code>retroID</code></td>
-<td>ID used by Retrosheet</td>
-</tr>
-<tr class="even">
-<td><code>bbrefID</code></td>
-<td>ID used by Baseball Reference website</td>
-</tr>
-</tbody>
-</table>
+<p>Returns the <code>People</code> table as a <code>DataFrame</code>.</p>
+<p>The <code>People</code> table contains biographical information for all players, managers, umpires, and executives in the database. The columns of the table are documented as the function returns.</p>
+<section id="returns" class="level2 doc-section doc-section-returns">
+<h2 class="doc-section doc-section-returns anchored" data-anchor-id="returns">Returns</h2>
+<dl>
+<dt><code><span class="parameter-name"><strong>ID</strong></span> <span class="parameter-annotation-sep">:</span> <span class="parameter-annotation">int</span></code></dt>
+<dd>
+<p>Unique identifier</p>
+</dd>
+<dt><code><span class="parameter-name"><strong>playerID</strong></span> <span class="parameter-annotation-sep">:</span> <span class="parameter-annotation">str</span></code></dt>
+<dd>
+<p>Player ID code</p>
+</dd>
+<dt><code><span class="parameter-name"><strong>birthYear</strong></span> <span class="parameter-annotation-sep">:</span> <span class="parameter-annotation">int</span></code></dt>
+<dd>
+<p>Year player was born</p>
+</dd>
+<dt><code><span class="parameter-name"><strong>birthMonth</strong></span> <span class="parameter-annotation-sep">:</span> <span class="parameter-annotation">int</span></code></dt>
+<dd>
+<p>Month player was born</p>
+</dd>
+<dt><code><span class="parameter-name"><strong>birthDay</strong></span> <span class="parameter-annotation-sep">:</span> <span class="parameter-annotation">int</span></code></dt>
+<dd>
+<p>Day player was born</p>
+</dd>
+<dt><code><span class="parameter-name"><strong>birthCountry</strong></span> <span class="parameter-annotation-sep">:</span> <span class="parameter-annotation">str</span></code></dt>
+<dd>
+<p>Country where player was born</p>
+</dd>
+<dt><code><span class="parameter-name"><strong>birthState</strong></span> <span class="parameter-annotation-sep">:</span> <span class="parameter-annotation">str</span></code></dt>
+<dd>
+<p>State where player was born</p>
+</dd>
+<dt><code><span class="parameter-name"><strong>birthCity</strong></span> <span class="parameter-annotation-sep">:</span> <span class="parameter-annotation">str</span></code></dt>
+<dd>
+<p>City where player was born</p>
+</dd>
+<dt><code><span class="parameter-name"><strong>deathYear</strong></span> <span class="parameter-annotation-sep">:</span> <span class="parameter-annotation">int</span></code></dt>
+<dd>
+<p>Year player died</p>
+</dd>
+<dt><code><span class="parameter-name"><strong>deathMonth</strong></span> <span class="parameter-annotation-sep">:</span> <span class="parameter-annotation">int</span></code></dt>
+<dd>
+<p>Month player died</p>
+</dd>
+<dt><code><span class="parameter-name"><strong>deathDay</strong></span> <span class="parameter-annotation-sep">:</span> <span class="parameter-annotation">int</span></code></dt>
+<dd>
+<p>Day player died</p>
+</dd>
+<dt><code><span class="parameter-name"><strong>deathCountry</strong></span> <span class="parameter-annotation-sep">:</span> <span class="parameter-annotation">str</span></code></dt>
+<dd>
+<p>Country where player died</p>
+</dd>
+<dt><code><span class="parameter-name"><strong>deathState</strong></span> <span class="parameter-annotation-sep">:</span> <span class="parameter-annotation">str</span></code></dt>
+<dd>
+<p>State where player died</p>
+</dd>
+<dt><code><span class="parameter-name"><strong>deathCity</strong></span> <span class="parameter-annotation-sep">:</span> <span class="parameter-annotation">str</span></code></dt>
+<dd>
+<p>City where player died</p>
+</dd>
+<dt><code><span class="parameter-name"><strong>nameFirst</strong></span> <span class="parameter-annotation-sep">:</span> <span class="parameter-annotation">str</span></code></dt>
+<dd>
+<p>Player’s first name</p>
+</dd>
+<dt><code><span class="parameter-name"><strong>nameLast</strong></span> <span class="parameter-annotation-sep">:</span> <span class="parameter-annotation">str</span></code></dt>
+<dd>
+<p>Player’s last name</p>
+</dd>
+<dt><code><span class="parameter-name"><strong>nameGiven</strong></span> <span class="parameter-annotation-sep">:</span> <span class="parameter-annotation">str</span></code></dt>
+<dd>
+<p>Player’s given name (typically first and middle)</p>
+</dd>
+<dt><code><span class="parameter-name"><strong>weight</strong></span> <span class="parameter-annotation-sep">:</span> <span class="parameter-annotation">int</span></code></dt>
+<dd>
+<p>Player’s weight in pounds</p>
+</dd>
+<dt><code><span class="parameter-name"><strong>height</strong></span> <span class="parameter-annotation-sep">:</span> <span class="parameter-annotation">int</span></code></dt>
+<dd>
+<p>Player’s height in inches</p>
+</dd>
+<dt><code><span class="parameter-name"><strong>bats</strong></span> <span class="parameter-annotation-sep">:</span> <span class="parameter-annotation">str</span></code></dt>
+<dd>
+<p>Player’s batting hand (left, right, or both)</p>
+</dd>
+<dt><code><span class="parameter-name"><strong>throws</strong></span> <span class="parameter-annotation-sep">:</span> <span class="parameter-annotation">str</span></code></dt>
+<dd>
+<p>Player’s throwing hand (left or right)</p>
+</dd>
+<dt><code><span class="parameter-name"><strong>debut</strong></span> <span class="parameter-annotation-sep">:</span> <span class="parameter-annotation">datetime</span></code></dt>
+<dd>
+<p>Date that player made first major league appearance</p>
+</dd>
+<dt><code><span class="parameter-name"><strong>finalGame</strong></span> <span class="parameter-annotation-sep">:</span> <span class="parameter-annotation">datetime</span></code></dt>
+<dd>
+<p>Date that player made last major league appearance</p>
+</dd>
+<dt><code><span class="parameter-name"><strong>retroID</strong></span> <span class="parameter-annotation-sep">:</span> <span class="parameter-annotation">str</span></code></dt>
+<dd>
+<p>ID used by Retrosheet</p>
+</dd>
+<dt><code><span class="parameter-name"><strong>bbrefID</strong></span> <span class="parameter-annotation-sep">:</span> <span class="parameter-annotation">str</span></code></dt>
+<dd>
+<p>ID used by Baseball Reference website</p>
+</dd>
+</dl>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->

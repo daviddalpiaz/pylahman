@@ -370,8 +370,87 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="pylahman.FieldingOFsplit" class="level1">
 <h1>FieldingOFsplit</h1>
 <div class="sourceCode" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>FieldingOFsplit()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Returns the <code>FieldingOFsplit</code> table as a <code>DataFrame</code>.</p>
+<p>The <code>FieldingOFsplit</code> table contains detailed outfield fielding statistics. The columns of the table are documented as the function returns.</p>
+<section id="returns" class="level2 doc-section doc-section-returns">
+<h2 class="doc-section doc-section-returns anchored" data-anchor-id="returns">Returns</h2>
+<dl>
+<dt><code><span class="parameter-name"><strong>playerID</strong></span> <span class="parameter-annotation-sep">:</span> <span class="parameter-annotation">str</span></code></dt>
+<dd>
+<p>Player ID code</p>
+</dd>
+<dt><code><span class="parameter-name"><strong>yearID</strong></span> <span class="parameter-annotation-sep">:</span> <span class="parameter-annotation">int</span></code></dt>
+<dd>
+<p>Year</p>
+</dd>
+<dt><code><span class="parameter-name"><strong>stint</strong></span> <span class="parameter-annotation-sep">:</span> <span class="parameter-annotation">int</span></code></dt>
+<dd>
+<p>Player’s stint (order of appearances within a season)</p>
+</dd>
+<dt><code><span class="parameter-name"><strong>teamID</strong></span> <span class="parameter-annotation-sep">:</span> <span class="parameter-annotation">str</span></code></dt>
+<dd>
+<p>Team</p>
+</dd>
+<dt><code><span class="parameter-name"><strong>lgID</strong></span> <span class="parameter-annotation-sep">:</span> <span class="parameter-annotation">str</span></code></dt>
+<dd>
+<p>League</p>
+</dd>
+<dt><code><span class="parameter-name"><strong>POS</strong></span> <span class="parameter-annotation-sep">:</span> <span class="parameter-annotation">str</span></code></dt>
+<dd>
+<p>Position</p>
+</dd>
+<dt><code><span class="parameter-name"><strong>G</strong></span> <span class="parameter-annotation-sep">:</span> <span class="parameter-annotation">int</span></code></dt>
+<dd>
+<p>Games</p>
+</dd>
+<dt><code><span class="parameter-name"><strong>GS</strong></span> <span class="parameter-annotation-sep">:</span> <span class="parameter-annotation">int</span></code></dt>
+<dd>
+<p>Games Started</p>
+</dd>
+<dt><code><span class="parameter-name"><strong>InnOuts</strong></span> <span class="parameter-annotation-sep">:</span> <span class="parameter-annotation">int</span></code></dt>
+<dd>
+<p>Time played in the field expressed as outs</p>
+</dd>
+<dt><code><span class="parameter-name"><strong>PO</strong></span> <span class="parameter-annotation-sep">:</span> <span class="parameter-annotation">int</span></code></dt>
+<dd>
+<p>Putouts</p>
+</dd>
+<dt><code><span class="parameter-name"><strong>A</strong></span> <span class="parameter-annotation-sep">:</span> <span class="parameter-annotation">int</span></code></dt>
+<dd>
+<p>Assists</p>
+</dd>
+<dt><code><span class="parameter-name"><strong>E</strong></span> <span class="parameter-annotation-sep">:</span> <span class="parameter-annotation">int</span></code></dt>
+<dd>
+<p>Errors</p>
+</dd>
+<dt><code><span class="parameter-name"><strong>DP</strong></span> <span class="parameter-annotation-sep">:</span> <span class="parameter-annotation">int</span></code></dt>
+<dd>
+<p>Double Plays</p>
+</dd>
+<dt><code><span class="parameter-name"><strong>CS</strong></span> <span class="parameter-annotation-sep">:</span> <span class="parameter-annotation">int</span></code></dt>
+<dd>
+<p>Caught Stealing</p>
+</dd>
+<dt><code><span class="parameter-name"><strong>PB</strong></span> <span class="parameter-annotation-sep">:</span> <span class="parameter-annotation">int</span></code></dt>
+<dd>
+<p>Passed Balls</p>
+</dd>
+<dt><code><span class="parameter-name"><strong>SB</strong></span> <span class="parameter-annotation-sep">:</span> <span class="parameter-annotation">int</span></code></dt>
+<dd>
+<p>Stolen Bases</p>
+</dd>
+<dt><code><span class="parameter-name"><strong>WP</strong></span> <span class="parameter-annotation-sep">:</span> <span class="parameter-annotation">int</span></code></dt>
+<dd>
+<p>Wild Pitches</p>
+</dd>
+<dt><code><span class="parameter-name"><strong>ZR</strong></span> <span class="parameter-annotation-sep">:</span> <span class="parameter-annotation">int</span></code></dt>
+<dd>
+<p>Zone Rating</p>
+</dd>
+</dl>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->

@@ -370,8 +370,51 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="pylahman.HallOfFame" class="level1">
 <h1>HallOfFame</h1>
 <div class="sourceCode" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>HallOfFame()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Returns the <code>HallOfFame</code> table as a <code>DataFrame</code>.</p>
+<p>The <code>HallOfFame</code> table contains information about Hall of Fame voting and inductions. The columns of the table are documented as the function returns.</p>
+<section id="returns" class="level2 doc-section doc-section-returns">
+<h2 class="doc-section doc-section-returns anchored" data-anchor-id="returns">Returns</h2>
+<dl>
+<dt><code><span class="parameter-name"><strong>playerID</strong></span> <span class="parameter-annotation-sep">:</span> <span class="parameter-annotation">str</span></code></dt>
+<dd>
+<p>Player ID code</p>
+</dd>
+<dt><code><span class="parameter-name"><strong>yearid</strong></span> <span class="parameter-annotation-sep">:</span> <span class="parameter-annotation">int</span></code></dt>
+<dd>
+<p>Year of ballot</p>
+</dd>
+<dt><code><span class="parameter-name"><strong>votedBy</strong></span> <span class="parameter-annotation-sep">:</span> <span class="parameter-annotation">str</span></code></dt>
+<dd>
+<p>Method by which player was voted upon</p>
+</dd>
+<dt><code><span class="parameter-name"><strong>ballots</strong></span> <span class="parameter-annotation-sep">:</span> <span class="parameter-annotation">int</span></code></dt>
+<dd>
+<p>Total ballots cast in that year</p>
+</dd>
+<dt><code><span class="parameter-name"><strong>needed</strong></span> <span class="parameter-annotation-sep">:</span> <span class="parameter-annotation">int</span></code></dt>
+<dd>
+<p>Number of votes needed for selection in that year</p>
+</dd>
+<dt><code><span class="parameter-name"><strong>votes</strong></span> <span class="parameter-annotation-sep">:</span> <span class="parameter-annotation">int</span></code></dt>
+<dd>
+<p>Total votes received</p>
+</dd>
+<dt><code><span class="parameter-name"><strong>inducted</strong></span> <span class="parameter-annotation-sep">:</span> <span class="parameter-annotation">str</span></code></dt>
+<dd>
+<p>Whether player was inducted by that vote or not (Y or N)</p>
+</dd>
+<dt><code><span class="parameter-name"><strong>category</strong></span> <span class="parameter-annotation-sep">:</span> <span class="parameter-annotation">str</span></code></dt>
+<dd>
+<p>Category in which candidate was honored</p>
+</dd>
+<dt><code><span class="parameter-name"><strong>needed_note</strong></span> <span class="parameter-annotation-sep">:</span> <span class="parameter-annotation">str</span></code></dt>
+<dd>
+<p>Explanation of qualifiers for special elections, revised in 2023 to include important notes about the record</p>
+</dd>
+</dl>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->

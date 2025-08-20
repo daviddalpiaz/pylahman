@@ -25,7 +25,19 @@
     "href": "reference/TeamsHalf.html",
     "title": "TeamsHalf",
     "section": "",
-    "text": "TeamsHalf\nTeamsHalf()",
+    "text": "TeamsHalf()\nReturns the TeamsHalf table as a DataFrame.\nThe TeamsHalf table contains team statistics by half-season. The columns of the table are documented as the function returns.\n\n\n\nyearID : int\n\nYear\n\nlgID : str\n\nLeague\n\nteamID : str\n\nTeam\n\nHalf : int\n\nFirst or second half of season\n\ndivID : str\n\nDivision\n\nDivWin : str\n\nWon Division (Y or N)\n\nRank : int\n\nTeam’s position in standings for the half\n\nG : int\n\nGames played\n\nW : int\n\nWins\n\nL : int\n\nLosses",
+    "crumbs": [
+      "API",
+      "Data Loading",
+      "TeamsHalf"
+    ]
+  },
+  {
+    "objectID": "reference/TeamsHalf.html#returns",
+    "href": "reference/TeamsHalf.html#returns",
+    "title": "TeamsHalf",
+    "section": "",
+    "text": "yearID : int\n\nYear\n\nlgID : str\n\nLeague\n\nteamID : str\n\nTeam\n\nHalf : int\n\nFirst or second half of season\n\ndivID : str\n\nDivision\n\nDivWin : str\n\nWon Division (Y or N)\n\nRank : int\n\nTeam’s position in standings for the half\n\nG : int\n\nGames played\n\nW : int\n\nWins\n\nL : int\n\nLosses",
     "crumbs": [
       "API",
       "Data Loading",
@@ -37,7 +49,19 @@
     "href": "reference/AwardsManagers.html",
     "title": "AwardsManagers",
     "section": "",
-    "text": "AwardsManagers\nAwardsManagers()",
+    "text": "AwardsManagers()\nReturns the AwardsManagers table as a DataFrame.\nThe AwardsManagers table contains information about awards won by managers. The columns of the table are documented as the function returns.\n\n\n\nplayerID : str\n\nManager ID code\n\nawardID : str\n\nName of award won\n\nyearID : int\n\nYear\n\nlgID : str\n\nLeague\n\ntie : str\n\nAward was a tie (Y or N)\n\nnotes : str\n\nNotes about the award",
+    "crumbs": [
+      "API",
+      "Data Loading",
+      "AwardsManagers"
+    ]
+  },
+  {
+    "objectID": "reference/AwardsManagers.html#returns",
+    "href": "reference/AwardsManagers.html#returns",
+    "title": "AwardsManagers",
+    "section": "",
+    "text": "playerID : str\n\nManager ID code\n\nawardID : str\n\nName of award won\n\nyearID : int\n\nYear\n\nlgID : str\n\nLeague\n\ntie : str\n\nAward was a tie (Y or N)\n\nnotes : str\n\nNotes about the award",
     "crumbs": [
       "API",
       "Data Loading",
@@ -49,7 +73,19 @@
     "href": "reference/Schools.html",
     "title": "Schools",
     "section": "",
-    "text": "Schools\nSchools()",
+    "text": "Schools()\nReturns the Schools table as a DataFrame.\nThe Schools table contains information about schools and colleges. The columns of the table are documented as the function returns.\n\n\n\nschoolID : str\n\nSchool ID code\n\nname_full : str\n\nSchool name\n\ncity : str\n\nCity where school is located\n\nstate : str\n\nState where school is located\n\ncountry : str\n\nCountry where school is located",
+    "crumbs": [
+      "API",
+      "Data Loading",
+      "Schools"
+    ]
+  },
+  {
+    "objectID": "reference/Schools.html#returns",
+    "href": "reference/Schools.html#returns",
+    "title": "Schools",
+    "section": "",
+    "text": "schoolID : str\n\nSchool ID code\n\nname_full : str\n\nSchool name\n\ncity : str\n\nCity where school is located\n\nstate : str\n\nState where school is located\n\ncountry : str\n\nCountry where school is located",
     "crumbs": [
       "API",
       "Data Loading",
@@ -61,7 +97,7 @@
     "href": "reference/index.html",
     "title": "API Reference",
     "section": "",
-    "text": "Functions to lookup player identifiers or names.\n\n\n\nget_player_names\n\n\n\nget_player_ids\n\n\n\n\n\n\n\nFunctions to load tables from the Lahman database.\n\n\n\nAllstarFull\n\n\n\nAppearances\n\n\n\nAwardsManagers\n\n\n\nAwardsPlayers\n\n\n\nAwardsShareManagers\n\n\n\nAwardsSharePlayers\n\n\n\nBatting\n\n\n\nBattingPost\n\n\n\nCollegePlaying\n\n\n\nFielding\n\n\n\nFieldingOF\n\n\n\nFieldingOFsplit\n\n\n\nFieldingPost\n\n\n\nHallOfFame\n\n\n\nHomeGames\n\n\n\nManagers\n\n\n\nManagersHalf\n\n\n\nParks\n\n\n\nPeople\nReturns the People table as a pandas DataFrame.\n\n\nPitching\n\n\n\nPitchingPost\n\n\n\nSalaries\n\n\n\nSchools\n\n\n\nSeriesPost\n\n\n\nTeams\n\n\n\nTeamsFranchises\n\n\n\nTeamsHalf",
+    "text": "Functions to lookup player identifiers or names.\n\n\n\nget_player_names\nGet player names from player IDs.\n\n\nget_player_ids\nGet player IDs from player names.\n\n\n\n\n\n\nFunctions to load tables from the Lahman database.\n\n\n\nAllstarFull\nReturns the AllstarFull table as a DataFrame.\n\n\nAppearances\nReturns the Appearances table as a DataFrame.\n\n\nAwardsManagers\nReturns the AwardsManagers table as a DataFrame.\n\n\nAwardsPlayers\nReturns the AwardsPlayers table as a DataFrame.\n\n\nAwardsShareManagers\nReturns the AwardsShareManagers table as a DataFrame.\n\n\nAwardsSharePlayers\nReturns the AwardsSharePlayers table as a DataFrame.\n\n\nBatting\nReturns the Batting table as a DataFrame.\n\n\nBattingPost\nReturns the BattingPost table as a DataFrame.\n\n\nCollegePlaying\nReturns the CollegePlaying table as a DataFrame.\n\n\nFielding\nReturns the Fielding table as a DataFrame.\n\n\nFieldingOF\nReturns the FieldingOF table as a DataFrame.\n\n\nFieldingOFsplit\nReturns the FieldingOFsplit table as a DataFrame.\n\n\nFieldingPost\nReturns the FieldingPost table as a DataFrame.\n\n\nHallOfFame\nReturns the HallOfFame table as a DataFrame.\n\n\nHomeGames\nReturns the HomeGames table as a DataFrame.\n\n\nManagers\nReturns the Managers table as a DataFrame.\n\n\nManagersHalf\nReturns the ManagersHalf table as a DataFrame.\n\n\nParks\nReturns the Parks table as a DataFrame.\n\n\nPeople\nReturns the People table as a DataFrame.\n\n\nPitching\nReturns the Pitching table as a DataFrame.\n\n\nPitchingPost\nReturns the PitchingPost table as a DataFrame.\n\n\nSalaries\nReturns the Salaries table as a DataFrame.\n\n\nSchools\nReturns the Schools table as a DataFrame.\n\n\nSeriesPost\nReturns the SeriesPost table as a DataFrame.\n\n\nTeams\nReturns the Teams table as a DataFrame.\n\n\nTeamsFranchises\nReturns the TeamsFranchises table as a DataFrame.\n\n\nTeamsHalf\nReturns the TeamsHalf table as a DataFrame.",
     "crumbs": [
       "API",
       "API Reference"
@@ -72,7 +108,7 @@
     "href": "reference/index.html#player-identification",
     "title": "API Reference",
     "section": "",
-    "text": "Functions to lookup player identifiers or names.\n\n\n\nget_player_names\n\n\n\nget_player_ids",
+    "text": "Functions to lookup player identifiers or names.\n\n\n\nget_player_names\nGet player names from player IDs.\n\n\nget_player_ids\nGet player IDs from player names.",
     "crumbs": [
       "API",
       "API Reference"
@@ -83,7 +119,7 @@
     "href": "reference/index.html#data-loading",
     "title": "API Reference",
     "section": "",
-    "text": "Functions to load tables from the Lahman database.\n\n\n\nAllstarFull\n\n\n\nAppearances\n\n\n\nAwardsManagers\n\n\n\nAwardsPlayers\n\n\n\nAwardsShareManagers\n\n\n\nAwardsSharePlayers\n\n\n\nBatting\n\n\n\nBattingPost\n\n\n\nCollegePlaying\n\n\n\nFielding\n\n\n\nFieldingOF\n\n\n\nFieldingOFsplit\n\n\n\nFieldingPost\n\n\n\nHallOfFame\n\n\n\nHomeGames\n\n\n\nManagers\n\n\n\nManagersHalf\n\n\n\nParks\n\n\n\nPeople\nReturns the People table as a pandas DataFrame.\n\n\nPitching\n\n\n\nPitchingPost\n\n\n\nSalaries\n\n\n\nSchools\n\n\n\nSeriesPost\n\n\n\nTeams\n\n\n\nTeamsFranchises\n\n\n\nTeamsHalf",
+    "text": "Functions to load tables from the Lahman database.\n\n\n\nAllstarFull\nReturns the AllstarFull table as a DataFrame.\n\n\nAppearances\nReturns the Appearances table as a DataFrame.\n\n\nAwardsManagers\nReturns the AwardsManagers table as a DataFrame.\n\n\nAwardsPlayers\nReturns the AwardsPlayers table as a DataFrame.\n\n\nAwardsShareManagers\nReturns the AwardsShareManagers table as a DataFrame.\n\n\nAwardsSharePlayers\nReturns the AwardsSharePlayers table as a DataFrame.\n\n\nBatting\nReturns the Batting table as a DataFrame.\n\n\nBattingPost\nReturns the BattingPost table as a DataFrame.\n\n\nCollegePlaying\nReturns the CollegePlaying table as a DataFrame.\n\n\nFielding\nReturns the Fielding table as a DataFrame.\n\n\nFieldingOF\nReturns the FieldingOF table as a DataFrame.\n\n\nFieldingOFsplit\nReturns the FieldingOFsplit table as a DataFrame.\n\n\nFieldingPost\nReturns the FieldingPost table as a DataFrame.\n\n\nHallOfFame\nReturns the HallOfFame table as a DataFrame.\n\n\nHomeGames\nReturns the HomeGames table as a DataFrame.\n\n\nManagers\nReturns the Managers table as a DataFrame.\n\n\nManagersHalf\nReturns the ManagersHalf table as a DataFrame.\n\n\nParks\nReturns the Parks table as a DataFrame.\n\n\nPeople\nReturns the People table as a DataFrame.\n\n\nPitching\nReturns the Pitching table as a DataFrame.\n\n\nPitchingPost\nReturns the PitchingPost table as a DataFrame.\n\n\nSalaries\nReturns the Salaries table as a DataFrame.\n\n\nSchools\nReturns the Schools table as a DataFrame.\n\n\nSeriesPost\nReturns the SeriesPost table as a DataFrame.\n\n\nTeams\nReturns the Teams table as a DataFrame.\n\n\nTeamsFranchises\nReturns the TeamsFranchises table as a DataFrame.\n\n\nTeamsHalf\nReturns the TeamsHalf table as a DataFrame.",
     "crumbs": [
       "API",
       "API Reference"
@@ -94,7 +130,19 @@
     "href": "reference/Parks.html",
     "title": "Parks",
     "section": "",
-    "text": "Parks\nParks()",
+    "text": "Parks()\nReturns the Parks table as a DataFrame.\nThe Parks table contains information about ballparks. The columns of the table are documented as the function returns.\n\n\n\nID : int\n\nUnique identifier\n\nparkkey : str\n\nBallpark ID code\n\nparkname : str\n\nName of ballpark\n\nparkalias : str\n\nAlternate names of ballpark, separated by semicolon\n\ncity : str\n\nCity\n\nstate : str\n\nState\n\ncountry : str\n\nCountry",
+    "crumbs": [
+      "API",
+      "Data Loading",
+      "Parks"
+    ]
+  },
+  {
+    "objectID": "reference/Parks.html#returns",
+    "href": "reference/Parks.html#returns",
+    "title": "Parks",
+    "section": "",
+    "text": "ID : int\n\nUnique identifier\n\nparkkey : str\n\nBallpark ID code\n\nparkname : str\n\nName of ballpark\n\nparkalias : str\n\nAlternate names of ballpark, separated by semicolon\n\ncity : str\n\nCity\n\nstate : str\n\nState\n\ncountry : str\n\nCountry",
     "crumbs": [
       "API",
       "Data Loading",
@@ -106,7 +154,19 @@
     "href": "reference/Pitching.html",
     "title": "Pitching",
     "section": "",
-    "text": "Pitching\nPitching()",
+    "text": "Pitching()\nReturns the Pitching table as a DataFrame.\nThe Pitching table contains yearly pitching statistics for all players. The columns of the table are documented as the function returns.\n\n\n\nplayerID : str\n\nPlayer ID code\n\nyearID : int\n\nYear\n\nstint : int\n\nPlayer’s stint (order of appearances within a season)\n\nteamID : str\n\nTeam\n\nlgID : str\n\nLeague\n\nW : int\n\nWins\n\nL : int\n\nLosses\n\nG : int\n\nGames\n\nGS : int\n\nGames Started\n\nCG : int\n\nComplete Games\n\nSHO : int\n\nShutouts\n\nSV : int\n\nSaves\n\nIPouts : int\n\nOuts Pitched (innings pitched x 3)\n\nH : int\n\nHits\n\nER : int\n\nEarned Runs\n\nHR : int\n\nHomeruns\n\nBB : int\n\nWalks\n\nSO : int\n\nStrikeouts\n\nBAOpp : float\n\nOpponent’s Batting Average\n\nERA : float\n\nEarned Run Average\n\nIBB : int\n\nIntentional Walks\n\nWP : int\n\nWild Pitches\n\nHBP : int\n\nBatters Hit By Pitch\n\nBK : int\n\nBalks\n\nBFP : int\n\nBatters faced by Pitcher\n\nGF : int\n\nGames Finished\n\nR : int\n\nRuns Allowed\n\nSH : int\n\nSacrifices by opposing batters\n\nSF : int\n\nSacrifice flies by opposing batters\n\nGIDP : int\n\nGrounded into double plays by opposing batter",
+    "crumbs": [
+      "API",
+      "Data Loading",
+      "Pitching"
+    ]
+  },
+  {
+    "objectID": "reference/Pitching.html#returns",
+    "href": "reference/Pitching.html#returns",
+    "title": "Pitching",
+    "section": "",
+    "text": "playerID : str\n\nPlayer ID code\n\nyearID : int\n\nYear\n\nstint : int\n\nPlayer’s stint (order of appearances within a season)\n\nteamID : str\n\nTeam\n\nlgID : str\n\nLeague\n\nW : int\n\nWins\n\nL : int\n\nLosses\n\nG : int\n\nGames\n\nGS : int\n\nGames Started\n\nCG : int\n\nComplete Games\n\nSHO : int\n\nShutouts\n\nSV : int\n\nSaves\n\nIPouts : int\n\nOuts Pitched (innings pitched x 3)\n\nH : int\n\nHits\n\nER : int\n\nEarned Runs\n\nHR : int\n\nHomeruns\n\nBB : int\n\nWalks\n\nSO : int\n\nStrikeouts\n\nBAOpp : float\n\nOpponent’s Batting Average\n\nERA : float\n\nEarned Run Average\n\nIBB : int\n\nIntentional Walks\n\nWP : int\n\nWild Pitches\n\nHBP : int\n\nBatters Hit By Pitch\n\nBK : int\n\nBalks\n\nBFP : int\n\nBatters faced by Pitcher\n\nGF : int\n\nGames Finished\n\nR : int\n\nRuns Allowed\n\nSH : int\n\nSacrifices by opposing batters\n\nSF : int\n\nSacrifice flies by opposing batters\n\nGIDP : int\n\nGrounded into double plays by opposing batter",
     "crumbs": [
       "API",
       "Data Loading",
@@ -118,7 +178,19 @@
     "href": "reference/ManagersHalf.html",
     "title": "ManagersHalf",
     "section": "",
-    "text": "ManagersHalf\nManagersHalf()",
+    "text": "ManagersHalf()\nReturns the ManagersHalf table as a DataFrame.\nThe ManagersHalf table contains managerial information by half-season. The columns of the table are documented as the function returns.\n\n\n\nplayerID : str\n\nManager ID code\n\nyearID : int\n\nYear\n\nteamID : str\n\nTeam\n\nlgID : str\n\nLeague\n\ninseason : int\n\nManagerial order, in order of appearance during the year, 1 if the individual managed the team the entire year\n\nhalf : int\n\nFirst or second half of season\n\nG : int\n\nGames managed\n\nW : int\n\nWins\n\nL : int\n\nLosses\n\nrank : int\n\nTeam’s position in standings for the half",
+    "crumbs": [
+      "API",
+      "Data Loading",
+      "ManagersHalf"
+    ]
+  },
+  {
+    "objectID": "reference/ManagersHalf.html#returns",
+    "href": "reference/ManagersHalf.html#returns",
+    "title": "ManagersHalf",
+    "section": "",
+    "text": "playerID : str\n\nManager ID code\n\nyearID : int\n\nYear\n\nteamID : str\n\nTeam\n\nlgID : str\n\nLeague\n\ninseason : int\n\nManagerial order, in order of appearance during the year, 1 if the individual managed the team the entire year\n\nhalf : int\n\nFirst or second half of season\n\nG : int\n\nGames managed\n\nW : int\n\nWins\n\nL : int\n\nLosses\n\nrank : int\n\nTeam’s position in standings for the half",
     "crumbs": [
       "API",
       "Data Loading",
@@ -130,7 +202,19 @@
     "href": "reference/HallOfFame.html",
     "title": "HallOfFame",
     "section": "",
-    "text": "HallOfFame\nHallOfFame()",
+    "text": "HallOfFame()\nReturns the HallOfFame table as a DataFrame.\nThe HallOfFame table contains information about Hall of Fame voting and inductions. The columns of the table are documented as the function returns.\n\n\n\nplayerID : str\n\nPlayer ID code\n\nyearid : int\n\nYear of ballot\n\nvotedBy : str\n\nMethod by which player was voted upon\n\nballots : int\n\nTotal ballots cast in that year\n\nneeded : int\n\nNumber of votes needed for selection in that year\n\nvotes : int\n\nTotal votes received\n\ninducted : str\n\nWhether player was inducted by that vote or not (Y or N)\n\ncategory : str\n\nCategory in which candidate was honored\n\nneeded_note : str\n\nExplanation of qualifiers for special elections, revised in 2023 to include important notes about the record",
+    "crumbs": [
+      "API",
+      "Data Loading",
+      "HallOfFame"
+    ]
+  },
+  {
+    "objectID": "reference/HallOfFame.html#returns",
+    "href": "reference/HallOfFame.html#returns",
+    "title": "HallOfFame",
+    "section": "",
+    "text": "playerID : str\n\nPlayer ID code\n\nyearid : int\n\nYear of ballot\n\nvotedBy : str\n\nMethod by which player was voted upon\n\nballots : int\n\nTotal ballots cast in that year\n\nneeded : int\n\nNumber of votes needed for selection in that year\n\nvotes : int\n\nTotal votes received\n\ninducted : str\n\nWhether player was inducted by that vote or not (Y or N)\n\ncategory : str\n\nCategory in which candidate was honored\n\nneeded_note : str\n\nExplanation of qualifiers for special elections, revised in 2023 to include important notes about the record",
     "crumbs": [
       "API",
       "Data Loading",
@@ -142,7 +226,19 @@
     "href": "reference/TeamsFranchises.html",
     "title": "TeamsFranchises",
     "section": "",
-    "text": "TeamsFranchises\nTeamsFranchises()",
+    "text": "TeamsFranchises()\nReturns the TeamsFranchises table as a DataFrame.\nThe TeamsFranchises table contains information about team franchises. The columns of the table are documented as the function returns.\n\n\n\nfranchID : str\n\nFranchise ID\n\nfranchName : str\n\nFranchise name\n\nactive : str\n\nWhether team is currently active or not (Y or N)\n\nNAassoc : str\n\nID of National Association team franchise played as",
+    "crumbs": [
+      "API",
+      "Data Loading",
+      "TeamsFranchises"
+    ]
+  },
+  {
+    "objectID": "reference/TeamsFranchises.html#returns",
+    "href": "reference/TeamsFranchises.html#returns",
+    "title": "TeamsFranchises",
+    "section": "",
+    "text": "franchID : str\n\nFranchise ID\n\nfranchName : str\n\nFranchise name\n\nactive : str\n\nWhether team is currently active or not (Y or N)\n\nNAassoc : str\n\nID of National Association team franchise played as",
     "crumbs": [
       "API",
       "Data Loading",
@@ -154,7 +250,19 @@
     "href": "reference/BattingPost.html",
     "title": "BattingPost",
     "section": "",
-    "text": "BattingPost\nBattingPost()",
+    "text": "BattingPost()\nReturns the BattingPost table as a DataFrame.\nThe BattingPost table contains postseason batting statistics for all players. The columns of the table are documented as the function returns.\n\n\n\nyearID : int\n\nYear\n\nround : str\n\nLevel of playoffs\n\nplayerID : str\n\nPlayer ID code\n\nteamID : str\n\nTeam\n\nlgID : str\n\nLeague\n\nG : int\n\nGames\n\nAB : int\n\nAt Bats\n\nR : int\n\nRuns\n\nH : int\n\nHits\n\n : 2B : int\n\nDoubles\n\n : 3B : int\n\nTriples\n\nHR : int\n\nHomeruns\n\nRBI : int\n\nRuns Batted In\n\nSB : int\n\nStolen Bases\n\nCS : int\n\nCaught stealing\n\nBB : int\n\nBase on Balls\n\nSO : int\n\nStrikeouts\n\nIBB : int\n\nIntentional walks\n\nHBP : int\n\nHit by pitch\n\nSH : int\n\nSacrifices\n\nSF : int\n\nSacrifice flies\n\nGIDP : int\n\nGrounded into double plays",
+    "crumbs": [
+      "API",
+      "Data Loading",
+      "BattingPost"
+    ]
+  },
+  {
+    "objectID": "reference/BattingPost.html#returns",
+    "href": "reference/BattingPost.html#returns",
+    "title": "BattingPost",
+    "section": "",
+    "text": "yearID : int\n\nYear\n\nround : str\n\nLevel of playoffs\n\nplayerID : str\n\nPlayer ID code\n\nteamID : str\n\nTeam\n\nlgID : str\n\nLeague\n\nG : int\n\nGames\n\nAB : int\n\nAt Bats\n\nR : int\n\nRuns\n\nH : int\n\nHits\n\n : 2B : int\n\nDoubles\n\n : 3B : int\n\nTriples\n\nHR : int\n\nHomeruns\n\nRBI : int\n\nRuns Batted In\n\nSB : int\n\nStolen Bases\n\nCS : int\n\nCaught stealing\n\nBB : int\n\nBase on Balls\n\nSO : int\n\nStrikeouts\n\nIBB : int\n\nIntentional walks\n\nHBP : int\n\nHit by pitch\n\nSH : int\n\nSacrifices\n\nSF : int\n\nSacrifice flies\n\nGIDP : int\n\nGrounded into double plays",
     "crumbs": [
       "API",
       "Data Loading",
@@ -166,7 +274,19 @@
     "href": "reference/AwardsPlayers.html",
     "title": "AwardsPlayers",
     "section": "",
-    "text": "AwardsPlayers\nAwardsPlayers()",
+    "text": "AwardsPlayers()\nReturns the AwardsPlayers table as a DataFrame.\nThe AwardsPlayers table contains information about awards won by players. The columns of the table are documented as the function returns.\n\n\n\nplayerID : str\n\nPlayer ID code\n\nawardID : str\n\nName of award won\n\nyearID : int\n\nYear\n\nlgID : str\n\nLeague\n\ntie : str\n\nAward was a tie (Y or N)\n\nnotes : str\n\nNotes about the award",
+    "crumbs": [
+      "API",
+      "Data Loading",
+      "AwardsPlayers"
+    ]
+  },
+  {
+    "objectID": "reference/AwardsPlayers.html#returns",
+    "href": "reference/AwardsPlayers.html#returns",
+    "title": "AwardsPlayers",
+    "section": "",
+    "text": "playerID : str\n\nPlayer ID code\n\nawardID : str\n\nName of award won\n\nyearID : int\n\nYear\n\nlgID : str\n\nLeague\n\ntie : str\n\nAward was a tie (Y or N)\n\nnotes : str\n\nNotes about the award",
     "crumbs": [
       "API",
       "Data Loading",
@@ -178,7 +298,19 @@
     "href": "reference/FieldingPost.html",
     "title": "FieldingPost",
     "section": "",
-    "text": "FieldingPost\nFieldingPost()",
+    "text": "FieldingPost()\nReturns the FieldingPost table as a DataFrame.\nThe FieldingPost table contains postseason fielding statistics for all players. The columns of the table are documented as the function returns.\n\n\n\nplayerID : str\n\nPlayer ID code\n\nyearID : int\n\nYear\n\nteamID : str\n\nTeam\n\nlgID : str\n\nLeague\n\nround : str\n\nLevel of playoffs\n\nPOS : str\n\nPosition Position\n\nG : int\n\nGames\n\nGS : int\n\nGames Started\n\nInnOuts : int\n\nTime played in the field expressed as outs\n\nPO : int\n\nPutouts\n\nA : int\n\nAssists\n\nE : int\n\nErrors\n\nDP : int\n\nDouble Plays\n\nTP : int\n\nTriple Plays\n\nPB : int\n\nPassed Balls\n\nSB : int\n\nStolen Bases allowed (by catcher)\n\nCS : int\n\nCaught Stealing (by catcher)",
+    "crumbs": [
+      "API",
+      "Data Loading",
+      "FieldingPost"
+    ]
+  },
+  {
+    "objectID": "reference/FieldingPost.html#returns",
+    "href": "reference/FieldingPost.html#returns",
+    "title": "FieldingPost",
+    "section": "",
+    "text": "playerID : str\n\nPlayer ID code\n\nyearID : int\n\nYear\n\nteamID : str\n\nTeam\n\nlgID : str\n\nLeague\n\nround : str\n\nLevel of playoffs\n\nPOS : str\n\nPosition Position\n\nG : int\n\nGames\n\nGS : int\n\nGames Started\n\nInnOuts : int\n\nTime played in the field expressed as outs\n\nPO : int\n\nPutouts\n\nA : int\n\nAssists\n\nE : int\n\nErrors\n\nDP : int\n\nDouble Plays\n\nTP : int\n\nTriple Plays\n\nPB : int\n\nPassed Balls\n\nSB : int\n\nStolen Bases allowed (by catcher)\n\nCS : int\n\nCaught Stealing (by catcher)",
     "crumbs": [
       "API",
       "Data Loading",
@@ -190,7 +322,19 @@
     "href": "reference/FieldingOFsplit.html",
     "title": "FieldingOFsplit",
     "section": "",
-    "text": "FieldingOFsplit\nFieldingOFsplit()",
+    "text": "FieldingOFsplit()\nReturns the FieldingOFsplit table as a DataFrame.\nThe FieldingOFsplit table contains detailed outfield fielding statistics. The columns of the table are documented as the function returns.\n\n\n\nplayerID : str\n\nPlayer ID code\n\nyearID : int\n\nYear\n\nstint : int\n\nPlayer’s stint (order of appearances within a season)\n\nteamID : str\n\nTeam\n\nlgID : str\n\nLeague\n\nPOS : str\n\nPosition\n\nG : int\n\nGames\n\nGS : int\n\nGames Started\n\nInnOuts : int\n\nTime played in the field expressed as outs\n\nPO : int\n\nPutouts\n\nA : int\n\nAssists\n\nE : int\n\nErrors\n\nDP : int\n\nDouble Plays\n\nCS : int\n\nCaught Stealing\n\nPB : int\n\nPassed Balls\n\nSB : int\n\nStolen Bases\n\nWP : int\n\nWild Pitches\n\nZR : int\n\nZone Rating",
+    "crumbs": [
+      "API",
+      "Data Loading",
+      "FieldingOFsplit"
+    ]
+  },
+  {
+    "objectID": "reference/FieldingOFsplit.html#returns",
+    "href": "reference/FieldingOFsplit.html#returns",
+    "title": "FieldingOFsplit",
+    "section": "",
+    "text": "playerID : str\n\nPlayer ID code\n\nyearID : int\n\nYear\n\nstint : int\n\nPlayer’s stint (order of appearances within a season)\n\nteamID : str\n\nTeam\n\nlgID : str\n\nLeague\n\nPOS : str\n\nPosition\n\nG : int\n\nGames\n\nGS : int\n\nGames Started\n\nInnOuts : int\n\nTime played in the field expressed as outs\n\nPO : int\n\nPutouts\n\nA : int\n\nAssists\n\nE : int\n\nErrors\n\nDP : int\n\nDouble Plays\n\nCS : int\n\nCaught Stealing\n\nPB : int\n\nPassed Balls\n\nSB : int\n\nStolen Bases\n\nWP : int\n\nWild Pitches\n\nZR : int\n\nZone Rating",
     "crumbs": [
       "API",
       "Data Loading",
@@ -202,7 +346,19 @@
     "href": "reference/Managers.html",
     "title": "Managers",
     "section": "",
-    "text": "Managers\nManagers()",
+    "text": "Managers()\nReturns the Managers table as a DataFrame.\nThe Managers table contains information about team managers. The columns of the table are documented as the function returns.\n\n\n\nplayerID : str\n\nPlayer ID Number\n\nyearID : int\n\nYear\n\nteamID : str\n\nTeam\n\nlgID : str\n\nLeague\n\ninseason : int\n\nManagerial order, in order of appearance during the year. One if the individual managed the team the entire year\n\nG : int\n\nGames managed\n\nW : int\n\nWins\n\nL : int\n\nLosses\n\nrank : int\n\nTeam’s final position in standings that year\n\nplyrMgr : str\n\nPlayer Manager (denoted by ‘Y’)",
+    "crumbs": [
+      "API",
+      "Data Loading",
+      "Managers"
+    ]
+  },
+  {
+    "objectID": "reference/Managers.html#returns",
+    "href": "reference/Managers.html#returns",
+    "title": "Managers",
+    "section": "",
+    "text": "playerID : str\n\nPlayer ID Number\n\nyearID : int\n\nYear\n\nteamID : str\n\nTeam\n\nlgID : str\n\nLeague\n\ninseason : int\n\nManagerial order, in order of appearance during the year. One if the individual managed the team the entire year\n\nG : int\n\nGames managed\n\nW : int\n\nWins\n\nL : int\n\nLosses\n\nrank : int\n\nTeam’s final position in standings that year\n\nplyrMgr : str\n\nPlayer Manager (denoted by ‘Y’)",
     "crumbs": [
       "API",
       "Data Loading",
@@ -214,7 +370,19 @@
     "href": "reference/AwardsSharePlayers.html",
     "title": "AwardsSharePlayers",
     "section": "",
-    "text": "AwardsSharePlayers\nAwardsSharePlayers()",
+    "text": "AwardsSharePlayers()\nReturns the AwardsSharePlayers table as a DataFrame.\nThe AwardsSharePlayers table contains voting information for player awards. The columns of the table are documented as the function returns.\n\n\n\nawardID : str\n\nName of award votes were received for\n\nyearID : int\n\nYear\n\nlgID : str\n\nLeague\n\nplayerID : str\n\nPlayer ID code\n\npointsWon : int\n\nNumber of points received\n\npointsMax : int\n\nMaximum number of points possible\n\nvotesFirst : int\n\nNumber of first place votes",
+    "crumbs": [
+      "API",
+      "Data Loading",
+      "AwardsSharePlayers"
+    ]
+  },
+  {
+    "objectID": "reference/AwardsSharePlayers.html#returns",
+    "href": "reference/AwardsSharePlayers.html#returns",
+    "title": "AwardsSharePlayers",
+    "section": "",
+    "text": "awardID : str\n\nName of award votes were received for\n\nyearID : int\n\nYear\n\nlgID : str\n\nLeague\n\nplayerID : str\n\nPlayer ID code\n\npointsWon : int\n\nNumber of points received\n\npointsMax : int\n\nMaximum number of points possible\n\nvotesFirst : int\n\nNumber of first place votes",
     "crumbs": [
       "API",
       "Data Loading",
@@ -226,7 +394,43 @@
     "href": "reference/get_player_names.html",
     "title": "get_player_names",
     "section": "",
-    "text": "get_player_names\nget_player_names(player_ids, last_only)",
+    "text": "get_player_names(player_ids, last_only)\nGet player names from player IDs.\n\n\n\nplayer_ids : str or list of str\n\nSingle player ID or list of player IDs\n\nlast_only : bool = False\n\nIf True, return only last names. If False, return “First Last” format.\n\n\n\n\n\n\n : str or list of str\n\nPlayer name(s) corresponding to the input ID(s)\n\n\n\n\n\n\n: ValueError\n\nIf a playerID is not found in the People table",
+    "crumbs": [
+      "API",
+      "Player Identification",
+      "get_player_names"
+    ]
+  },
+  {
+    "objectID": "reference/get_player_names.html#parameters",
+    "href": "reference/get_player_names.html#parameters",
+    "title": "get_player_names",
+    "section": "",
+    "text": "player_ids : str or list of str\n\nSingle player ID or list of player IDs\n\nlast_only : bool = False\n\nIf True, return only last names. If False, return “First Last” format.",
+    "crumbs": [
+      "API",
+      "Player Identification",
+      "get_player_names"
+    ]
+  },
+  {
+    "objectID": "reference/get_player_names.html#returns",
+    "href": "reference/get_player_names.html#returns",
+    "title": "get_player_names",
+    "section": "",
+    "text": ": str or list of str\n\nPlayer name(s) corresponding to the input ID(s)",
+    "crumbs": [
+      "API",
+      "Player Identification",
+      "get_player_names"
+    ]
+  },
+  {
+    "objectID": "reference/get_player_names.html#raises",
+    "href": "reference/get_player_names.html#raises",
+    "title": "get_player_names",
+    "section": "",
+    "text": ": ValueError\n\nIf a playerID is not found in the People table",
     "crumbs": [
       "API",
       "Player Identification",
@@ -238,7 +442,19 @@
     "href": "reference/PitchingPost.html",
     "title": "PitchingPost",
     "section": "",
-    "text": "PitchingPost\nPitchingPost()",
+    "text": "PitchingPost()\nReturns the PitchingPost table as a DataFrame.\nThe PitchingPost table contains postseason pitching statistics for all players. The columns of the table are documented as the function returns.\n\n\n\nplayerID : str\n\nPlayer ID code\n\nyearID : int\n\nYear\n\nround : str\n\nLevel of playoffs\n\nteamID : str\n\nTeam\n\nlgID : str\n\nLeague\n\nW : int\n\nWins\n\nL : int\n\nLosses\n\nG : int\n\nGames\n\nGS : int\n\nGames Started\n\nCG : int\n\nComplete Games\n\nSHO : int\n\nShutouts\n\nSV : int\n\nSaves\n\nIPouts : int\n\nOuts Pitched (innings pitched x 3)\n\nH : int\n\nHits\n\nER : int\n\nEarned Runs\n\nHR : int\n\nHomeruns\n\nBB : int\n\nWalks\n\nSO : int\n\nStrikeouts\n\nBAOpp : float\n\nOpponents’ batting average\n\nERA : float\n\nEarned Run Average\n\nIBB : int\n\nIntentional Walks\n\nWP : int\n\nWild Pitches\n\nHBP : int\n\nBatters Hit By Pitch\n\nBK : int\n\nBalks\n\nBFP : int\n\nBatters faced by Pitcher\n\nGF : int\n\nGames Finished\n\nR : int\n\nRuns Allowed\n\nSH : int\n\nSacrifice Hits allowed\n\nSF : int\n\nSacrifice Flies allowed\n\nGIDP : int\n\nGrounded into Double Plays",
+    "crumbs": [
+      "API",
+      "Data Loading",
+      "PitchingPost"
+    ]
+  },
+  {
+    "objectID": "reference/PitchingPost.html#returns",
+    "href": "reference/PitchingPost.html#returns",
+    "title": "PitchingPost",
+    "section": "",
+    "text": "playerID : str\n\nPlayer ID code\n\nyearID : int\n\nYear\n\nround : str\n\nLevel of playoffs\n\nteamID : str\n\nTeam\n\nlgID : str\n\nLeague\n\nW : int\n\nWins\n\nL : int\n\nLosses\n\nG : int\n\nGames\n\nGS : int\n\nGames Started\n\nCG : int\n\nComplete Games\n\nSHO : int\n\nShutouts\n\nSV : int\n\nSaves\n\nIPouts : int\n\nOuts Pitched (innings pitched x 3)\n\nH : int\n\nHits\n\nER : int\n\nEarned Runs\n\nHR : int\n\nHomeruns\n\nBB : int\n\nWalks\n\nSO : int\n\nStrikeouts\n\nBAOpp : float\n\nOpponents’ batting average\n\nERA : float\n\nEarned Run Average\n\nIBB : int\n\nIntentional Walks\n\nWP : int\n\nWild Pitches\n\nHBP : int\n\nBatters Hit By Pitch\n\nBK : int\n\nBalks\n\nBFP : int\n\nBatters faced by Pitcher\n\nGF : int\n\nGames Finished\n\nR : int\n\nRuns Allowed\n\nSH : int\n\nSacrifice Hits allowed\n\nSF : int\n\nSacrifice Flies allowed\n\nGIDP : int\n\nGrounded into Double Plays",
     "crumbs": [
       "API",
       "Data Loading",
@@ -250,7 +466,19 @@
     "href": "reference/Salaries.html",
     "title": "Salaries",
     "section": "",
-    "text": "Salaries\nSalaries()",
+    "text": "Salaries()\nReturns the Salaries table as a DataFrame.\nThe Salaries table contains player salary information. The columns of the table are documented as the function returns.\n\n\n\nyearID : int\n\nYear\n\nteamID : str\n\nTeam\n\nlgID : str\n\nLeague\n\nplayerID : str\n\nPlayer ID code\n\nsalary : int\n\nSalary",
+    "crumbs": [
+      "API",
+      "Data Loading",
+      "Salaries"
+    ]
+  },
+  {
+    "objectID": "reference/Salaries.html#returns",
+    "href": "reference/Salaries.html#returns",
+    "title": "Salaries",
+    "section": "",
+    "text": "yearID : int\n\nYear\n\nteamID : str\n\nTeam\n\nlgID : str\n\nLeague\n\nplayerID : str\n\nPlayer ID code\n\nsalary : int\n\nSalary",
     "crumbs": [
       "API",
       "Data Loading",
@@ -262,7 +490,19 @@
     "href": "reference/AwardsShareManagers.html",
     "title": "AwardsShareManagers",
     "section": "",
-    "text": "AwardsShareManagers\nAwardsShareManagers()",
+    "text": "AwardsShareManagers()\nReturns the AwardsShareManagers table as a DataFrame.\nThe AwardsShareManagers table contains voting information for manager awards. The columns of the table are documented as the function returns.\n\n\n\nawardID : str\n\nName of award votes were received for\n\nyearID : int\n\nYear\n\nlgID : str\n\nLeague\n\nplayerID : str\n\nManager ID code\n\npointsWon : int\n\nNumber of points received\n\npointsMax : int\n\nMaximum number of points possible\n\nvotesFirst : int\n\nNumber of first place votes",
+    "crumbs": [
+      "API",
+      "Data Loading",
+      "AwardsShareManagers"
+    ]
+  },
+  {
+    "objectID": "reference/AwardsShareManagers.html#returns",
+    "href": "reference/AwardsShareManagers.html#returns",
+    "title": "AwardsShareManagers",
+    "section": "",
+    "text": "awardID : str\n\nName of award votes were received for\n\nyearID : int\n\nYear\n\nlgID : str\n\nLeague\n\nplayerID : str\n\nManager ID code\n\npointsWon : int\n\nNumber of points received\n\npointsMax : int\n\nMaximum number of points possible\n\nvotesFirst : int\n\nNumber of first place votes",
     "crumbs": [
       "API",
       "Data Loading",
@@ -274,7 +514,19 @@
     "href": "reference/AllstarFull.html",
     "title": "AllstarFull",
     "section": "",
-    "text": "AllstarFull\nAllstarFull()",
+    "text": "AllstarFull()\nReturns the AllstarFull table as a DataFrame.\nThe AllstarFull table contains information about All-Star game appearances. The columns of the table are documented as the function returns.\n\n\n\nplayerID : str\n\nPlayer ID code\n\nyearID : int\n\nYear\n\ngameNum : int\n\nGame number (zero if only one All-Star game played that season)\n\ngameID : str\n\nRetrosheet ID for the game\n\nteamID : str\n\nTeam\n\nlgID : str\n\nLeague\n\nGP : int\n\n1 if Played in the game\n\nstartingPos : str\n\nIf player was game starter, the position played",
+    "crumbs": [
+      "API",
+      "Data Loading",
+      "AllstarFull"
+    ]
+  },
+  {
+    "objectID": "reference/AllstarFull.html#returns",
+    "href": "reference/AllstarFull.html#returns",
+    "title": "AllstarFull",
+    "section": "",
+    "text": "playerID : str\n\nPlayer ID code\n\nyearID : int\n\nYear\n\ngameNum : int\n\nGame number (zero if only one All-Star game played that season)\n\ngameID : str\n\nRetrosheet ID for the game\n\nteamID : str\n\nTeam\n\nlgID : str\n\nLeague\n\nGP : int\n\n1 if Played in the game\n\nstartingPos : str\n\nIf player was game starter, the position played",
     "crumbs": [
       "API",
       "Data Loading",
@@ -286,7 +538,19 @@
     "href": "reference/Teams.html",
     "title": "Teams",
     "section": "",
-    "text": "Teams\nTeams()",
+    "text": "Teams()\nReturns the Teams table as a DataFrame.\nThe Teams table contains yearly team statistics and standings information for all major league teams. The columns of the table are documented as the function returns.\n\n\n\nyearID : int\n\nYear\n\nlgID : str\n\nLeague\n\nteamID : str\n\nTeam\n\nfranchID : str\n\nFranchise (links to TeamsFranchise table)\n\ndivID : str\n\nTeam’s division\n\nRank : int\n\nPosition in final standings\n\nG : int\n\nGames played\n\nGhome : int\n\nGames played at home\n\nW : int\n\nWins\n\nL : int\n\nLosses\n\nDivWin : str\n\nDivision Winner (Y or N)\n\nWCWin : str\n\nWild Card Winner (Y or N)\n\nLgWin : str\n\nLeague Champion (Y or N)\n\nWSWin : str\n\nWorld Series Winner (Y or N)\n\nR : int\n\nRuns scored\n\nAB : int\n\nAt bats\n\nH : int\n\nHits by batters\n\n : 2B : int\n\nDoubles\n\n : 3B : int\n\nTriples\n\nHR : int\n\nHomeruns by batters\n\nBB : int\n\nWalks by batters\n\nSO : int\n\nStrikeouts by batters\n\nSB : int\n\nStolen bases\n\nCS : int\n\nCaught stealing\n\nHBP : int\n\nBatters hit by pitch\n\nSF : int\n\nSacrifice flies\n\nRA : int\n\nOpponents runs scored\n\nER : int\n\nEarned runs allowed\n\nERA : float\n\nEarned run average\n\nCG : int\n\nComplete games\n\nSHO : int\n\nShutouts (team level)\n\nSV : int\n\nSaves\n\nIPouts : int\n\nOuts Pitched (innings pitched x 3)\n\nHA : int\n\nHits allowed\n\nHRA : int\n\nHomeruns allowed\n\nBBA : int\n\nWalks allowed\n\nSOA : int\n\nStrikeouts by pitchers\n\nE : int\n\nErrors\n\nDP : int\n\nDouble Plays (team level)\n\nFP : float\n\nFielding percentage\n\nname : str\n\nTeam’s full name\n\npark : str\n\nName of team’s home ballpark\n\nattendance : int\n\nHome attendance total\n\nBPF : int\n\nThree-year park factor for batters\n\nPPF : int\n\nThree-year park factor for pitchers\n\nteamIDBR : str\n\nTeam ID used by Baseball Reference website\n\nteamIDlahman45 : str\n\nTeam ID used in Lahman database version 4.5\n\nteamIDretro : str\n\nTeam ID used by Retrosheet",
+    "crumbs": [
+      "API",
+      "Data Loading",
+      "Teams"
+    ]
+  },
+  {
+    "objectID": "reference/Teams.html#returns",
+    "href": "reference/Teams.html#returns",
+    "title": "Teams",
+    "section": "",
+    "text": "yearID : int\n\nYear\n\nlgID : str\n\nLeague\n\nteamID : str\n\nTeam\n\nfranchID : str\n\nFranchise (links to TeamsFranchise table)\n\ndivID : str\n\nTeam’s division\n\nRank : int\n\nPosition in final standings\n\nG : int\n\nGames played\n\nGhome : int\n\nGames played at home\n\nW : int\n\nWins\n\nL : int\n\nLosses\n\nDivWin : str\n\nDivision Winner (Y or N)\n\nWCWin : str\n\nWild Card Winner (Y or N)\n\nLgWin : str\n\nLeague Champion (Y or N)\n\nWSWin : str\n\nWorld Series Winner (Y or N)\n\nR : int\n\nRuns scored\n\nAB : int\n\nAt bats\n\nH : int\n\nHits by batters\n\n : 2B : int\n\nDoubles\n\n : 3B : int\n\nTriples\n\nHR : int\n\nHomeruns by batters\n\nBB : int\n\nWalks by batters\n\nSO : int\n\nStrikeouts by batters\n\nSB : int\n\nStolen bases\n\nCS : int\n\nCaught stealing\n\nHBP : int\n\nBatters hit by pitch\n\nSF : int\n\nSacrifice flies\n\nRA : int\n\nOpponents runs scored\n\nER : int\n\nEarned runs allowed\n\nERA : float\n\nEarned run average\n\nCG : int\n\nComplete games\n\nSHO : int\n\nShutouts (team level)\n\nSV : int\n\nSaves\n\nIPouts : int\n\nOuts Pitched (innings pitched x 3)\n\nHA : int\n\nHits allowed\n\nHRA : int\n\nHomeruns allowed\n\nBBA : int\n\nWalks allowed\n\nSOA : int\n\nStrikeouts by pitchers\n\nE : int\n\nErrors\n\nDP : int\n\nDouble Plays (team level)\n\nFP : float\n\nFielding percentage\n\nname : str\n\nTeam’s full name\n\npark : str\n\nName of team’s home ballpark\n\nattendance : int\n\nHome attendance total\n\nBPF : int\n\nThree-year park factor for batters\n\nPPF : int\n\nThree-year park factor for pitchers\n\nteamIDBR : str\n\nTeam ID used by Baseball Reference website\n\nteamIDlahman45 : str\n\nTeam ID used in Lahman database version 4.5\n\nteamIDretro : str\n\nTeam ID used by Retrosheet",
     "crumbs": [
       "API",
       "Data Loading",
@@ -298,7 +562,43 @@
     "href": "reference/get_player_ids.html",
     "title": "get_player_ids",
     "section": "",
-    "text": "get_player_ids\nget_player_ids(last_name, first_name)",
+    "text": "get_player_ids(last_name, first_name)\nGet player IDs from player names.\n\n\n\nlast_name : str or list of str\n\nPlayer’s last name(s)\n\nfirst_name : str or list of str\n\nPlayer’s first name(s)\n\n\n\n\n\n\n : str or list of str\n\nPlayer ID(s) corresponding to the input name(s)\n\n\n\n\n\n\n: ValueError\n\nIf a player name combination is not found in the People table",
+    "crumbs": [
+      "API",
+      "Player Identification",
+      "get_player_ids"
+    ]
+  },
+  {
+    "objectID": "reference/get_player_ids.html#parameters",
+    "href": "reference/get_player_ids.html#parameters",
+    "title": "get_player_ids",
+    "section": "",
+    "text": "last_name : str or list of str\n\nPlayer’s last name(s)\n\nfirst_name : str or list of str\n\nPlayer’s first name(s)",
+    "crumbs": [
+      "API",
+      "Player Identification",
+      "get_player_ids"
+    ]
+  },
+  {
+    "objectID": "reference/get_player_ids.html#returns",
+    "href": "reference/get_player_ids.html#returns",
+    "title": "get_player_ids",
+    "section": "",
+    "text": ": str or list of str\n\nPlayer ID(s) corresponding to the input name(s)",
+    "crumbs": [
+      "API",
+      "Player Identification",
+      "get_player_ids"
+    ]
+  },
+  {
+    "objectID": "reference/get_player_ids.html#raises",
+    "href": "reference/get_player_ids.html#raises",
+    "title": "get_player_ids",
+    "section": "",
+    "text": ": ValueError\n\nIf a player name combination is not found in the People table",
     "crumbs": [
       "API",
       "Player Identification",
@@ -310,7 +610,19 @@
     "href": "reference/Fielding.html",
     "title": "Fielding",
     "section": "",
-    "text": "Fielding\nFielding()",
+    "text": "Fielding()\nReturns the Fielding table as a DataFrame.\nThe Fielding table contains yearly fielding statistics for all players. The columns of the table are documented as the function returns.\n\n\n\nplayerID : str\n\nPlayer ID code\n\nyearID : int\n\nYear\n\nstint : int\n\nPlayer’s stint (order of appearances within a season)\n\nteamID : str\n\nTeam\n\nlgID : str\n\nLeague\n\nPOS : str\n\nPosition\n\nG : int\n\nGames\n\nGS : int\n\nGames Started\n\nInnOuts : int\n\nTime played in the field expressed as outs\n\nPO : int\n\nPutouts\n\nA : int\n\nAssists\n\nE : int\n\nErrors\n\nDP : int\n\nDouble Plays\n\nPB : int\n\nPassed Balls (by catchers)\n\nWP : int\n\nWild Pitches (by catchers)\n\nSB : int\n\nOpponent Stolen Bases (by catchers)\n\nCS : int\n\nOpponents Caught Stealing (by catchers)\n\nZR : float\n\nZone Rating",
+    "crumbs": [
+      "API",
+      "Data Loading",
+      "Fielding"
+    ]
+  },
+  {
+    "objectID": "reference/Fielding.html#returns",
+    "href": "reference/Fielding.html#returns",
+    "title": "Fielding",
+    "section": "",
+    "text": "playerID : str\n\nPlayer ID code\n\nyearID : int\n\nYear\n\nstint : int\n\nPlayer’s stint (order of appearances within a season)\n\nteamID : str\n\nTeam\n\nlgID : str\n\nLeague\n\nPOS : str\n\nPosition\n\nG : int\n\nGames\n\nGS : int\n\nGames Started\n\nInnOuts : int\n\nTime played in the field expressed as outs\n\nPO : int\n\nPutouts\n\nA : int\n\nAssists\n\nE : int\n\nErrors\n\nDP : int\n\nDouble Plays\n\nPB : int\n\nPassed Balls (by catchers)\n\nWP : int\n\nWild Pitches (by catchers)\n\nSB : int\n\nOpponent Stolen Bases (by catchers)\n\nCS : int\n\nOpponents Caught Stealing (by catchers)\n\nZR : float\n\nZone Rating",
     "crumbs": [
       "API",
       "Data Loading",
@@ -322,7 +634,19 @@
     "href": "reference/Appearances.html",
     "title": "Appearances",
     "section": "",
-    "text": "Appearances\nAppearances()",
+    "text": "Appearances()\nReturns the Appearances table as a DataFrame.\nThe Appearances table contains information about player appearances by position. The columns of the table are documented as the function returns.\n\n\n\nyearID : int\n\nYear\n\nteamID : str\n\nTeam\n\nlgID : str\n\nLeague\n\nplayerID : str\n\nPlayer ID code\n\nG_all : int\n\nTotal games played\n\nGS : int\n\nGames started\n\nG_batting : int\n\nGames in which player batted\n\nG_defense : int\n\nGames in which player appeared on defense\n\nG_p : int\n\nGames as pitcher\n\nG_c : int\n\nGames as catcher\n\nG_1b : int\n\nGames as first baseman\n\nG_2b : int\n\nGames as second baseman\n\nG_3b : int\n\nGames as third baseman\n\nG_ss : int\n\nGames as shortstop\n\nG_lf : int\n\nGames as left fielder\n\nG_cf : int\n\nGames as center fielder\n\nG_rf : int\n\nGames as right fielder\n\nG_of : int\n\nGames as outfielder (if a player appeared in a single game at multiple OF positions, this will count as one g_OF game)\n\nG_dh : int\n\nGames as designated hitter\n\nG_ph : int\n\nGames as pinch hitter\n\nG_pr : int\n\nGames as pinch runner",
+    "crumbs": [
+      "API",
+      "Data Loading",
+      "Appearances"
+    ]
+  },
+  {
+    "objectID": "reference/Appearances.html#returns",
+    "href": "reference/Appearances.html#returns",
+    "title": "Appearances",
+    "section": "",
+    "text": "yearID : int\n\nYear\n\nteamID : str\n\nTeam\n\nlgID : str\n\nLeague\n\nplayerID : str\n\nPlayer ID code\n\nG_all : int\n\nTotal games played\n\nGS : int\n\nGames started\n\nG_batting : int\n\nGames in which player batted\n\nG_defense : int\n\nGames in which player appeared on defense\n\nG_p : int\n\nGames as pitcher\n\nG_c : int\n\nGames as catcher\n\nG_1b : int\n\nGames as first baseman\n\nG_2b : int\n\nGames as second baseman\n\nG_3b : int\n\nGames as third baseman\n\nG_ss : int\n\nGames as shortstop\n\nG_lf : int\n\nGames as left fielder\n\nG_cf : int\n\nGames as center fielder\n\nG_rf : int\n\nGames as right fielder\n\nG_of : int\n\nGames as outfielder (if a player appeared in a single game at multiple OF positions, this will count as one g_OF game)\n\nG_dh : int\n\nGames as designated hitter\n\nG_ph : int\n\nGames as pinch hitter\n\nG_pr : int\n\nGames as pinch runner",
     "crumbs": [
       "API",
       "Data Loading",
@@ -334,7 +658,19 @@
     "href": "reference/SeriesPost.html",
     "title": "SeriesPost",
     "section": "",
-    "text": "SeriesPost\nSeriesPost()",
+    "text": "SeriesPost()\nReturns the SeriesPost table as a DataFrame.\nThe SeriesPost table contains information about postseason series results. The columns of the table are documented as the function returns.\n\n\n\nyearID : int\n\nYear\n\nround : str\n\nLevel of playoffs\n\nteamIDwinner : str\n\nTeam ID of the team that won the series\n\nlgIDwinner : str\n\nLeague ID of the team that won the series\n\nteamIDloser : str\n\nTeam ID of the team that lost the series\n\nlgIDloser : str\n\nLeague ID of the team that lost the series\n\nwins : int\n\nWins by team that won the series\n\nlosses : int\n\nLosses by team that won the series\n\nties : int\n\nTie games",
+    "crumbs": [
+      "API",
+      "Data Loading",
+      "SeriesPost"
+    ]
+  },
+  {
+    "objectID": "reference/SeriesPost.html#returns",
+    "href": "reference/SeriesPost.html#returns",
+    "title": "SeriesPost",
+    "section": "",
+    "text": "yearID : int\n\nYear\n\nround : str\n\nLevel of playoffs\n\nteamIDwinner : str\n\nTeam ID of the team that won the series\n\nlgIDwinner : str\n\nLeague ID of the team that won the series\n\nteamIDloser : str\n\nTeam ID of the team that lost the series\n\nlgIDloser : str\n\nLeague ID of the team that lost the series\n\nwins : int\n\nWins by team that won the series\n\nlosses : int\n\nLosses by team that won the series\n\nties : int\n\nTie games",
     "crumbs": [
       "API",
       "Data Loading",
@@ -346,7 +682,19 @@
     "href": "reference/Batting.html",
     "title": "Batting",
     "section": "",
-    "text": "Batting\nBatting()",
+    "text": "Batting()\nReturns the Batting table as a DataFrame.\nThe Batting table contains yearly batting statistics for all players. The columns of the table are documented as the function returns.\n\n\n\nplayerID : str\n\nPlayer ID code\n\nyearID : int\n\nYear\n\nstint : int\n\nPlayer’s stint (order of appearances within a season)\n\nteamID : str\n\nTeam\n\nlgID : str\n\nLeague\n\nG : int\n\nGames\n\nAB : int\n\nAt Bats\n\nR : int\n\nRuns\n\nH : int\n\nHits\n\n : 2B : int\n\nDoubles\n\n : 3B : int\n\nTriples\n\nHR : int\n\nHomeruns\n\nRBI : int\n\nRuns Batted In\n\nSB : int\n\nStolen Bases\n\nCS : int\n\nCaught Stealing\n\nBB : int\n\nBase on Balls\n\nSO : int\n\nStrikeouts\n\nIBB : int\n\nIntentional walks\n\nHBP : int\n\nHit by pitch\n\nSH : int\n\nSacrifice hits\n\nSF : int\n\nSacrifice flies\n\nGIDP : int\n\nGrounded into double plays",
+    "crumbs": [
+      "API",
+      "Data Loading",
+      "Batting"
+    ]
+  },
+  {
+    "objectID": "reference/Batting.html#returns",
+    "href": "reference/Batting.html#returns",
+    "title": "Batting",
+    "section": "",
+    "text": "playerID : str\n\nPlayer ID code\n\nyearID : int\n\nYear\n\nstint : int\n\nPlayer’s stint (order of appearances within a season)\n\nteamID : str\n\nTeam\n\nlgID : str\n\nLeague\n\nG : int\n\nGames\n\nAB : int\n\nAt Bats\n\nR : int\n\nRuns\n\nH : int\n\nHits\n\n : 2B : int\n\nDoubles\n\n : 3B : int\n\nTriples\n\nHR : int\n\nHomeruns\n\nRBI : int\n\nRuns Batted In\n\nSB : int\n\nStolen Bases\n\nCS : int\n\nCaught Stealing\n\nBB : int\n\nBase on Balls\n\nSO : int\n\nStrikeouts\n\nIBB : int\n\nIntentional walks\n\nHBP : int\n\nHit by pitch\n\nSH : int\n\nSacrifice hits\n\nSF : int\n\nSacrifice flies\n\nGIDP : int\n\nGrounded into double plays",
     "crumbs": [
       "API",
       "Data Loading",
@@ -358,7 +706,19 @@
     "href": "reference/FieldingOF.html",
     "title": "FieldingOF",
     "section": "",
-    "text": "FieldingOF\nFieldingOF()",
+    "text": "FieldingOF()\nReturns the FieldingOF table as a DataFrame.\nThe FieldingOF table contains outfield position information for players. The columns of the table are documented as the function returns.\n\n\n\nplayerID : str\n\nPlayer ID code\n\nyearID : int\n\nYear\n\nstint : int\n\nPlayer’s stint (order of appearances within a season)\n\nGlf : int\n\nGames played in left field\n\nGcf : int\n\nGames played in center field\n\nGrf : int\n\nGames played in right field",
+    "crumbs": [
+      "API",
+      "Data Loading",
+      "FieldingOF"
+    ]
+  },
+  {
+    "objectID": "reference/FieldingOF.html#returns",
+    "href": "reference/FieldingOF.html#returns",
+    "title": "FieldingOF",
+    "section": "",
+    "text": "playerID : str\n\nPlayer ID code\n\nyearID : int\n\nYear\n\nstint : int\n\nPlayer’s stint (order of appearances within a season)\n\nGlf : int\n\nGames played in left field\n\nGcf : int\n\nGames played in center field\n\nGrf : int\n\nGames played in right field",
     "crumbs": [
       "API",
       "Data Loading",
@@ -370,7 +730,19 @@
     "href": "reference/HomeGames.html",
     "title": "HomeGames",
     "section": "",
-    "text": "HomeGames\nHomeGames()",
+    "text": "HomeGames()\nReturns the HomeGames table as a DataFrame.\nThe HomeGames table contains information about home games played by teams. The columns of the table are documented as the function returns.\n\n\n\nyearkey : int\n\nYear\n\nleaguekey : str\n\nLeague\n\nteamkey : str\n\nTeam ID\n\nparkkey : str\n\nBallpark ID\n\nspanfirst : datetime\n\nFirst date of operation (yyyy-mm-dd)\n\nspanlast : datetime\n\nLast date of operation (yyyy-mm-dd)\n\ngames : int\n\nTotal number of games\n\nopenings : int\n\nTotal number of paid dates played (games with attendance, note that doubleheaders may make the openings less than games)\n\nattendance : int\n\nTotal attendance",
+    "crumbs": [
+      "API",
+      "Data Loading",
+      "HomeGames"
+    ]
+  },
+  {
+    "objectID": "reference/HomeGames.html#returns",
+    "href": "reference/HomeGames.html#returns",
+    "title": "HomeGames",
+    "section": "",
+    "text": "yearkey : int\n\nYear\n\nleaguekey : str\n\nLeague\n\nteamkey : str\n\nTeam ID\n\nparkkey : str\n\nBallpark ID\n\nspanfirst : datetime\n\nFirst date of operation (yyyy-mm-dd)\n\nspanlast : datetime\n\nLast date of operation (yyyy-mm-dd)\n\ngames : int\n\nTotal number of games\n\nopenings : int\n\nTotal number of paid dates played (games with attendance, note that doubleheaders may make the openings less than games)\n\nattendance : int\n\nTotal attendance",
     "crumbs": [
       "API",
       "Data Loading",
@@ -382,7 +754,19 @@
     "href": "reference/People.html",
     "title": "People",
     "section": "",
-    "text": "People\nPeople()\nReturns the People table as a pandas DataFrame.\n\n\n\n\n\n\n\nColumn\nDescription\n\n\n\n\nplayerID\nA unique code assigned to each player. Links data across files.\n\n\nbirthYear\nYear player was born\n\n\nbirthMonth\nMonth player was born\n\n\nbirthDay\nDay player was born\n\n\nbirthCountry\nCountry where player was born\n\n\nbirthState\nState where player was born\n\n\nbirthCity\nCity where player was born\n\n\ndeathYear\nYear player died\n\n\ndeathMonth\nMonth player died\n\n\ndeathDay\nDay player died\n\n\ndeathCountry\nCountry where player died\n\n\ndeathState\nState where player died\n\n\ndeathCity\nCity where player died\n\n\nnameFirst\nPlayer’s first name\n\n\nnameLast\nPlayer’s last name\n\n\nnameGiven\nPlayer’s given name (typically first and middle)\n\n\nweight\nPlayer’s weight in pounds\n\n\nheight\nPlayer’s height in inches\n\n\nbats\nPlayer’s batting hand (left, right, or both)\n\n\nthrows\nPlayer’s throwing hand (left or right)\n\n\ndebut\nDate that player made first major league appearance\n\n\nfinalGame\nDate that player made last major league appearance\n\n\nretroID\nID used by Retrosheet\n\n\nbbrefID\nID used by Baseball Reference website",
+    "text": "People()\nReturns the People table as a DataFrame.\nThe People table contains biographical information for all players, managers, umpires, and executives in the database. The columns of the table are documented as the function returns.\n\n\n\nID : int\n\nUnique identifier\n\nplayerID : str\n\nPlayer ID code\n\nbirthYear : int\n\nYear player was born\n\nbirthMonth : int\n\nMonth player was born\n\nbirthDay : int\n\nDay player was born\n\nbirthCountry : str\n\nCountry where player was born\n\nbirthState : str\n\nState where player was born\n\nbirthCity : str\n\nCity where player was born\n\ndeathYear : int\n\nYear player died\n\ndeathMonth : int\n\nMonth player died\n\ndeathDay : int\n\nDay player died\n\ndeathCountry : str\n\nCountry where player died\n\ndeathState : str\n\nState where player died\n\ndeathCity : str\n\nCity where player died\n\nnameFirst : str\n\nPlayer’s first name\n\nnameLast : str\n\nPlayer’s last name\n\nnameGiven : str\n\nPlayer’s given name (typically first and middle)\n\nweight : int\n\nPlayer’s weight in pounds\n\nheight : int\n\nPlayer’s height in inches\n\nbats : str\n\nPlayer’s batting hand (left, right, or both)\n\nthrows : str\n\nPlayer’s throwing hand (left or right)\n\ndebut : datetime\n\nDate that player made first major league appearance\n\nfinalGame : datetime\n\nDate that player made last major league appearance\n\nretroID : str\n\nID used by Retrosheet\n\nbbrefID : str\n\nID used by Baseball Reference website",
+    "crumbs": [
+      "API",
+      "Data Loading",
+      "People"
+    ]
+  },
+  {
+    "objectID": "reference/People.html#returns",
+    "href": "reference/People.html#returns",
+    "title": "People",
+    "section": "",
+    "text": "ID : int\n\nUnique identifier\n\nplayerID : str\n\nPlayer ID code\n\nbirthYear : int\n\nYear player was born\n\nbirthMonth : int\n\nMonth player was born\n\nbirthDay : int\n\nDay player was born\n\nbirthCountry : str\n\nCountry where player was born\n\nbirthState : str\n\nState where player was born\n\nbirthCity : str\n\nCity where player was born\n\ndeathYear : int\n\nYear player died\n\ndeathMonth : int\n\nMonth player died\n\ndeathDay : int\n\nDay player died\n\ndeathCountry : str\n\nCountry where player died\n\ndeathState : str\n\nState where player died\n\ndeathCity : str\n\nCity where player died\n\nnameFirst : str\n\nPlayer’s first name\n\nnameLast : str\n\nPlayer’s last name\n\nnameGiven : str\n\nPlayer’s given name (typically first and middle)\n\nweight : int\n\nPlayer’s weight in pounds\n\nheight : int\n\nPlayer’s height in inches\n\nbats : str\n\nPlayer’s batting hand (left, right, or both)\n\nthrows : str\n\nPlayer’s throwing hand (left or right)\n\ndebut : datetime\n\nDate that player made first major league appearance\n\nfinalGame : datetime\n\nDate that player made last major league appearance\n\nretroID : str\n\nID used by Retrosheet\n\nbbrefID : str\n\nID used by Baseball Reference website",
     "crumbs": [
       "API",
       "Data Loading",
@@ -394,7 +778,19 @@
     "href": "reference/CollegePlaying.html",
     "title": "CollegePlaying",
     "section": "",
-    "text": "CollegePlaying\nCollegePlaying()",
+    "text": "CollegePlaying()\nReturns the CollegePlaying table as a DataFrame.\nThe CollegePlaying table contains information about players’ college careers. The columns of the table are documented as the function returns.\n\n\n\nplayerID : str\n\nPlayer ID code\n\nschoolID : str\n\nSchool ID code\n\nyearID : int\n\nYear",
+    "crumbs": [
+      "API",
+      "Data Loading",
+      "CollegePlaying"
+    ]
+  },
+  {
+    "objectID": "reference/CollegePlaying.html#returns",
+    "href": "reference/CollegePlaying.html#returns",
+    "title": "CollegePlaying",
+    "section": "",
+    "text": "playerID : str\n\nPlayer ID code\n\nschoolID : str\n\nSchool ID code\n\nyearID : int\n\nYear",
     "crumbs": [
       "API",
       "Data Loading",
