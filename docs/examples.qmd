@@ -1,0 +1,10 @@
+# Examples
+
+```{python}
+import pylahman
+```
+
+
+```{python}
+pylahman.People()
+```

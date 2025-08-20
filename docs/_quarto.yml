@@ -14,9 +14,14 @@ website:
   page-navigation: true
   navbar:
     search: true
-    right:
+    left:
       - text: "API"
         href: reference/index.qmd
+      # - text: "Examples"
+        # href: examples.qmd
+    right:
+      - icon: github
+        href: https://github.com/daviddalpiaz/pylahman/
   sidebar:
     - id: reference
       contents: "_sidebar.yml"

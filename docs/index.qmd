@@ -9,17 +9,21 @@
 
 ## Installation
 
-`pylahman` can be installed via `pip`.
+The `pylahman` package can be installed via `pip`.
 
 ```bash
 pip install pylahman
 ```
 
-## Usage
+## Documentation and Usage
+
+Each table in the Lahman Baseball Database has a corresponding data loading function in `pylahman` with the same name.
+For example, the `Pitching` table is accessed via the `Pitching()` function.
+Descriptions of each data table can be found in the documentation for the corresponding data loading function in the [API Reference](reference/).
 
 ```{python}
-import pylahman as lahman
+import pylahman
 
-Pitching = lahman.Pitching()
+Pitching = pylahman.Pitching()
 print(Pitching.head())
 ```

@@ -1,8 +1,15 @@
-on: [push]
-name: publish-documentation
+on:
+  workflow_run:
+    workflows: ["Publish Package"]
+    types:
+      - completed
+    branches:
+      - main
+name: Publish Documentation
 jobs:
   build:
     runs-on: ubuntu-latest
+    if: ${{ github.event.workflow_run.conclusion == 'success' }}
     permissions:
       contents: write
     env:
