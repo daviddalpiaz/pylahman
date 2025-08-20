@@ -37,3 +37,9 @@ dev-dependencies = [
     "pytest>=8.3.2",
     "quartodoc>=0.11.1",
 ]
+
+[tool.pytest.ini_options]
+markers = [
+    "readme: tests that validate docstrings against README documentation (run with -m readme)",
+]
+addopts = "-m 'not readme'"
