@@ -1,3 +1,4 @@
+name: publish-docs
 on:
   workflow_dispatch:
   workflow_run:

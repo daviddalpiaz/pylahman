@@ -1,3 +1,4 @@
+name: test-package
 on:
   workflow_dispatch:
   push:

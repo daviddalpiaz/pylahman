@@ -1,3 +1,4 @@
+name: publish-package
 on:
   workflow_dispatch:
   workflow_run:
