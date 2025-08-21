@@ -3,8 +3,6 @@ on:
     workflows: ["Test Package"]
     types:
       - completed
-    branches:
-      - main
   workflow_dispatch:
 name: Publish Package
 jobs:

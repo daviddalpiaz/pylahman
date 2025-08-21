@@ -3,8 +3,6 @@ on:
     workflows: ["Publish Package"]
     types:
       - completed
-    branches:
-      - main
 name: Publish Documentation
 jobs:
   build:
