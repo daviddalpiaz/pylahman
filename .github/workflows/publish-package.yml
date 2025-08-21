@@ -1,13 +1,11 @@
 on:
+  workflow_dispatch:
   workflow_run:
-    workflows: ["Test Package"]
+    workflows: ["test-package"]
     types:
       - completed
-  workflow_dispatch:
-name: Publish Package
 jobs:
   publish-package:
-    name: publish-package
     runs-on: ubuntu-latest
     if: ${{ github.event.workflow_run.conclusion == 'success' }}
     steps:

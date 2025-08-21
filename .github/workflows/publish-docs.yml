@@ -1,11 +1,11 @@
 on:
+  workflow_dispatch:
   workflow_run:
-    workflows: ["Publish Package"]
+    workflows: ["publish-package"]
     types:
       - completed
-name: Publish Documentation
 jobs:
-  build:
+  publish-package:
     runs-on: ubuntu-latest
     if: ${{ github.event.workflow_run.conclusion == 'success' }}
     permissions:

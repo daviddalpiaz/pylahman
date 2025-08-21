@@ -3,10 +3,8 @@ on:
   push:
     tags:
       - 'v*'
-name: Test Package
 jobs:
   test-package:
-    name: test-package
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
