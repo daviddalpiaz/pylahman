@@ -1,5 +1,8 @@
 on:
   workflow_dispatch:
+  push:
+    tags:
+      - 'v*'
 name: Test Package
 jobs:
   test-package:
