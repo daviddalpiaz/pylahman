@@ -8,7 +8,7 @@ Database](https://sabr.org/lahman-database/) via `pandas`.
 > [SABR](https://sabr.org/) and is licensed under [CC BY-SA
 > 3.0](https://creativecommons.org/licenses/by-sa/3.0/). The data was
 > last updated based on the source data available from
-> <https://sabr.org/lahman-database/> on 2025-07-18.
+> <https://sabr.org/lahman-database/> on 2025-10-29.
 >
 > The surrounding software is licensed under the [MIT
 > License](https://opensource.org/licenses/MIT).
