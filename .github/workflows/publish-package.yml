@@ -16,7 +16,7 @@ jobs:
       - name: Set up Python
         run: uv python install
       - name: Install the project
-        run: uv sync --all-extras --dev
+        run: uv sync
       - uses: extractions/setup-just@v3
       - name: Build package
         run: just build

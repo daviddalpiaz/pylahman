@@ -9,8 +9,8 @@ description = "Python Package for Sean Lahman's Baseball Database"
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
-    "numpy>=2.3.2",
-    "pandas>=2.3.1",
+    "numpy>=2.4.0",
+    "pandas>=2.3.3",
     "pyarrow>=22.0.0",
 ]
 
