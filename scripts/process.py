@@ -30,9 +30,11 @@ def process_raw_csv_files():
                     engine="pyarrow",
                 )
             if filename == "People.csv":
-                df[["debut", "finalGame"]] = df[["debut", "finalGame"]].apply(pd.to_datetime)
+                df["debut"] = pd.to_datetime(df["debut"])
+                df["finalGame"] = pd.to_datetime(df["finalGame"])
             if filename == "HomeGames.csv":
-                df[["spanfirst", "spanlast"]] = df[["spanfirst", "spanlast"]].apply(pd.to_datetime)
+                df["spanfirst"] = pd.to_datetime(df["spanfirst"])
+                df["spanlast"] = pd.to_datetime(df["spanlast"])
             if filename == "Batting.csv":
                 cols_to_drop = [col for col in ["G_batting", "G_old"] if col in df.columns]
                 if cols_to_drop:
