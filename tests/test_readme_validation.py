@@ -27,12 +27,27 @@ def parse_readme_table(table_name):
     # Extract text from table header to next table or end
     start_pos = match.end()
 
-    # Find next table section or end of file
+    # Find next table section, section divider, or end of file
+    # Look for: next TABLE header, long dash line (section divider), or numbered section
     next_table_pattern = r"^[A-Z][A-Z\s]+ TABLE\s*$"
-    next_match = re.search(next_table_pattern, content[start_pos:], re.MULTILINE)
+    section_divider_pattern = r"^-{20,}\s*$"  # line of 20+ dashes
+    numbered_section_pattern = r"^\d+\.\d+\s"  # e.g., "2.1 Notes"
 
-    if next_match:
-        end_pos = start_pos + next_match.start()
+    next_table_match = re.search(next_table_pattern, content[start_pos:], re.MULTILINE)
+    divider_match = re.search(section_divider_pattern, content[start_pos:], re.MULTILINE)
+    numbered_match = re.search(numbered_section_pattern, content[start_pos:], re.MULTILINE)
+
+    # Find the earliest boundary
+    end_positions = []
+    if next_table_match:
+        end_positions.append(next_table_match.start())
+    if divider_match:
+        end_positions.append(divider_match.start())
+    if numbered_match:
+        end_positions.append(numbered_match.start())
+
+    if end_positions:
+        end_pos = start_pos + min(end_positions)
         table_text = content[start_pos:end_pos]
     else:
         table_text = content[start_pos:]
