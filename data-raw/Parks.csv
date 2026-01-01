@@ -1,67 +1,63 @@
 ID,parkalias,parkkey,parkname,city,state,country
-256,,ALB01,Riverside Park,Albany,NY,US
-257,,ALT01,Columbia Park,Altoona,PA,US
+256,Greenbush Grounds,ALB01,Riverside Park,Rensselaer,NY,US
+257,Fourth Avenue Grounds,ALT01,Columbia Park,Altoona,PA,US
 258,Edison Field; Anaheim Stadium,ANA01,Angel Stadium of Anaheim,Anaheim,CA,US
 259,,ARL01,Arlington Stadium,Arlington,TX,US
 260,The Ballpark in Arlington; Ameriquest Field in Arlington; Rangers Ballpark in Arlington,ARL02,Globe Life Park in Arlington,Arlington,TX,US
-515,,ARL03,Globe Life Field,Arlington,TX,US
-261,,ATL01,Atlanta-Fulton County Stadium,Atlanta,GA,US
-262,,ATL02,Turner Field,Atlanta,GA,US
-263,,ATL03,Suntrust Park,Atlanta,GA,US
-264,,BAL01,Madison Avenue Grounds,Baltimore,MD,US
+261,Fulton County Stadium; Atlanta Stadium,ATL01,Atlanta-Fulton County Stadium,Atlanta,GA,US
+262,Centennial Olympic Stadium,ATL02,Turner Field,Atlanta,GA,US
+263,SunTrust Park,ATL03,Truist Park,Atlanta,GA,US
+264,Monumental Park,BAL01,Madison Avenue Grounds,Baltimore,MD,US
 265,,BAL02,Newington Park,Baltimore,MD,US
-266,,BAL03,Oriole Park I,Baltimore,MD,US
-267,,BAL04,Belair Lot,Baltimore,MD,US
-268,,BAL05,Monumental Park,Baltimore,MD,US
+266,Huntingdon Avenue Park; American Association Park,BAL03,Oriole Park I,Baltimore,MD,US
+267,Union Park; Union Association Grounds,BAL04,Belair Lot,Baltimore,MD,US
 269,,BAL06,Oriole Park II,Baltimore,MD,US
-270,,BAL07,Oriole Park III,Baltimore,MD,US
+270,Union Park,BAL07,Oriole Park III,Baltimore,MD,US
 271,American League Park,BAL09,Oriole Park IV,Baltimore,MD,US
 272,Oriole Park V,BAL10,Terrapin Park,Baltimore,MD,US
-273,,BAL11,Memorial Stadium,Baltimore,MD,US
-274,,BAL12,Oriole Park at Camden Yards,Baltimore,MD,US
-517,,BIR01,Rickwood Field,Birmingham,AL,USA
-275,Walpole Street Grounds,BOS01,South End Grounds I,Boston,MA,US
-276,Union Park,BOS02,Dartmouth Grounds,Boston,MA,US
-277,,BOS03,South End Grounds II,Boston,MA,US
+273,Baltimore Memorial Stadium,BAL11,Memorial Stadium,Baltimore,MD,US
+274,Camden Yards,BAL12,Oriole Park at Camden Yards,Baltimore,MD,US
+275,Walpole Street Grounds; Union Baseball Grounds; Boston National League Base Ball Park; Boston Base Ball Grounds,BOS01,South End Grounds I,Boston,MA,US
+276,Union Park; Union Athletic Grounds; Union Grounds,BOS02,Dartmouth Grounds,Boston,MA,US
+277,Grand Pavilion,BOS03,South End Grounds II,Boston,MA,US
 278,,BOS04,Congress Street Grounds,Boston,MA,US
-279,,BOS05,South End Grounds III,Boston,MA,US
+279,Boston National League Base Ball Park,BOS05,South End Grounds III,Boston,MA,US
 280,,BOS06,Huntington Avenue Baseball Grounds,Boston,MA,US
 281,,BOS07,Fenway Park,Boston,MA,US
-282,Bee Hive,BOS08,Braves Field,Boston,MA,US
-283,,BUF01,Riverside Grounds,Buffalo,NY,US
+282,National League Park,BOS08,Braves Field,Boston,MA,US
+283,Riverside Park,BUF01,Riverside Grounds,Buffalo,NY,US
 284,,BUF02,Olympic Park I,Buffalo,NY,US
-285,,BUF03,Olympic Park II,Buffalo,NY,US
-286,Federal League Park,BUF04,International Fair Association Grounds,Buffalo,NY,US
-514,Pilot Field; Downtown Ballpark; North AmeriCare Park; Dunn Tire Park; Coca-Cola Field,BUF05,Sahlen Field,Buffalo,NY,US
-287,Pastime Park,CAN01,Mahaffey Park,Canton,OH,US
+285,Buffalo Baseball Park,BUF03,Olympic Park II,Buffalo,NY,US
+286,International Fair Association Grounds,BUF04,Federal League Park,Buffalo,NY,US
+287,League Park,CAN01,Mahaffey Park,Canton,OH,US
 288,,CAN02,Pastime Park,Canton,OH,US
-289,Union Base-ball Grounds,CHI01,Lake Front Park I,Chicago,IL,US
+289,Union Base-Ball Grounds; White-Stocking Park,CHI01,Lake Front Park I,Chicago,IL,US
 290,,CHI02,23rd Street Park,Chicago,IL,US
-291,,CHI03,Lake Front Park II,Chicago,IL,US
-292,Cricket Club Grounds; Union Grounds,CHI05,South Side Park I,Chicago,IL,US
+291,Lake-Shore Park; Lake Front Park; Lake Park,CHI03,Lake Front Park II,Chicago,IL,US
+292,Cricket Club Grounds; Union Base Ball Park; 39th Street Grounds,CHI05,South Side Park I,Chicago,IL,US
 293,,CHI06,West Side Park,Chicago,IL,US
-294,,CHI07,South Side Park II,Chicago,IL,US
-295,,CHI08,West Side Grounds,Chicago,IL,US
-296,,CHI09,South Side Park III,Chicago,IL,US
+294,White Stocking Park; Brotherhood Park,CHI07,South Side Park II,Chicago,IL,US
+295,West Side Park; Garden City Athletic Club,CHI08,West Side Grounds,Chicago,IL,US
+296,Schorling Park; Schorling's Park II; Cole's Park; American Giants Park; White Sox Park,CHI09,South Side Park III,Chicago,IL,US
 297,White Sox Park,CHI10,Comiskey Park I,Chicago,IL,US
 298,Weeghman Park; Cubs Park,CHI11,Wrigley Field,Chicago,IL,US
-299,U.S. Cellular Field;White Sox Park; Comiskey Park II,CHI12,Guaranteed Rate Field,Chicago,IL,US
-300,Union Cricket Club Grounds,CIN01,Lincoln Park Grounds,Cincinnati,OH,US
-301,,CIN02,Avenue Grounds,Cincinnati,OH,US
-302,,CIN03,Bank Street Grounds,Cincinnati,OH,US
-303,,CIN04,League Park I,Cincinnati,OH,US
+299,U.S. Cellular Field; White Sox Park; Comiskey Park II; Guaranteed Rate Field,CHI12,Rate Field,Chicago,IL,US
+300,Union Grounds; Union Cricket Club Grounds,CIN01,Lincoln Park Grounds,Cincinnati,OH,US
+301,Brighton Park; Cincinnati Baseball Park,CIN02,Avenue Grounds,Cincinnati,OH,US
+302,Bank-Street Grounds; Union Athletic Park,CIN03,Bank Street Grounds,Cincinnati,OH,US
+303,Cincinnati Base Ball Grounds; Western Avenue Grounds; American Park,CIN04,League Park I,Cincinnati,OH,US
 304,,CIN05,League Park II,Cincinnati,OH,US
 305,League Park III,CIN06,Palace of the Fans,Cincinnati,OH,US
 306,Redland Field,CIN07,Crosley Field,Cincinnati,OH,US
 307,Riverfront Stadium,CIN08,Cinergy Field,Cincinnati,OH,US
 308,,CIN09,Great American Ballpark,Cincinnati,OH,US
 309,,CLE01,National Association Grounds,Cleveland,OH,US
-310,Kennard Street Park,CLE02,League Park I,Cleveland,OH,US
-311,American Association Park,CLE03,League Park II,Cleveland,OH,US
+310,National League Park I; Kennard Street Baseball Grounds; Kennard Street Park,CLE02,League Park I,Cleveland,OH,US
+311,National League Park II; American Association Park; Association Park; Association Park,CLE03,League Park II,Cleveland,OH,US
 312,Players League Park,CLE04,Brotherhood Park,Cleveland,OH,US
 313,National League Park III,CLE05,League Park III,Cleveland,OH,US
 314,Dunn Field,CLE06,League Park IV,Cleveland,OH,US
-315,Municipal Stadium,CLE07,Cleveland Stadium,Cleveland,OH,US
+315,Municipal Stadium; Lakefront Stadium; Cleveland Municipal Stadium,CLE07,Cleveland Stadium,Cleveland,OH,US
 316,Jacobs Field,CLE08,Progressive Field,Cleveland,OH,US
 317,,CLE09,Cedar Avenue Driving Park,Cleveland,OH,US
 318,,CLL01,Euclid Beach Park,Collinwood,OH,US
@@ -71,161 +67,157 @@ ID,parkalias,parkkey,parkname,city,state,country
 322,,COL04,Neil Park II,Columbus,OH,US
 323,,COV01,Star Baseball Park,Covington,KY,US
 324,,DAY01,Fairview Park,Dayton,OH,US
-325,,DEN01,Mile High Stadium,Denver,CO,US
+325,Bears Stadium,DEN01,Mile High Stadium,Denver,CO,US
 326,,DEN02,Coors Field,Denver,CO,US
 327,,DET01,Recreation Park,Detroit,MI,US
 328,,DET02,Bennett Park,Detroit,MI,US
 329,West End Park,DET03,Burns Park,Detroit,MI,US
 330,Navin Field; Briggs Stadium,DET04,Tiger Stadium,Detroit,MI,US
 331,,DET05,Comerica Park,Detroit,MI,US
-332,,DOV01,Fairview Park Fair Grounds,Dover,DE,US
-513,Dunedin Stadium at Grant Field; Knology Park; Florida Auto Exchange Stadium,DUN01,TD Ballpark,Dunedin,FL,US
-512,,DYE01,Field of Dreams,Dyersville,IA,US
-333,,ELM01,Maple Avenue Driving Park,Elmira,NY,US
-334,Hamilton Field,FOR01,Grand Duchess,Fort Wayne,IN,US
+332,Dover Grounds,DOV01,Fairview Park Fair Grounds,Dover,DE,US
+333,Elmira Grounds,ELM01,Maple Avenue Driving Park,Elmira,NY,US
+334,Grand Duchess; Hamilton Field,FOR01,Kekionga Ball Grounds,Fort Wayne,IN,US
 335,,FOR03,Jailhouse Flats,Fort Wayne,IN,US
 336,,FTB01,Fort Bragg Field,Fort Bragg,NC,US
-337,Beyerle's Park,GEA01,Geauga Lake Grounds,Geauga Lake,OH,US
+337,,GEA01,Geauga Lake Grounds,Bainbridge Township,OH,US
 338,,GLO01,Gloucester Point Grounds,Gloucester City,NJ,US
 339,,GLO02,Gloucester Fireworks Park,Gloucester City,NJ,US
 340,,GRA01,Ramona Park,Grand Rapids,MI,US
-341,,HAR01,Harrison Field,Harrison,NJ,US
-342,,HOB01,Elysian Field,Hoboken,NJ,US
+341,Federal Baseball Park,HAR01,Harrison Field,Harrison,NJ,US
+342,,HOB01,Elysian Fields,Hoboken,NJ,US
 343,,HON01,Aloha Stadium,Honolulu,HI,US
-344,,HOU01,Colt Stadium,Houston,TX,US
+344,Estadio Superior; Estadio Ángel Castro; Estadio de Béisbol Mecano; Millón de Tuercas,HOU01,Colt Stadium,Houston,TX,US
 345,,HOU02,Astrodome,Houston,TX,US
-346,Enron Field; Astros Field,HOU03,Minute Maid Park,Houston,TX,US
+346,The Ballpark at Union Station; Enron Field; Astros Field; Minute Maid Park,HOU03,Daikin Park,Houston,TX,US
 347,,HRT01,Hartford Ball Club Grounds,Hartford,CT,US
 348,,HRT02,Hartford Trotting Park,Hartford,CT,US
-349,,IND01,South Street Park,Indianapolis,IN,US
-350,,IND02,Seventh Street Park I,Indianapolis,IN,US
-351,,IND03,Bruce Grounds,Indianapolis,IN,US
-352,,IND04,Seventh Street Park II,Indianapolis,IN,US
-353,,IND05,Seventh Street Park III,Indianapolis,IN,US
-354,,IND06,Indianapolis Park,Indianapolis,IN,US
+349,South Street Grounds; National Park,IND01,South Street Park,Indianapolis,IN,US
+350,Tinker Park; Athletic Park,IND02,Seventh Street Park I,Indianapolis,IN,US
+351,Bruce Park; Bruce's Park,IND03,Bruce Grounds,Indianapolis,IN,US
+352,Tinker Park; Athletic Park,IND04,Seventh Street Park II,Indianapolis,IN,US
+353,Tinker Park; Athletic Park,IND05,Seventh Street Park III,Indianapolis,IN,US
+354,Athletic Park II; League Park,IND06,Indianapolis Park,Indianapolis,IN,US
 355,Washington Park,IND07,Federal League Park,Indianapolis,IN,US
-356,,IRO01,Windsor Beach,Irondequoit,NY,US
-357,,JER01,Oakdale Park,Jersey City,NJ,US
-358,,JER02,Roosevelt Stadium,Jersey City,NJ,US
+356,Windsor Beach Grounds,IRO01,Windsor Beach,Irondequoit,NY,US
+357,Oakland Athletic Association Field,JER01,Oakdale Park,Jersey City,NJ,US
+358,Jersey City Roosevelt Stadium,JER02,Roosevelt Stadium,Jersey City,NJ,US
 359,,KAN01,Athletic Park,Kansas City,MO,US
-360,,KAN02,Association Park,Kansas City,MO,US
+360,Association Park I; League Park,KAN02,Association Park,Kansas City,MO,US
 361,,KAN03,Exposition Park,Kansas City,MO,US
-362,,KAN04,Gordon and Koppel Field,Kansas City,MO,US
-363,,KAN05,Municipal Stadium,Kansas City,MO,US
+362,Gordon and Koppel Stadium; Gordon-Koppel Field; Gordon & Koppel Field; Gordon & Koppel Stadium,KAN04,Gordon and Koppel Field,Kansas City,MO,US
+363,Muehlebach Field; Ruppert Stadium; Blues Stadium,KAN05,Municipal Stadium,Kansas City,MO,US
 364,Royals Stadium,KAN06,Kauffman Stadium,Kansas City,MO,US
 365,Walte's Pasture,KEO01,Perry Park,Keokuk,IA,US
 366,,LAS01,Cashman Field,Las Vegas,NV,US
-367,,LBV01,The Ballpark at Disney's Wide World,Lake Buena Vista,FL,US
-368,,LON01,London Stadium,London,ENG,UK
-369,,LOS01,Los Angeles Memorial Coliseum,Los Angeles,CA,US
+367,The Ballpark; Cracker Jack Stadium; The Ballpark at Disney's Wide World of Sports; Champion Stadium,LBV01,The Stadium at the ESPN Wide World of Sports,Lake Buena Vista,FL,US
+368,Olympic Stadium; Stadium at Queen Elizabeth Olympic Park,LON01,London Stadium,London,ENG,UK
+369,Los Angeles Coliseum; L.A. Coliseum; Olympic Stadium,LOS01,Los Angeles Memorial Coliseum,Los Angeles,CA,US
 370,,LOS02,Wrigley Field,Los Angeles,CA,US
 371,Chavez Ravine,LOS03,Dodger Stadium,Los Angeles,CA,US
-372,,LOU01,Louisville Baseball Park,Louisville,KY,US
+372,Louisville Baseball Grounds,LOU01,Louisville Baseball Park,Louisville,KY,US
 373,,LOU02,Eclipse Park I,Louisville,KY,US
 374,,LOU03,Eclipse Park II,Louisville,KY,US
 375,,LOU04,Eclipse Park III,Louisville,KY,US
 376,,LUD01,Ludlow Baseball Park,Ludlow,KY,US
-377,,MAS01,Long Island Grounds,Maspeth,NY,US
-511,Estadio Alfredo Harp Helú,MEX02,Alfredo Harp Helú Stadium,Mexico City,CDMX,MX
-378,JoeRobbie; ProPlayer; Dolphin; LandShark,MIA01,Sun Life Stadium,Miami,FL,US
-379,,MIA02,Marlins Park,Miami,FL,US
-380,,MID01,Mansfield Club Grounds,Middletown,CT,US
-381,,MIL01,Milwaukee Base-Ball Grounds,Milwaukee,WI,US
+377,Maspeth Ball Grounds; Long Island Recreation Grounds,MAS01,Long Island Grounds,Maspeth,NY,US
+378,Joe Robbie Stadium; Pro Player Park; Pro Player Stadium; Dolphins Stadium; Dolphin Stadium; Land Shark Stadium; Sun Life Stadium,MIA01,Hard Rock Stadium,Miami,FL,US
+379,Marlins Park,MIA02,loanDepot park,Miami,FL,US
+380,Mansfield Park; Fort Hill Grounds,MID01,Mansfield Club Grounds,Middletown,CT,US
+381,Milwaukee Base-Ball Grounds,MIL01,Eclipse Park,Milwaukee,WI,US
 382,,MIL02,Wright Street Grounds,Milwaukee,WI,US
-383,,MIL03,Athletic Park,Milwaukee,WI,US
+383,Borchert Field; Borchert Park,MIL03,Athletic Park,Milwaukee,WI,US
 384,,MIL04,Lloyd Street Grounds,Milwaukee,WI,US
-385,,MIL05,County Stadium,Milwaukee,WI,US
-386,,MIL06,Miller Park,Milwaukee,WI,US
+385,Milwaukee County Stadium; Milwaukee County Municipal Stadium,MIL05,County Stadium,Milwaukee,WI,US
+386,Miller Park,MIL06,American Family Field,Milwaukee,WI,US
 387,,MIN01,Athletic Park,Minneapolis,MN,US
-388,,MIN02,Metropolitan Stadium,Bloomington,MN,US
-389,,MIN03,Hubert H. Humphrey Metrodome,Minneapolis,MN,US
+388,Met Stadium,MIN02,Metropolitan Stadium,Bloomington,MN,US
+389,Metrodome,MIN03,Hubert H. Humphrey Metrodome,Minneapolis,MN,US
 390,,MIN04,Target Field,Minneapolis,MN,US
-391,,MNT01,Estadio Monterrey,Monterrey,Nuevo Leon,MX
-392,Jarry Park,MON01,Parc Jarry,Montreal,QC,CA
+391,Estadio de Béisbol Monterrey; Estadio Mobil Super; Palacio Sultán,MNT01,Estadio Monterrey,Monterrey,Nuevo Leon,MX
+392,Jarry Park Stadium; Jarry Park,MON01,Stade Parc Jarry,Montreal,QC,CA
 393,Olympic Stadium,MON02,Stade Olympique,Montreal,QC,CA
-394,Brewster Park,NEW01,Howard Avenue Grounds,New Haven,CT,US
-395,,NEW02,Hamilton Park,New Haven,CT,US
-396,Beyerle's Park,NEW03,Geauga Lake Grounds,Geauga Lake,OH,US
-397,,NWK01,Wiedenmeyer's Park,Newark,NJ,US
+394,Brewster Park; Hamilton Park,NEW01,Howard Avenue Grounds,New Haven,CT,US
+395,Brewster Park; Howard Avenue Grounds,NEW02,Hamilton Park,New Haven,CT,US
+396,,NEW03,Beyerle's Park,Newburgh Township,OH,US
+397,Wiedenmeyer's Park,NWK01,Wiedenmayer's Park,Newark,NJ,US
 398,,NYC01,Union Grounds,Brooklyn,NY,US
-399,,NYC02,Capitoline Grounds,Brooklyn,NY,US
-400,,NYC03,Polo Grounds I (Southeast Diamond),New York,NY,US
-401,,NYC04,Polo Grounds II (Southwest Diamond),New York,NY,US
+399,Capitoline Skating Lake and Base Ball Ground,NYC02,Capitoline Grounds,Brooklyn,NY,US
+400,Polo Field East; the polo grounds,NYC03,Polo Grounds I (Southeast Diamond),New York,NY,US
+401,Polo Field West; Metropolitan Field,NYC04,Polo Grounds II (Southwest Diamond),New York,NY,US
 402,,NYC05,Washington Park I,Brooklyn,NY,US
 403,,NYC06,Metropolitan Park,New York,NY,US
-404,Ridgewood Park I,NYC07,Grauer's Ridgewood Park,Queens,NY,US
+404,Grauer's Ridgewood Park; Grauer's Woods; Ridgewood Grounds,NYC07,Ridgewood Park I,Queens,NY,US
 405,,NYC08,Washington Park II,Brooklyn,NY,US
-406,,NYC09,Polo Grounds III,New York,NY,US
-407,,NYC10,Polo Grounds IV,New York,NY,US
+406,New Polo Grounds; Manhattan Field,NYC09,Polo Grounds III,New York,NY,US
+407,New Polo Grounds; Brotherhood Park,NYC10,Polo Grounds IV,New York,NY,US
 408,,NYC11,Eastern Park,Brooklyn,NY,US
 409,,NYC12,Washington Park III,Brooklyn,NY,US
-410,,NYC13,Hilltop Park,New York,NY,US
-411,,NYC14,Polo Grounds V,New York,NY,US
+410,American League Park,NYC13,Hilltop Park,New York,NY,US
+411,Brush Stadium,NYC14,Polo Grounds V,New York,NY,US
 412,,NYC15,Ebbets Field,Brooklyn,NY,US
 413,,NYC16,Yankee Stadium I,New York,NY,US
-414,William A. Shea Stadium,NYC17,Shea Stadium,New York,NY,US
-415,Ridgewood Park II,NYC18,Wallace's Ridgewood Park,Queens,NY,US
+414,Flushing Meadow Park Municipal Stadium; William A. Shea Municipal Stadium,NYC17,Shea Stadium,New York,NY,US
+415,Wallace's Ridgewood Park; Wallace Grounds,NYC18,Ridgewood Park II,Queens,NY,US
 416,,NYC19,Washington Park IV,Brooklyn,NY,US
 417,,NYC20,Citi Field,New York,NY,US
 418,,NYC21,Yankee Stadium II,New York,NY,US
-419,Network Associates Coliseum,OAK01,Oakland-Alameda County Coliseum,Oakland,CA,US
-420,,OMA01,TD Ameritrade Park,Omaha,NE,US
+419,Oakland Coliseum; Network Associates Coliseum; McAfee Coliseum; Overstock.com Coliseum; O.co Coliseum; RingCentral Coliseum,OAK01,Oakland-Alameda County Coliseum,Oakland,CA,US
+420,TD Ameritrade Park Omaha,OMA01,Charles Schwab Field Omaha,Omaha,NE,US
 421,Pendleton Park,PEN01,East End Park,Cincinnati,OH,US
-422,Athletics Park,PHI01,Jefferson Street Grounds,Philadelphia,PA,US
-423,,PHI02,Centennial Park,Philadelphia,PA,US
+422,Athletics Park; Twenty-Fifth and Jefferson Streets; Olympic Ball Ground,PHI01,Jefferson Street Grounds,Philadelphia,PA,US
+423,Centennial Grounds,PHI02,Centennial Park,Philadelphia,PA,US
 424,,PHI03,Oakdale Park,Philadelphia,PA,US
 425,,PHI04,Recreation Park,Philadelphia,PA,US
 426,,PHI05,Keystone Park,Philadelphia,PA,US
-427,,PHI06,Huntingdon Grounds I,Philadelphia,PA,US
-428,,PHI07,Forepaugh Park,Philadelphia,PA,US
-429,,PHI08,University of Penn. Athletic Field,Philadelphia,PA,US
-430,,PHI09,Baker Bowl,Philadelphia,PA,US
-431,,PHI10,Columbia Park,Philadelphia,PA,US
+427,Philadelphia Baseball Grounds; National League Park,PHI06,Huntingdon Grounds I,Philadelphia,PA,US
+428,Brotherhood Park,PHI07,Forepaugh Park,Philadelphia,PA,US
+429,University of Penn. Athletic Field,PHI08,University of Pennsylvania Athletic Field,Philadelphia,PA,US
+430,Philadelphia Baseball Grounds; National League Park,PHI09,Baker Bowl,Philadelphia,PA,US
+431,Columbia Avenue Grounds,PHI10,Columbia Park,Philadelphia,PA,US
 432,Connie Mack Stadium,PHI11,Shibe Park,Philadelphia,PA,US
 433,,PHI12,Veterans Stadium,Philadelphia,PA,US
 434,,PHI13,Citizens Bank Park,Philadelphia,PA,US
-435,,PHI14,Huntingdon Grounds II,Philadelphia,PA,US
+435,Philadelphia Baseball Grounds; National League Park,PHI14,Huntingdon Grounds II,Philadelphia,PA,US
 436,Bank One Ballpark,PHO01,Chase Field,Phoenix,AZ,US
 437,,PIT01,Union Park,Pittsburgh,PA,US
-438,Lower Field,PIT02,Exposition Park I,Pittsburgh,PA,US
-439,Upper Field,PIT03,Exposition Park II,Pittsburgh,PA,US
-440,,PIT04,Recreation Park,Pittsburgh,PA,US
+438,,PIT02,Exposition Park I,Pittsburgh,PA,US
+439,,PIT03,Exposition Park II,Pittsburgh,PA,US
+440,Union Park; 3A Park; the Coliseum,PIT04,Recreation Park,Pittsburgh,PA,US
 441,,PIT05,Exposition Park III,Pittsburgh,PA,US
 442,,PIT06,Forbes Field,Pittsburgh,PA,US
 443,,PIT07,Three Rivers Stadium,Pittsburgh,PA,US
 444,,PIT08,PNC Park,Pittsburgh,PA,US
-445,,PRO01,Adelaide Avenue Grounds,Providence,RI,US
-446,,PRO02,Messer Street Grounds,Providence,RI,US
-447,,RCK01,Agricultural Society Fair Grounds,Rockford,IL,US
+445,Adelaide Park I,PRO01,Adelaide Avenue Grounds,Providence,RI,US
+446,Messer Park; Messer Field,PRO02,Messer Street Grounds,Providence,RI,US
+447,Fair Grounds Park,RCK01,Agricultural Society Fair Grounds,Rockford,IL,US
 448,,RIC01,Richmond Fair Grounds,Richmond,VA,US
 449,,RIC02,Allens Pasture,Richmond,VA,US
 450,,ROC01,Culver Field I,Rochester,NY,US
 451,,ROC02,Culver Field II,Rochester,NY,US
 452,,ROC03,Ontario Beach Grounds,Rochester,NY,US
-453,,SAI01,St. George Cricket Grounds,New York,NY,US
-454,San Diego/Jack Murphy Stadium,SAN01,Qualcomm Stadium,San Diego,CA,US
-455,,SAN02,PETCO Park,San Diego,CA,US
-456,,SEA01,Sick's Stadium,Seattle,WA,US
-457,,SEA02,Kingdome,Seattle,WA,US
-458,T-Mobile Park,SEA03,Safeco Field,Seattle,WA,US
-516,,SEO01,Gocheok Sky Dome,Seoul,Seoul,South Korea
+453,St. George Grounds,SAI01,St. George Cricket Grounds,New York,NY,US
+454,San Diego Stadium; Jack Murphy Stadium; SDCCU Stadium,SAN01,Qualcomm Stadium,San Diego,CA,US
+455,,SAN02,Petco Park,San Diego,CA,US
+456,Sick's Seattle Stadium; Sicks' Stadium,SEA01,Sick's Stadium,Seattle,WA,US
+457,King County Stadium,SEA02,Kingdome,Seattle,WA,US
+458,Safeco Field,SEA03,T-Mobile Park,Seattle,WA,US
 459,,SFO01,Seals Stadium,San Francisco,CA,US
-460,3Com Park,SFO02,Candlestick Park,San Francisco,CA,US
+460,Bay View Stadium; 3Com Park; 3Com Park at Candlestick Point,SFO02,Candlestick Park,San Francisco,CA,US
 461,Pacific Bell Park; SBC Park,SFO03,AT&T Park,San Francisco,CA,US
-462,,SJU01,Estadio Hiram Bithorn,San Juan,,PR
+462,Hiram Bithorn Stadium,SJU01,Estadio Hiram Bithorn,San Juan,,PR
 463,Springfield Track,SPR01,Hampden Park Race Track,Springfield,MA,US
-464,,STL01,Red Stockings Base Ball Park,St. Louis,MO,US
-465,,STL02,Grand Avenue Park,St. Louis,MO,US
-466,,STL03,Sportsman's Park I,St. Louis,MO,US
-467,,STL04,Union Grounds,St. Louis,MO,US
-468,,STL05,Robison Field,St. Louis,MO,US
+464,Red Stocking Base-Ball Park; Compton Avenue Park,STL01,Red Stocking Baseball Park,St. Louis,MO,US
+465,Sportsman's Park; Grand Avenue Park; Athletic Park,STL02,Grand Avenue Ball Grounds,St. Louis,MO,US
+466,Grand Avenue Ball Grounds; Grand Avenue Park; Athletic Park,STL03,Sportsman's Park I,St. Louis,MO,US
+467,Union Base Ball Park; Lucas Park,STL04,Union Grounds,St. Louis,MO,US
+468,New Sportsmans' Park; League Park; Cardinal Field,STL05,Robison Field,St. Louis,MO,US
 469,,STL06,Sportsman's Park II,St. Louis,MO,US
 470,Busch Stadium I,STL07,Sportsman's Park III,St. Louis,MO,US
 471,Federal League Park,STL08,Handlan's Park,St. Louis,MO,US
-472,,STL09,Busch Stadium II,St. Louis,MO,US
+472,Busch Memorial Stadium,STL09,Busch Stadium II,St. Louis,MO,US
 473,,STL10,Busch Stadium III,St. Louis,MO,US
-474,,STP01,Tropicana Field,St. Petersburg,FL,US
-475,,SYD01,Sydney Cricket Ground,Sydney,New South Wales,AU
+474,Florida Suncoast Dome; ThunderDome,STP01,Tropicana Field,St. Petersburg,FL,US
+475,SCG,SYD01,Sydney Cricket Ground,Sydney,New South Wales,AU
 476,Newell Park,SYR01,Star Park I,Syracuse,NY,US
 477,,SYR02,Star Park II,Syracuse,NY,US
 478,,SYR03,Iron Pier,Syracuse,NY,US
@@ -235,29 +227,117 @@ ID,parkalias,parkkey,parkname,city,state,country
 482,,TOL02,Tri-State Fair Grounds,Toledo,OH,US
 483,,TOL03,Speranza Park,Toledo,OH,US
 484,,TOL04,Armory Park,Toledo,OH,US
-485,,TOR01,Exhibition Stadium,Toronto,ON,CA
-486,Skydome,TOR02,Rogers Centre,Toronto,ON,CA
-487,,TRO01,Haymakers' Grounds,Troy,NY,US
+485,Canadian National Exhibition Stadium; CNE Stadium,TOR01,Exhibition Stadium,Toronto,ON,CA
+486,Ontario Stadium Project; SkyDome; Pan-Am Dome; Pan-Am Ceremonies Venue,TOR02,Rogers Centre,Toronto,ON,CA
+487,Vail's Lot,TRO01,Haymakers' Grounds,Troy,NY,US
 488,,TRO02,Putnam Grounds,Troy,NY,US
-489,,WAR01,Rocky Point Park,Warwick,RI,US
-490,,WAS01,Olympic Grounds,Washington,DC,US
+489,Rocky Point Amusement Park,WAR01,Rocky Point Park,Warwick,RI,US
+490,Olympic Grounds; Olympic's Grounds,WAS01,Olympic Grounds,Washington,DC,US
 491,,WAS02,National Grounds,Washington,DC,US
-492,,WAS03,Capitol Grounds,Washington,DC,US
-493,,WAS04,Athletic Park,Washington,DC,US
-494,,WAS05,Swampoodle Grounds,Washington,DC,US
-495,,WAS06,Boundary Field,Washington,DC,US
+492,Capitol Park I,WAS03,Capitol Grounds,Washington,DC,US
+493,Washington Athletic Park,WAS04,Athletic Park,Washington,DC,US
+494,Capitol Park II,WAS05,Swampoodle Grounds,Washington,DC,US
+495,American League Park II; National Park; Nationals' Park,WAS06,Boundary Field,Washington,DC,US
 496,,WAS07,American League Park I,Washington,DC,US
-497,,WAS08,American League Park II,Washington,DC,US
-498,,WAS09,Griffith Stadium,Washington,DC,US
-499,D.C. Stadium,WAS10,Robert F. Kennedy Stadium,Washington,DC,US
+498,National Park; American League Park,WAS09,Griffith Stadium,Washington,DC,US
+499,Robert F. Kennedy Memorial Stadium; District of Columbia Stadium,WAS10,RFK Stadium,Washington,DC,US
 500,,WAS11,Nationals Park,Washington,DC,US
 501,,WAT01,Troy Ball Club Grounds,Watervliet,NY,US
-502,,WAV01,Waverly Fairgrounds,Waverly,NJ,US
-503,,WEE01,Monitor Grounds,Weehawken,NJ,US
+502,Waverly Park ,WAV01,Waverly Fairgrounds,Waverly,NJ,US
+503,Monitor Park,WEE01,Monitor Grounds,Weehawken,NJ,US
 504,,WHE01,Island Grounds,Wheeling,WV,US
 505,,WIL01,Union Street Park,Wilmington,DE,US
-506,,WIL02,BB&T Ballpark at Bowman Field,Williamsport,PA,US
-507,,WNY01,West New York Field Club Grounds,West New York,NJ,US
-508,,WOR01,Agricultural County Fair Grounds I,Worcester,MA,US
-509,,WOR02,Agricultural County Fair Grounds II,Worcester,MA,US
+506,Memorial Field; Bowman Field; Historic Bowman Field; Muncy Bank Ballpark at Historic Bowman Field,WIL02,BB&T Ballpark at Bowman Field,Williamsport,PA,US
+507,Weehawken Cricket Grounds,WNY01,West New York Field Club Grounds,West New York,NJ,US
+508,Worcester Driving Park,WOR01,Agricultural County Fair Grounds I,Worcester,MA,US
+509,Worcester Driving Park,WOR02,Agricultural County Fair Grounds II,Worcester,MA,US
 510,,WOR03,Worcester Driving Park Grounds,Worcester,MA,US
+511,Estadio Alfredo Harp Helú,MEX02,Alfredo Harp Helú Stadium,Mexico City,CDMX,MX
+512,,DYE01,Field of Dreams,Dyersville,IA,US
+513,Dunedin Stadium at Grant Field; Knology Park; Florida Auto Exchange Stadium,DUN01,TD Ballpark,Dunedin,FL,US
+514,Pilot Field; Downtown Ballpark; North AmeriCare Park; Dunn Tire Park; Coca-Cola Field,BUF05,Sahlen Field,Buffalo,NY,US
+515,,ARL03,Globe Life Field,Arlington,TX,US
+516,,SEO01,Gocheok Sky Dome,Seoul,Seoul,South Korea
+517,,BIR01,Rickwood Field,Birmingham,AL,US
+518,Fort Street Grounds; Fort Road Grounds,SPA01,West Seventh Street Park,St. Paul,MN,US
+519,St. Mary's Field,AKR01,League Park II,Akron,OH,US
+520,,ALG01,Fair Grounds,Algona,IA,US
+521,,ATC01,Bacharach Park,Atlantic City,NJ,US
+522,,ATC02,Inlet Park,Atlantic City,NJ,US
+523,,ATC03,Inlet Park II,Atlantic City,NJ,US
+524,Spiller Park; Spiller Field,ATL04,Ponce De Leon Park,Atlanta,GA,US
+525,,BAL13,Bugle Field,Baltimore,MD,US
+526,,BAL14,Maryland Park,Baltimore,MD,US
+527,Sprague Field,BLO01,General Electric Field,Bloomfield,NJ,US
+528,New York Catholic Protectory,BNX01,Catholic Protectory Oval,Bronx,NY,US
+529,Razzberry Park; 3rd and Erie,CAM01,3rd & Erie,Camden,NJ,US
+530,,CHE01,Congoleum-Nairn Field,Chester,PA,US
+531,,CHE02,Felton Field,Chester,PA,US
+532,Schorling's Park I,CHI13,Auburn Park,Chicago,IL,US
+533,,CHI14,Columbia Park,Chicago,IL,US
+534,Chase Park,CHI15,Gunther Park,Chicago,IL,US
+535,,CHI16,Logan Square Park,Chicago,IL,US
+536,,CHI17,Normal Park,Chicago,IL,US
+537,Osterman's Red Sox park,CHI18,Red Sox Park,Chicago,IL,US
+538,37th and Butler St,CHI19,Union Park,Chicago,IL,US
+539,Cleveland Hardware Field,CLE10,Hardware Field,Cleveland,OH,US
+540,Luna Bowl,CLE12,Luna Park,Cleveland,OH,US
+541,Hooper Field; Slavia Hooper Field,CLE11,Tate Field,Newburgh Heights,OH,US
+542,,COL05,Panhandle Park,Columbus,OH,US
+543,West Side Park,DAY02,Westwood Field,Dayton,OH,US
+544,,DET06,Mack Park,Detroit,MI,US
+545,Freeport Speedway; Freeport Municipal Stadium,FRE01,Municipal Stadium,Freeport,NY,US
+546,,FRL01,Pluto Park,French Lick,IN,US
+547,Roesink Stadium,HAM01,Hamtramck Stadium,Hamtramck,MI,US
+548,City Island,HSB01,Island Park,Harrisburg,PA,US
+549,,HSB02,West End Grounds,Harrisburg,PA,US
+550,East Ohio Street Grounds; League Park,IND08,Northwestern Park,Indianapolis,IN,US
+551,Owen J. Bush Stadium; Bush Stadium; Victory Field I,IND09,Perry Stadium,Indianapolis,IN,US
+552,Washington Baseball Park; Washington Baseball Grounds; West Washington Street Park,IND10,Washington Park II,Indianapolis,IN,US
+553,J. P. Small Memorial Stadium; Barrs Field; Myrtle Avenue Ball Park; Red Cap Stadium,JAX01,Durkee Field,Jacksonville,FL,US
+554,Skeeters Park,JER03,West Side Park,Jersey City,NJ,US
+555,,KAN07,Association Park II,Kansas City,MO,US
+556,,KAN08,Riverside Park,Kansas City,KS,US
+557,,KAN09,Shelley Park,Kansas City,MO,US
+558,Colonels Field,LOU05,Parkway Field,Louisville,KY,US
+559,Crump's Park,LRO01,Crump Park,Little Rock,AR,US
+560,State Hospital Field,MDN01,State Hospital Grounds,Middletown,NY,US
+561,,MEA01,Athletic Park,Meadville,PA,US
+562,Martin Stadium; Martin Park,MEM01,Lewis Park,Memphis,TN,US
+563,Elm Wood Park; Red Elm Park,MEM02,Russwood Park,Memphis,TN,US
+564,,MNR01,Casino Park,Monroe,LA,US
+565,,MTG01,College Hill Park,Montgomery,AL,US
+566,Heinemann Park,NOL01,Pelican Stadium,New Orleans,LA,US
+567,Sulphur Spring Park; Athletic Park,NSH01,Sulphur Dell,Nashville,TN,US
+568,Tom Wilson Park,NSH01,Wilson Park,Nashville,TN,US
+569,Ruppert Stadium; Davids' stadium,NWK02,Davids Stadium,Newark,NJ,US
+570,Ollemar Field,NWK03,Ollemar Stadium,Irvington,NJ,US
+571,,NYC22,Brighton Oval,Brooklyn,NY,US
+572,,NYC23,Dexter Park,Queens,NY,US
+573,,NYC24,Dyckman Oval,New York,NY,US
+574,,NYC25,Lenox Oval,New York,NY,US
+575,,NYC26,Meyerrose Park,Queens,NY,US
+576,,NYC27,New York Oval,Bronx,NY,US
+577,,NYC28,Olympic Field,New York,NY,US
+578,,NYC29,Saratoga Park,Brooklyn,NY,US
+579,Saratoga Park,OKC01,Colcord Park,Oklahoma City,OK,US
+580,,PAT01,Hinchliffe Stadium,Paterson,NJ,US
+581,P.R.R. YMCA Athletic Field; PRR-YMCA Field; Penmar Park; Parkside Athletic Field; 44th and Parkside ballpark,PHI15,44th & Parkside,Philadelphia,PA,US
+582,,PHI16,Passon Field,Philadelphia,PA,US
+583,Bala Cynwyd Park; Pencoyd Park,PHI17,Pencoyd Field,Philadelphia,PA,US
+584,Central Amusement Park,PIT09,Central Park,Pittsburgh,PA,US
+585,,PIT10,Greenlee Field,Pittsburgh,PA,US
+586,Silver Stadium,ROC04,Red Wing Stadium,Rochester,NY,US
+587,Van Slyck Island,SCH01,Island Park,Schenectady,NY,US
+588,,SPA02,Downtown Park,St. Paul,MN,US
+589,,STL11,Brock's Park,St. Louis,MO,US
+590,Christian Brothers College High School; CBC High School,STL12,Christian Brothers College Diamond,St. Louis,MO,US
+591,Metropolitan Park,STL13,Giants Park II,St. Louis,MO,US
+592,Kuebler's Park; Giants Park I,STL14,Kuebler Park,St. Louis,MO,US
+593,South End Park; National Nite Baseball Park,STL15,South End Grounds,St. Louis,MO,US
+594,,STL16,Stars Park,St. Louis,MO,US
+595,Tigers' Field; Tigers Field,STL17,Tiger Field,St. Louis,MO,US
+596,,TOL05,Swayne Field,Toledo,OH,US
+597,,WBS01,Sprudel Park,West Baden Springs,IN,US
+598,,WIL03,Harlan Field,Wilmington,DE,US
+599,,YEA01,Hilldale Park,Yeadon,PA,US

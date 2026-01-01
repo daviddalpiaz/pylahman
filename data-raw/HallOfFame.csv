@@ -479,7 +479,7 @@ boyerke01,1998,Veterans,,,,N,Player,
 boyerke01,2003,Veterans - Players,81,61,11,N,Player,
 boyerke01,2005,Veterans - Players,80,60,15,N,Player,
 boyerke01,2007,Veterans - Players,84,62,9,N,Player,
-boyerke01,2009,Veterans - 1943 and Later,,,,Y,Player,Preliminary poll
+boyerke01,2009,Veterans - 1943 and Later,,,,N,Player,Preliminary poll
 boyerke01,2012,Veterans - Golden Era,16,12,,N,Player,<3 votes
 boyerke01,2015,Veterans - Golden Era,16,12,,N,Player,<3 votes
 boyerke01,2022,Veterans - Golden Age Era,16,12,,N,Player,<4 votes
@@ -683,7 +683,7 @@ camniho01,1945,BBWAA,247,186,1,N,Player,
 campabe01,1989,BBWAA,447,336,14,N,Player,
 campabe01,2005,Veterans - Players,,,,N,Player,Preliminary ballot (200 players)
 campabe01,2007,Veterans - Players,,,,N,Player,Preliminary ballot (200 players)
-campabe01,2009,Veterans - 1943 and Later,,,,Y,Player,Preliminary poll
+campabe01,2009,Veterans - 1943 and Later,,,,N,Player,Preliminary poll
 camparo01,1964,BBWAA,201,151,115,N,Player,
 camparo01,1964,Run Off,201,,138,N,Player,Player receiving most votes inducted
 camparo01,1966,BBWAA,302,227,197,N,Player,
@@ -892,7 +892,7 @@ colavro01,1975,BBWAA,362,272,1,N,Player,
 colavro01,2003,Veterans - Players,81,61,7,N,Player,
 colavro01,2005,Veterans - Players,80,60,4,N,Player,
 colavro01,2007,Veterans - Players,84,62,5,N,Player,
-colavro01,2009,Veterans - 1943 and Later,,,,Y,Player,Preliminary poll
+colavro01,2009,Veterans - 1943 and Later,,,,N,Player,Preliminary poll
 colboji01,1984,BBWAA,403,303,0,N,Player,
 colemvi01,2003,BBWAA,496,372,3,N,Player,
 collied01,1936,BBWAA,226,170,60,N,Player,
@@ -1128,7 +1128,7 @@ cuellmi01,1983,BBWAA,374,281,0,N,Player,
 cuellmi01,2003,Veterans - Players,,,,N,Player,Preliminary ballot (200 players)
 cuellmi01,2005,Veterans - Players,,,,N,Player,Preliminary ballot (200 players)
 cuellmi01,2007,Veterans - Players,,,,N,Player,Preliminary ballot (200 players)
-cuellmi01,2009,Veterans - 1943 and Later,,,,Y,Player,Preliminary poll
+cuellmi01,2009,Veterans - 1943 and Later,,,,N,Player,Preliminary poll
 culpra01,1979,BBWAA,432,324,0,N,Player,
 cummica01,1936,Veterans,78,59,0,N,Player,
 cummica01,1939,Old Timers,,,,Y,Pioneer/Executive,
@@ -1206,8 +1206,8 @@ daubeja01,1938,BBWAA,262,197,1,N,Player,
 daubeja01,1939,BBWAA,274,206,1,N,Player,
 daubeja01,1951,BBWAA,226,170,1,N,Player,
 daubeja01,1953,Veterans,,,,N,Player,
-daubeja01,1955,Veterans,,,,N,Player,
 daubeja01,1955,BBWAA,251,189,1,N,Player,
+daubeja01,1955,Veterans,,,,N,Player,
 daubeja01,1959,Veterans,,,,N,Player,
 daubeja01,1961,Veterans,,,,N,Player,
 daubeja01,1962,Veterans,,,,N,Player,Preliminary poll
@@ -1875,7 +1875,7 @@ garvest01,2004,BBWAA,506,380,123,N,Player,
 garvest01,2005,BBWAA,516,387,106,N,Player,
 garvest01,2006,BBWAA,520,390,135,N,Player,
 garvest01,2007,BBWAA,545,409,115,N,Player,
-garvest01,2009,Veterans - 1943 and Later,,,,Y,Player,Preliminary poll
+garvest01,2009,Veterans - 1943 and Later,,,,N,Player,Preliminary poll
 garvest01,2011,Veterans - Expansion Era,16,12,,N,Player,<8 votes
 garvest01,2014,Veterans - Expansion Era,16,12,,N,Player,<6 votes
 garvest01,2018,Veterans - Modern Baseball Era,16,12,,N,Player,<7 votes
@@ -2904,8 +2904,8 @@ kellejo01,1961,Veterans,,,,N,Player,Finalist
 kellejo01,1962,Veterans,,,,N,Player,Preliminary poll
 kellejo01,1963,Veterans,,,,N,Player,Group A - Holdover from 1962 ballot - two could be elected from Group A
 kellejo01,1971,Veterans,,,,Y,Player,
-kellge01,1964,Run Off,201,,8,N,Player,Player receiving most votes inducted
 kellge01,1964,BBWAA,201,151,33,N,Player,
+kellge01,1964,Run Off,201,,8,N,Player,Player receiving most votes inducted
 kellge01,1966,BBWAA,302,227,29,N,Player,
 kellge01,1967,BBWAA,292,219,40,N,Player,
 kellge01,1967,Run Off,306,,11,N,Player,Player receiving most votes inducted
@@ -3060,7 +3060,7 @@ kluszte01,1981,BBWAA,401,301,56,N,Player,
 kluszte01,2003,Veterans - Players,81,61,4,N,Player,
 kluszte01,2005,Veterans - Players,,,,N,Player,Preliminary ballot (200 players)
 kluszte01,2007,Veterans - Players,,,,N,Player,Preliminary ballot (200 players)
-kluszte01,2009,Veterans - 1943 and Later,,,,Y,Player,Preliminary poll
+kluszte01,2009,Veterans - 1943 and Later,,,,N,Player,Preliminary poll
 knabeot01,1939,BBWAA,274,206,1,N,Player,
 knabeot01,1946,Nominating Vote,202,,1,N,Player,Players in top 20 proceed to final ballot
 kneppbo01,1996,BBWAA,470,353,0,N,Player,
@@ -3293,7 +3293,7 @@ lolicmi01,1999,BBWAA,497,373,26,N,Player,
 lolicmi01,2003,Veterans - Players,81,61,13,N,Player,
 lolicmi01,2005,Veterans - Players,80,60,9,N,Player,
 lolicmi01,2007,Veterans - Players,84,62,8,N,Player,
-lolicmi01,2009,Veterans - 1943 and Later,,,,Y,Player,Preliminary poll
+lolicmi01,2009,Veterans - 1943 and Later,,,,N,Player,Preliminary poll
 lollash01,2003,Veterans - Players,,,,N,Player,Preliminary ballot (200 players)
 lollash01,2005,Veterans - Players,,,,N,Player,Preliminary ballot (200 players)
 lollash01,2007,Veterans - Players,,,,N,Player,Preliminary ballot (200 players)
@@ -3539,7 +3539,7 @@ marisro01,2000,Veterans,,,,N,Player,
 marisro01,2003,Veterans - Players,81,61,18,N,Player,
 marisro01,2005,Veterans - Players,80,60,19,N,Player,
 marisro01,2007,Veterans - Players,84,62,15,N,Player,
-marisro01,2009,Veterans - 1943 and Later,,,,Y,Player,Preliminary poll
+marisro01,2009,Veterans - 1943 and Later,,,,N,Player,Preliminary poll
 marisro01,2022,Veterans - Golden Age Era,16,12,,N,Player,<4 votes
 marquru01,1936,BBWAA,226,170,1,N,Player,
 marquru01,1937,BBWAA,201,151,13,N,Player,
@@ -3651,7 +3651,7 @@ mayje01,1979,BBWAA,432,324,0,N,Player,
 mayle01,1988,BBWAA,427,321,3,N,Player,
 mayle01,2005,Veterans - Players,,,,N,Player,Preliminary ballot (200 players)
 mayle01,2007,Veterans - Players,,,,N,Player,Preliminary ballot (200 players)
-mayle01,2009,Veterans - 1943 and Later,,,,Y,Player,Preliminary poll
+mayle01,2009,Veterans - 1943 and Later,,,,N,Player,Preliminary poll
 mayru01,1989,BBWAA,447,336,0,N,Player,
 maysca01,1958,BBWAA,266,200,6,N,Player,
 maysca01,1970,Veterans,,,,N,Player,
@@ -3960,7 +3960,7 @@ minosmi01,2003,Veterans - Players,81,61,16,N,Player,
 minosmi01,2005,Veterans - Players,80,60,12,N,Player,
 minosmi01,2006,Negro League,,,,N,Player,
 minosmi01,2007,Veterans - Players,84,62,12,N,Player,
-minosmi01,2009,Veterans - 1943 and Later,,,,Y,Player,Preliminary poll
+minosmi01,2009,Veterans - 1943 and Later,,,,N,Player,Preliminary poll
 minosmi01,2012,Veterans - Golden Era,16,12,9,N,Player,
 minosmi01,2015,Veterans - Golden Era,16,12,8,N,Player,
 minosmi01,2022,Veterans - Golden Age Era,16,12,14,Y,Player,
@@ -4080,7 +4080,7 @@ munsoth01,1995,BBWAA,460,345,30,N,Player,
 munsoth01,2003,Veterans - Players,81,61,4,N,Player,
 munsoth01,2005,Veterans - Players,80,60,2,N,Player,
 munsoth01,2007,Veterans - Players,84,62,6,N,Player,
-munsoth01,2009,Veterans - 1943 and Later,,,,Y,Player,Preliminary poll
+munsoth01,2009,Veterans - 1943 and Later,,,,N,Player,Preliminary poll
 munsoth01,2020,Veterans - Modern Baseball Era,16,12,,N,Player,<3 votes
 murcebo01,1989,BBWAA,447,336,3,N,Player,
 murcebo01,2005,Veterans - Players,,,,N,Player,Preliminary ballot (200 players)
@@ -4658,8 +4658,8 @@ reddidi01,1982,Veterans,,,,N,Player,
 reddidi01,1995,Veterans,,,,N,Player,
 reddidi01,2006,Negro League,,,,N,Player,
 reddidi01,2022,Veterans - Early Baseball Era,16,12,,N,Player,<4 votes
-reesepe01,1964,Run Off,201,,47,N,Player,Player receiving most votes inducted
 reesepe01,1964,BBWAA,201,151,73,N,Player,
+reesepe01,1964,Run Off,201,,47,N,Player,Player receiving most votes inducted
 reesepe01,1966,BBWAA,302,227,95,N,Player,
 reesepe01,1967,BBWAA,292,219,89,N,Player,
 reesepe01,1967,Run Off,306,,16,N,Player,Player receiving most votes inducted

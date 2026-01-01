@@ -1,7 +1,7 @@
 The SABR Lahman Baseball Database 1871-2024
-Release Date: July 1, 2025
+Release Date: Oct 30, 2025
 
---------------------------------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 README CONTENTS
 0.1 Copyright Notice
@@ -15,8 +15,9 @@ README CONTENTS
 1.5 Revision History
 
 2.0 Data Tables
+2.1 Notes on Negro League data
 
---------------------------------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 0.1 Copyright Notice & Limited Use License
 
@@ -27,25 +28,25 @@ Unported License. For details see: http://creativecommons.org/licenses/by-sa/3.0
 
 For licensing information or further information, contact Scott Bush at: sbush@sabr.org
 
---------------------------------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 0.2 Contact Information
 
 Web site: https://sabr.org/lahman-database/
-E-Mail:   jpomrenke@sabr.org
+E-Mail:   lahmandb@sabr.org
 
---------------------------------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 1.0  Release Contents
 
 This release of the database can be downloaded in several formats. The contents of each version are listed below.
 
 MS Access Versions:
       lahman_1871-2024.mdb 
-      readme2024.txt 
+      readme2024u.txt 
 
 MSSQL Versions:
       lahman2024.bak
-      readme2024.txt 
+      readme2024u.txt 
    
 Comma Delimited Version:
       readme.txt     
@@ -70,7 +71,7 @@ Comma Delimited Version:
       People.csv
       Pitching.csv
       PitchingPost.csv
-      readme2024.txt
+      readme2024u.txt
       Salaries.csv
       Schools.csv
       SeriesPost.csv
@@ -78,15 +79,32 @@ Comma Delimited Version:
       TeamsFranchises.csv
       TeamsHalf.csv
 
---------------------------------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 1.1 Introduction
 
 This database contains pitching, hitting, and fielding statistics for Major League Baseball from 1871 through 2024.  It includes data from
-the two current leagues (American and National), the four other white "major" leagues (American Association, Union Association, Players League, and
-Federal League), and the National Association of 1871-1875. 
+the two current leagues (American and National) and the following other major leagues, as recognized by SABR:
+
+National Association (1871-1875)
+American Association (1882-1891)
+Union Association (1884)
+Players League (1890)
+Federal League (1914-1915)
+Negro National League I (1920–1931)
+Eastern Colored League (1923–1928)
+American Negro League (1929)
+East-West League (1932)
+Negro Southern League (1932)
+Negro National League II (1933–1948)
+Negro American League (1937–1950)
+
+In addition, Negro League barnstorming/independent teams from 1891-1936 are included in the data under pseudo-leagues labeled 
+"Eastern Independent Clubs," "Independent Clubs," and "Western Independent Clubs." While these clubs were not part of established
+leagues, they have been selected as major league caliber in light of the economic and social conditions that forced them to
+play outside a typical league structure.
 
 This database was created by Sean Lahman, who pioneered the effort to make baseball statistics freely available to the general public. What
-started as a one man effort in 1994 has grown tremendously, and now a team of researchers have collected their efforts to make this the
+started as a one-man effort in 1994 has grown tremendously, and now a team of researchers has collected their efforts to make this the
 largest and most accurate source for baseball statistics available anywhere. (See Acknowledgements below for a list of the key
 contributors to this project.)
 
@@ -95,54 +113,105 @@ Palmer (among others).  All baseball fans owe a debt of gratitude to the people 
 of data that we have today.  Our thanks also to the many members of the Society for American Baseball Research who have helped us over
 the years.  We strongly urge you to support and join their efforts. Please visit their website (www.sabr.org).
 
-If you have any problems or find any errors, please let us know.  Any feedback is appreciated.
+If you have any problems or find any errors, please let us know.  Any feedback is appreciated at lahmandb@sabr.org.
 
---------------------------------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 1.2 What's New 
 
-Player stats have been updated through the latest season. Supplemental tables except CollegePlaying, Salaries, and Schools have been updated.  
+Seamheads data for the Negro League is now in the database. The data here constitutes major league data as per SABR's recommendations from 
+Feb 11, 2021 (https://sabr.org/latest/sabr-negro-leagues-task-force-issues-recommendations-on-major-league-status/) and Jun 3, 2024
+(https://sabr.org/latest/sabr-special-committee-acknowledges-1949-50-negro-american-league-independent-black-baseball-teams-as-major-league-caliber/).
 
-Researched retirements from 2020-2025 to better identify players that should have their last game updated.
+The recovery of this data is an ongoing process, and changes can and will occur when new sources are located and compiled. The definitions of
+the teams and games that qualify as major leagues may also differ across datasets (SABR, Seamheads, MLB, Retrosheet, Baseball Reference, etc.)
+This database reflects SABR's current recommendations.
 
-Updated biographical information for people where it differed in Retrosheet and Chadwick.
+Playing level of data
+All Negro League data within the Lahman database reflects major league caliber league and independent team competition. It does not include exhibitions
+of any level (majors, minors, or semi-pro), nor does it include games within Cuban leagues. In all cases below, read any reference to data, stats, games,
+teams, leagues, etc. within this context.
 
-Corrected 2023 team data for DP and SHO, which were mistakenly presented as sums of the player totals and not team level stats.
+NULLs
+Missing data within the Negro Leagues dataset will be represented by NULL values, rather than zeros, in the same way that existing National League
+seasons in the 1800s may have NULL values for caught stealing. In both cases, the NULLs represent that the value is unknown. First names can also have
+NULLs.
 
-Corrected team data where the stadium was incorrect for some clubs between 2019-2023.
+The 1939 Toledo Crawfords played in two leagues
+Given the barnstorming nature of major league teams of Black baseball and the Negro Leagues, it is feasible that a single team may play within
+more than a single league that qualifies as major league (or within a major league and barnstorming/independent games that qualify as major league) in a single 
+year. 
 
-Corrected park data for ARL03, which was mistakenly named Field of Dreams and not Globe Life Field.
+Currently, there are no teams that played both major league games and barnstorming/independent games that qualify as major league in a single year. 
 
-Removed 2023 data from FieldingOF, which was only intended to go until 1955.
+There is one team that played in more than one major league in a single year, the 1939 Toledo Crawfords, who played in the Negro American League and the second
+Negro National League. Within this database, this is represented as two separate team IDs for 1939 (TC and TC2) that belong to one franchise (PC). This is a
+unique situation within the database, and we believe it is the best way to present this data. However, it is atypical and therefore specially noted here.
 
-Standardized all state/province data for US, Canada, and Australia to use the postal codes only.
+On colleges
+Seamheads has compiled a good list of colleges for people within the dataset. When reviewing this data, I discovered that many of the schools still existed
+under different names. Many were already in the Lahman school list. I briefly considered keying the old data to the current schools, but I declined to do
+that for the sake of keeping the history intact. I also did not want to change the table schema or have the name field of the college be a list of names.
+I decided to take these old names of the schools and put them as new rows in the Schools table, but use the key for the current school with a year suffix
+that corresponds to the first year that name was used. 
 
-Filled in state data with known state/province/department/county/etc. data for all places of birth and death.
+As a practical example, Howard Millon attended Illinois State Normal University. Today, this school is known as Illinois State University. It was called 
+Illinois State Normal University from 1957-1964. In order to keep the identity of the school as it was when Millon attended, there will be a new school
+record for Illinois State Normal University with a schoolID of illinoisst1857, which will tie it to Illinois State University, which has a schoolID of illinoisst. 
+I have also taken a school like New Orleans University, which exists today as Dillard University, and given it the key of dillard1869. 
 
-Corrected data where City, State, Country were misplaced in the fields.
+The Negro League college data lacks years, so the years in here will be NULL.
 
-Foreign placenames will now have diacritics for cities and states.
+Team and Player level data
+Due to the incomplete nature of Negro League data, there may be instances where game-level data is available but player-level data is not available. This can result
+in player-level data not adding up to team level data.
 
-Standardized states for foreign countries (ex: Baden-Württemberg will always be Baden-Württemberg, not BR, Baden Württemberg, Baden-Wurttemberg, 
-Baden, or Württemberg, etc.)
+Team record against all teams versus team record within league
+Teams within leagues also played games outside of league competition against independent major league caliber Negro League teams. Because of this most Seamheads
+team records will have wins, losses, and ties within the league and against all clubs. For the first iteration of Lahman, the records on the team table will reflect
+the league level w/l/t data. For independent teams that lacked a league, the same data will reflect their record against all teams.
 
-Added historical data for the following awards: 
-   All-MLB Team awards
-   Bob Feller Act of Valor Awards 
-   MLB Players Choice awards
-   Pitcher of the Month
-   Player of the Month
-   Player of the Week
-   Reliever of the Month
-   Rookie of the Month
-   This Year in Baseball (MLB.com / Esurance) awards (now defunct)
-   TSN Comeback Player of the Year
-   TSN Pitcher of the Year
-   TSN Reliever of the Year
-   TSN Rookie of the Year
-   TSN Rookie Pitcher of the Year
-   TSN Rookie Player of the Year
+Player data against all teams versus within league
+All player-level data is in the context of against all teams.
 
---------------------------------------------------------------------------------------------------------------------------------------------
+AllstarFull
+There are six new "Leagues" within the data: NOS (North All Stars) and SAS (South All Stars) from the North-South series, WES (West All Stars) and EAS (East All Stars)
+from the East-West series, and NNN (Negro National League II North All Stars) and NNS (Negro National League II South All Stars). Teams for the players will reflect the
+primary team they were on that season (in terms of games played). There are cases where the only major league games that were played in that season were the All Star
+Games, and in these cases I have looked back one season, then forward one season, then back two seasons, etc. until I located a team. There are two players in the
+data who only played on the All Star team during their known major league career. S. M. Humphries in 1937 (who played on the independent non-major league Atlanta
+Black Crackers) and Peppy Collins in 1939 (who has no other major league playing record). GameNum and gameID will be NULL, as we have the cumulative data for the year
+not individual games within this dataset. With this, the startingPos field can have multiple positions, in a format like 3;6, if the player started one game at 1B and
+another game at SS. The order of the data does not indicate the first or second game of a multiple-game record.
+
+Appearances
+GS will be NULL for many seasons. G_defense and g_of, both of which record distinct games on defense, not a simple sum of positional data. The dataset does not include
+this level of granularity to tell when a player appeared at multiple positions during the same game.
+
+FieldingOF
+FieldingOF is not used as all the data is at the LF/CF/RF level.
+
+Managers
+Some teams do not have a known manager and these teams will not have a record within the Manager table.
+
+ManagersHalf
+There were several seasons with First and Second half champions for many Negro Leagues between 1925-1948. The exact records and standings are not within the 
+dataset for each half. Therefore, the ManagersHalf table will not have any data for the Negro Leagues at this time.
+
+SeriesPost and other Post tables
+Round IDs are:
+ALC (NAL Championship Series)
+NWS (Negro League World Series)
+NNC (NNL I Championship Series)
+NLC (NNL II Championship Series)
+NLP (NNL II Playoff Series)
+NSC (NSL Championship Series)
+
+TeamsHalf
+There were several seasons with First and Second half champions for many Negro Leagues between 1925-1948. The exact records and standings are not within the 
+dataset for each half. However, the TeamsHalf table has been updated with the known First and Second half champions, leaving the record blank with a Rank of 1.
+Other teams outside the first place finish are not recorded in the table.
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 1.3 Acknowledgements
 
 Much of the raw data contained in this database comes from the work of Pete Palmer, the legendary statistician, who has had a hand in most 
@@ -153,20 +222,20 @@ account at: http://sabr.org/cmsfiles/PalmerDatabaseHistory.pdf
 Three people have been key contributors to the work that followed, first by taking the raw data and creating a relational database, and later 
 by extending the database to make it more accessible to researchers.
 
-Sean Lahman launched the Baseball Archive's website back before most people had heard of the world wide web.  Frustrated by the
+Sean Lahman launched the Baseball Archive's website back before most people had heard of the World Wide Web.  Frustrated by the
 lack of sports data available, he led the effort to build a baseball database that everyone could use. He created the first version
 of the database and began to make it available for free download from his website in 1995.  
 
 The work of Sean Forman to create and maintain an online encyclopedia at Baseball-Reference.com was a quantum leap for both fans and 
-researchers. The website launched in 2000, provIding a user-friendly interface to the Lahman Baseball Database.  Forman and Lahman launched
-the Baseball Databank in 2001, a group of researchers whose goal was to update and maintain the database as an open source collection available
+researchers. The website launched in 2000, providing a user-friendly interface to the Lahman Baseball Database.  Forman and Lahman launched
+the Baseball Databank in 2001, a group of researchers whose goal was to update and maintain the database as an open-source collection available
 to all.
   
-Ted Turocy has done the lion's share of the work to updating the main data tables since 2012, automating the work of annual updates and linking
+Ted Turocy has done the lion's share of the work to update the main data tables during the 2010s, automating the work of annual updates and linking
 historical data to play-by-play accounts compiled by Retrosheet.
 
-A handful of researchers have made substantial contributions to maintain this database over years. Listed alphabetically, they 
-are: Derek Adair, Mike Crain, Kevin Johnson, Rod Nelson, Tom Tango, and Paul Wendt. These folks did much of the heavy lifting, and are 
+A handful of researchers have made substantial contributions to maintain this database over the years. Listed alphabetically, they 
+are: Derek Adair, Mike Crain, Kevin Johnson, Rod Nelson, Tom Tango, and Paul Wendt. These folks did much of the heavy lifting and are 
 largely responsible for the improvements made since 2000.
 
 Others who made important contributions include: Dvd Avins, Clifford Blau, Bill Burgess, Clem Comly, Jeff Burk, Randy Cox, 
@@ -183,47 +252,47 @@ a huge collection of stats into a relational database in the mid-1990s. Clifford
 versions. Lee Sinnis, John Northey & Erik Greenwood helped supply key pieces of data. Many others have written in with corrections and 
 suggestions that made each subsequent version even better than what preceded it. 
 
-The work of the SABR Baseball Records Committee, led by Lyle Spatz has been invaluable.  So has the work of Bill Carle and the SABR 
-Biographical Committee. David Vincent, keeper of the Home Run Log and other bits of hard to find info, was always helpful. The recent
+The work of the SABR Baseball Records Committee, led by Lyle Spatz, has been invaluable.  So has the work of Bill Carle and the SABR 
+Biographical Committee. David Vincent, keeper of the Home Run Log and other bits of hard-to-find info, was always helpful. The recent
 addition of colleges to player bios is the result of much research by members of SABR's Collegiate Baseball committee.
 
 Salary data was first supplied by Doug Pappas, who passed away during the summer of 2004. He was the leading authority on many subjects, 
 most significantly the financial history of Major League Baseball.  We are grateful that he allowed us to include some of the data he 
 compiled.  His work has been continued by the SABR Business of Baseball committee.  
 
-Thanks is also due to the staff at the National Baseball Library in Cooperstown who have been so helpful over the years, including
+Thanks are also due to the staff at the National Baseball Library in Cooperstown, who have been so helpful over the years, including
 Tim Wiles, Jim Gates, Bruce Markusen, and the rest of the staff.  
 
 A special debt of gratitude is owed to Dave Smith and the folks at Retrosheet. There is no other group working so hard to compile and
 share baseball data.  Their website (www.Retrosheet.org) will give you a taste of the wealth of information Dave and the gang have 
 collected.
 
-The 2023 version of the Lahman Database was updated and generated by Bryan Walko, who learned about databases from the Lahman Database 
-back in the late 1990s.
+Starting in 2023, the Lahman Database is updated and generated by Bryan Walko, who learned how to use databases from this very same
+Lahman Database back in the late 1990s.
 
 The HallOfFame data has been expanded with the permission of Graham Womack and his fantastic research into Known Veterans and 
 Era Committee candidates, 1953-current, with some additional data researched and deduced by Bryan Walko. This provides us valuable
 insight into not just the people who were voted in by these committees, but also what we know about those who were considered
 over time.
 
-Thank you Sean, for donating the database to SABR, for overseeing the database for three decades, and for providing our first steps
-into research during the internet era.
+Thank you, Sean, for donating the database to SABR, for overseeing the database for three decades, and for providing our first steps
+into research during the Internet era.
 
 Thanks to all contributors great and small. What you have created is a wonderful thing.
 
---------------------------------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 1.4 Using this Database
 
-This version of the database is available in Microsoft Access format, SQL files or in a generic, comma delimited format. Because this 
-is a relational database, you will not be able to use the data in a flat-database application. 
+This version of the database is available in Microsoft Access format, SQL files, or in a generic, comma-delimited format. Because this 
+is a relational database; you will not be able to use the data in a flat-database application. 
 
 Please note that this is not a stand alone application.  It requires a database application or some other application designed specifically
 to interact with the database.
 
 If you are unable to import the data directly, you should download the database in the delimited text format.  Then use the documentation
-in section 2.0 of this document to import the data into your database application. 
+in section 2.0 of this document, to import the data into your database application. 
 
---------------------------------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 1.5 Revision History
 
      Version      Date            Comments
@@ -273,7 +342,7 @@ in section 2.0 of this document to import the data into your database applicatio
 	                              Added non-appearing players to 2022 All-Star data, replaced #INF data in some tables, extended length
 								  of needed_note on HallOfFame table so additional information could be included.
        2024     July 2025         Updated for 2024
-	                              Researched retirements from 2020-2025 to better identify players that should have their last game updated
+	                              Researched retirements from 2020-2025 to better identify players who should have their last game updated
 								  Updated biographical information for people where it differed in Retrosheet and Chadwick
 								  Corrected 2023 team data for DP and SHO, which were mistakenly presented as sums of the player totals and
 								  not team level stats
@@ -297,13 +366,15 @@ in section 2.0 of this document to import the data into your database applicatio
 	                              mapped Milwaukee Braves to non-existent ID teamID. Fixed Appearances and FieldingOF for Frank Thompson that
 								  were still aligned to the phantom player Andrew Thompson.
        2024.03  July 2025         Corrected 2024 data where LAA was miskeyed as ANA. (Thank you Mark K.)
-	   2024.04  July 2-25         Corrected duplication in AllStarFull for 1962 and 2022. Corrected teamIDs for Angels (1997-2004) and 
+	   2024.04  July 2025         Corrected duplication in AllStarFull for 1962 and 2022. Corrected teamIDs for Angels (1997-2004) and 
 	                              Brewers (1970-1997). Corrected duplicates for Billy Herman (1934), Dave Freese (2012), and Shohei
 								  Ohtani (2021). Ohtani's 2021 record records starting position as 1;10, since he started two positions
-								  in that game per the MLB. Corrected Angels in Appearances to the correct teamID for 2023. Added new
+								  in that game, per the MLB. Corrected Angels in Appearances to the correct teamID for 2023. Added new
 								  records to People that were in the HallOfFame file but missing from People. This includes Bud Fowler,
 								  along with baseball executives, owners, and umpires.
---------------------------------------------------------------------------------------------------------------------------------------------
+       2024u    Oct 2025          Added Negro League data. See 2.1 Notes on Negro League data.
+	                              Data fixes at https://docs.google.com/spreadsheets/d/18N2KMplQ5IWElj9FU_Vw9Pgtc7GQH3mqKP8INEYxKCk/edit?usp=sharing
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 2.0 Data Tables
 
 The design follows these general principles.  Each player is assigned a unique number (playerID).  All of the information relating to that player
@@ -349,7 +420,7 @@ It is supplemented by these tables:
   Salaries               Player salary data (last updated 2016)
   Schools                List of colleges that players attended (last updated 2014)
 
---------------------------------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 PEOPLE TABLE
 
 
@@ -430,7 +501,7 @@ teamIDBR       Team ID used by Baseball Reference website
 teamIDlahman45 Team ID used in Lahman database version 4.5
 teamIDretro    Team ID used by Retrosheet
 
---------------------------------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 TEAM FRANCHISES TABLE
 
 franchID       Franchise ID
@@ -438,7 +509,7 @@ franchName     Franchise name
 active         Whether team is currently active or not (Y or N)
 NAassoc        ID of National Association team franchise played as
 
---------------------------------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 PARKS TABLE
 
 parkkey        Ballpark ID code
@@ -448,7 +519,7 @@ city           City
 state          State 
 country        Country
 
---------------------------------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 BATTING TABLE
 
 playerID       Player ID code
@@ -474,7 +545,7 @@ SH             Sacrifice hits
 SF             Sacrifice flies
 GIDP           Grounded into double plays
 
---------------------------------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 PITCHING TABLE
 
 playerID       Player ID code
@@ -508,7 +579,7 @@ SH             Sacrifices by opposing batters
 SF             Sacrifice flies by opposing batters
 GIDP           Grounded into double plays by opposing batter
 
---------------------------------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 FIELDING TABLE
 
 playerID       Player ID code
@@ -530,7 +601,7 @@ SB             Opponent Stolen Bases (by catchers)
 CS             Opponents Caught Stealing (by catchers)
 ZR             Zone Rating
 
---------------------------------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 FIELDING OF TABLE
 
 playerID       Player ID code
@@ -540,7 +611,7 @@ Glf            Games played in left field
 Gcf            Games played in center field
 Grf            Games played in right field
 
---------------------------------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 FIELDING OF SPLIT TABLE
 
 playerID       Player ID code
@@ -557,7 +628,7 @@ A              Assists
 E              Errors
 DP             Double Plays
 
---------------------------------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 APPEARANCES TABLE
 
 yearID         Year
@@ -582,7 +653,7 @@ G_dh           Games as designated hitter
 G_ph           Games as pinch hitter
 G_pr           Games as pinch runner
 
---------------------------------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 MANAGERS TABLE
  
 playerID       Player ID Number
@@ -596,7 +667,7 @@ L              Losses
 rank           Team's final position in standings that year
 plyrMgr        Player Manager (denoted by 'Y')
 
---------------------------------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ALL STAR FULL TABLE
 
 playerID       Player ID code
@@ -608,7 +679,7 @@ lgID           League
 GP             1 if Played in the game
 startingPos    If player was game starter, the position played
 
---------------------------------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 BATTING POST TABLE
 
 yearID         Year
@@ -634,7 +705,7 @@ SH             Sacrifices
 SF             Sacrifice flies
 GIDP           Grounded into double plays
 
---------------------------------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 PITCHING POST TABLE
 
 playerID       Player ID code
@@ -668,7 +739,7 @@ SH             Sacrifice Hits allowed
 SF             Sacrifice Flies allowed
 GIDP           Grounded into Double Plays
 
---------------------------------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 FIELDING POST TABLE
 
 playerID       Player ID code
@@ -689,7 +760,7 @@ PB             Passed Balls
 SB             Stolen Bases allowed (by catcher)
 CS             Caught Stealing (by catcher)
 
---------------------------------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 SERIES POST TABLE
 
 yearID         Year
@@ -702,7 +773,7 @@ wins           Wins by team that won the series
 losses         Losses by team that won the series
 ties           Tie games
 
---------------------------------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 HOME GAMES TABLE
 
 yearkey        Year
@@ -715,7 +786,7 @@ games          Total number of games
 openings       Total number of paid dates played (games with attendance, note that doubleheaders may make the openings less than games)
 attendance     Total attendance
 
---------------------------------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 MANAGERS HALF TABLE
 
 playerID       Manager ID code
@@ -729,7 +800,7 @@ W              Wins
 L              Losses
 rank           Team's position in standings for the half
 
---------------------------------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 TEAMS HALF TABLE
 
 yearID         Year
@@ -743,7 +814,7 @@ G              Games played
 W              Wins
 L              Losses
 
---------------------------------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 AWARDS MANAGERS TABLE
 
 playerID       Manager ID code
@@ -753,7 +824,7 @@ lgID           League
 tie            Award was a tie (Y or N)
 notes          Notes about the award
 
---------------------------------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 AWARDS PLAYERS TABLE
 
 playerID       Player ID code
@@ -763,7 +834,7 @@ lgID           League
 tie            Award was a tie (Y or N)
 notes          Notes about the award
 
---------------------------------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 AWARDS SHARE MANAGERS TABLE
 
 awardID        Name of award votes were received for
@@ -774,7 +845,7 @@ pointsWon      Number of points received
 pointsMax      Maximum number of points possible
 votesFirst     Number of first place votes
 
---------------------------------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 AWARDS SHARE PLAYERS TABLE
 
 awardID        Name of award votes were received for
@@ -785,7 +856,7 @@ pointsWon      Number of points received
 pointsMax      Maximum number of points possible
 votesFirst     Number of first place votes
 
---------------------------------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 HALL OF FAME TABLE
 
 playerID       Player ID code
@@ -798,14 +869,14 @@ inducted       Whether player was inducted by that vote or not (Y or N)
 category       Category in which candidate was honored
 needed_note    Explanation of qualifiers for special elections, revised in 2023 to include important notes about the record.
 
---------------------------------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 COLLEGE PLAYING TABLE
 
 playerid       Player ID code
 schoolID       School ID code
-year           Year
+yearID         Year
 
---------------------------------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 SALARIES TABLE
 
 yearID         Year
@@ -814,7 +885,7 @@ lgID           League
 playerID       Player ID code
 salary         Salary
 
---------------------------------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 SCHOOLS TABLE
 
 schoolID       School ID code
@@ -822,6 +893,106 @@ schoolName     School name
 schoolCity     City where school is located
 schoolState    State where school's city is located
 schoolNick     Nickname for school's baseball team
+
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+2.1 Notes on Negro League data
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Seamheads data for the Negro League is now in the database. The data here constitutes major league data as per SABR's recommendations from 
+Feb 11, 2021 (https://sabr.org/latest/sabr-negro-leagues-task-force-issues-recommendations-on-major-league-status/) and Jun 3, 2024
+(https://sabr.org/latest/sabr-special-committee-acknowledges-1949-50-negro-american-league-independent-black-baseball-teams-as-major-league-caliber/).
+
+The recovery of this data is an ongoing process, and changes can and will occur when new sources are located and compiled. The definitions of
+of the teams and games that qualify as major leagues may also differ across datasets (SABR, Seamheads, MLB, Retrosheet, Baseball Reference, etc.)
+This database reflects SABR's current recommendations.
+
+Playing level of data
+All Negro League data within the Lahman database reflects major league caliber league and independent team competition. It does not include exhibitions
+of any level (majors, minors, or semi-pro), nor does it include games within Cuban leagues. In all cases below, read any reference to data, stats, games,
+teams, leagues, etc. within this context.
+
+NULLs
+Missing data within the Negro Leagues dataset will be represented by NULL values, rather than zeros, in the same way that existing National League
+seasons in the 1800s may have NULL values for caught stealing. In both cases, the NULLs represent that the value is unknown. First names can also have
+NULLs.
+
+The 1939 Toledo Crawfords played in two leagues
+Given the barnstorming nature of major league teams of Black baseball and the Negro Leagues, it is feasible that a single team may play within
+more than a single league that qualifies as major league (or within a major league and barnstorming/independent games that qualify as major league) in a single 
+year. 
+
+Currently, there are no teams that played both major league games and barnstorming/independent games that qualify as major league in a single year. 
+
+There is one team that played in more than one major league in a single year, the 1939 Toledo Crawfords, who played in the Negro American League and the second
+Negro National League. Within this database, this is represented as two separate team IDs for 1939 (TC and TC2) that belong to one franchise (PC). This is a
+unique situation within the database, and we believe it is the best way to present this data. However, it is atypical and therefore specially noted here.
+
+On colleges
+Seamheads has compiled a good list of colleges for people within the dataset. When reviewing this data, I discovered that many of the schools still existed
+under different names. Many were already in the Lahman school list. I briefly considered keying the old data to the current schools, but I declined to do
+that for the sake of keeping the history intact. I also did not want to change the table schema or have the name field of the college be a list of names.
+I decided to take these old names of the schools and put them as new rows in the Schools table, but use the key for the current school with a year suffix
+that corresponds to the first year that name was used. 
+
+As a practical example, Howard Millon attended Illinois State Normal University. Today, this school is known as Illinois State University. It was called 
+Illinois State Normal University from 1957-1964. In order to keep the identity of the school as it was when Millon attended, there will be a new school
+record for Illinois State Normal University with a schoolID of illinoisst1857, which will tie it to Illinois State University, which has a schoolID of illinoisst. 
+I have also taken a school like New Orleans University, which exists today as Dillard University, and given it the key of dillard1869. 
+
+The Negro League college data lacks years, so the years in here will be NULL.
+
+Team and Player level data
+Due to the incomplete nature of Negro League data, there may be instances where game-level data is available but player-level data is not available. This can result
+in player-level data not adding up to team level data.
+
+Team record against all teams versus team record within league
+Teams within leagues also played games outside of league competition against independent major league caliber Negro League teams. Because of this most Seamheads
+team records will have wins, losses, and ties within the league and against all clubs. For the first iteration of Lahman, the records on the team table will reflect
+the league level w/l/t data. For independent teams that lacked a league, the same data will reflect their record against all teams.
+
+Player data against all teams versus within league
+All player-level data is in the context of against all teams.
+
+AllstarFull
+There are six new "Leagues" within the data: NOS (North All Stars) and SAS (South All Stars) from the North-South series, WES (West All Stars) and EAS (East All Stars)
+from the East-West series, and NNN (Negro National League II North All Stars) and NNS (Negro National League II South All Stars). Teams for the players will reflect the
+primary team they were on that season (in terms of games played). There are cases where the only major league games that were played in that season were the All Star
+Games, and in these cases I have looked back one season, then forward one season, then back two seasons, etc. until I located a team. There are two players in the
+data who only played on the All Star team during their known major league career. S. M. Humphries in 1937 (who played on the independent non-major league Atlanta
+Black Crackers) and Peppy Collins in 1939 (who has no other major league playing record). GameNum and gameID will be NULL, as we have the cumulative data for the year
+not individual games within this dataset. With this, the startingPos field can have multiple positions, in a format like 3;6, if the player started one game at 1B and
+another game at SS. The order of the data does not indicate the first or second game of a multiple-game record.
+
+Appearances
+GS will be NULL for many seasons. G_defense and g_of, both of which record distinct games on defense, not a simple sum of positional data. The dataset does not include
+this level of granularity to tell when a player appeared at multiple positions during the same game.
+
+FieldingOF
+FieldingOF is not used as all the data is at the LF/CF/RF level.
+
+Managers
+Some teams do not have a known manager and these teams will not have a record within the Manager table.
+
+ManagersHalf
+There were several seasons with First and Second half champions for many Negro Leagues between 1925-1948. The exact records and standings are not within the 
+dataset for each half. Therefore, the ManagersHalf table will not have any data for the Negro Leagues at this time.
+
+SeriesPost and other Post tables
+Round IDs are:
+ALC (NAL Championship Series)
+NWS (Negro League World Series)
+NNC (NNL I Championship Series)
+NLC (NNL II Championship Series)
+NLP (NNL II Playoff Series)
+NSC (NSL Championship Series)
+
+TeamsHalf
+There were several seasons with First and Second half champions for many Negro Leagues between 1925-1948. The exact records and standings are not within the 
+dataset for each half. However, the TeamsHalf table has been updated with the known First and Second half champions, leaving the record blank with a Rank of 1.
+Other teams outside the first place finish are not recorded in the table.
 
 <end of file>
      
