@@ -1,6 +1,6 @@
 process:
     @echo "Processing raw data..."
-    uv run --no-group docs scripts/process.py
+    uv run scripts/process.py
 
 build-sdist:
     @echo "Building sdist..."
@@ -13,18 +13,18 @@ build-wheel:
 build: process build-sdist build-wheel
 
 docs:
-    quartodoc build --config docs/_quarto.yml
+    uv run --group docs -- quartodoc build --config docs/_quarto.yml
     just docs-index-to-readme
     quarto preview docs
 
 # run tests
 test:
-    uv run --no-group docs pytest tests/ -v
+    uv run pytest tests/ -v
 
 # compare data columns with README and R package
 compare-tables:
     Rscript scripts/extract-r-columns.R
-    uv run --no-group docs python scripts/compare-tables.py
+    uv run python scripts/compare-tables.py
 
 docs-index-to-readme:
     cp docs/index.qmd README.qmd

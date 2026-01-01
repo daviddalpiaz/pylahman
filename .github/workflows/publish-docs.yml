@@ -25,8 +25,8 @@ jobs:
         run: uv sync --group docs
       - name: Build documentation
         run: |
-          uv run quartodoc build --config docs/_quarto.yml
-          uv run quarto render docs
+          uv run --group docs -- quartodoc build --config docs/_quarto.yml
+          uv run --group docs -- quarto render docs
           touch docs/_site/.nojekyll
       - name: Publish to GitHub Pages
         uses: quarto-dev/quarto-actions/publish@v2
