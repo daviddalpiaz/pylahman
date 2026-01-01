@@ -17,8 +17,8 @@ website:
     left:
       - text: "API"
         href: reference/index.qmd
-      # - text: "Examples"
-        # href: examples.qmd
+      - text: "Column Naming"
+        href: compare.qmd
     right:
       - icon: github
         href: https://github.com/daviddalpiaz/pylahman/

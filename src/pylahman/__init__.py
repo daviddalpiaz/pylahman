@@ -520,7 +520,7 @@ def HallOfFame() -> pd.DataFrame:
     -------
     playerID : str
         Player ID code
-    yearid : int
+    yearID : int
         Year of ballot
     votedBy : str
         Method by which player was voted upon
@@ -646,8 +646,6 @@ def Parks() -> pd.DataFrame:
 
     Returns
     -------
-    ID : int
-        Unique identifier
     parkkey : str
         Ballpark ID code
     parkname : str
@@ -674,8 +672,6 @@ def People() -> pd.DataFrame:
 
     Returns
     -------
-    ID : int
-        Unique identifier
     playerID : str
         Player ID code
     birthYear : int
@@ -761,7 +757,7 @@ def Pitching() -> pd.DataFrame:
         Shutouts
     SV : int
         Saves
-    IPouts : int
+    IPOuts : int
         Outs Pitched (innings pitched x 3)
     H : int
         Hits
@@ -834,7 +830,7 @@ def PitchingPost() -> pd.DataFrame:
         Shutouts
     SV : int
         Saves
-    IPouts : int
+    IPOuts : int
         Outs Pitched (innings pitched x 3)
     H : int
         Hits
@@ -908,7 +904,7 @@ def Schools() -> pd.DataFrame:
     -------
     schoolID : str
         School ID code
-    name_full : str
+    nameFull : str
         School name
     city : str
         City where school is located
@@ -975,7 +971,7 @@ def Teams() -> pd.DataFrame:
         Position in final standings
     G : int
         Games played
-    Ghome : int
+    GHome : int
         Games played at home
     W : int
         Wins
@@ -1025,7 +1021,7 @@ def Teams() -> pd.DataFrame:
         Shutouts (team level)
     SV : int
         Saves
-    IPouts : int
+    IPOuts : int
         Outs Pitched (innings pitched x 3)
     HA : int
         Hits allowed
@@ -1097,13 +1093,13 @@ def TeamsHalf() -> pd.DataFrame:
         League
     teamID : str
         Team
-    Half : int
+    half : int
         First or second half of season
     divID : str
         Division
     DivWin : str
         Won Division (Y or N)
-    Rank : int
+    rank : int
         Team's position in standings for the half
     G : int
         Games played

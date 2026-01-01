@@ -1,6 +1,6 @@
 [project]
 name = "pylahman"
-version = "0.4.5"
+version = "0.5.0"
 authors = [
   { name="David Dalpiaz", email="dalpiaz2@illinois.edu" },
 ]
@@ -37,9 +37,3 @@ dev-dependencies = [
     "pytest>=8.3.2",
     "quartodoc>=0.11.1",
 ]
-
-[tool.pytest.ini_options]
-markers = [
-    "readme: tests that validate docstrings against README documentation (run with -m readme)",
-]
-addopts = "-m 'not readme'"

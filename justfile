@@ -17,15 +17,14 @@ docs:
     just docs-index-to-readme
     quarto preview docs
 
-# run standard tests
+# run tests
 test:
-    @echo "Running standard tests (docstring validation against data)..."
     uv run pytest tests/ -v
 
-# run extended tests
-test-all:
-    @echo "Running all tests including README validation..."
-    uv run pytest tests/ -m "" -v
+# compare data columns with README and R package
+compare-tables:
+    Rscript scripts/extract-r-columns.R
+    uv run python scripts/compare-tables.py
 
 docs-index-to-readme:
     cp docs/index.qmd README.qmd

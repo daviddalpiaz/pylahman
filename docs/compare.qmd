@@ -1,0 +1,47 @@
+---
+title: "Column Naming"
+---
+
+This page compares the column names used in the tables from three sources:
+
+- **Python**: Column names used in `pylahman`
+- **README**: Column names documented in the [Lahman Database README](https://sabr.org/lahman-database/)
+- **R**: Column names in the [Lahman `R` package](https://github.com/cdalzell/Lahman)
+
+We have attempted to use well-chosen names in `pylahman` that are both internally consistent, while not deviating from the source README or the popular `R` package.
+Accomplishing this is not entirely possible.
+As such, the following tables summarize the discrepancies between the three sources.
+An empty cell indicates the column is not present in that source.
+Unlisted tables or column names indicate that all three sources currently agree.
+
+```{python}
+#| echo: false
+import json
+from IPython.display import Markdown
+
+with open("compare-tables.json") as f:
+    data = json.load(f)
+
+tables_with_diffs = [
+    (name, info) for name, info in data["tables"].items()
+    if info["has_differences"]
+]
+
+if not tables_with_diffs:
+    display(Markdown("**All tables match across all sources.**"))
+else:
+    for table_name, info in tables_with_diffs:
+        # build markdown table
+        lines = [f"## {table_name}\n"]
+        lines.append("| Python | README | R |")
+        lines.append("|--------|--------|---|")
+
+        for row in info["differences"]:
+            py = row["python"] if row["python"] else "-"
+            readme = row["readme"] if row["readme"] else "-"
+            r = row["r"] if row["r"] else "-"
+            lines.append(f"| {py} | {readme} | {r} |")
+
+        lines.append("")
+        display(Markdown("\n".join(lines)))
+```

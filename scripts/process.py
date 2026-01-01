@@ -39,6 +39,19 @@ def process_raw_csv_files():
                 cols_to_drop = [col for col in ["G_batting", "G_old"] if col in df.columns]
                 if cols_to_drop:
                     df = df.drop(columns=cols_to_drop)
+            if filename in ("Parks.csv", "People.csv"):
+                if "ID" in df.columns:
+                    df = df.drop(columns=["ID"])
+            if filename == "HallOfFame.csv":
+                df = df.rename(columns={"yearid": "yearID"})
+            if filename == "TeamsHalf.csv":
+                df = df.rename(columns={"Half": "half", "Rank": "rank"})
+            if filename in ("Pitching.csv", "PitchingPost.csv"):
+                df = df.rename(columns={"IPouts": "IPOuts"})
+            if filename == "Teams.csv":
+                df = df.rename(columns={"IPouts": "IPOuts", "Ghome": "GHome"})
+            if filename == "Schools.csv":
+                df = df.rename(columns={"name_full": "nameFull"})
             df.to_parquet(parquet_path, index=False, engine="pyarrow", compression="zstd")
             print(f"Converted {csv_path} to {parquet_path}")
 

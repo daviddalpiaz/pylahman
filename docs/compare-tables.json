@@ -1,0 +1,338 @@
+{
+  "has_r_data": true,
+  "tables": {
+    "AllstarFull": {
+      "differences": [
+        {
+          "python": "yearID",
+          "readme": "YearID",
+          "r": "yearID"
+        }
+      ],
+      "has_differences": true
+    },
+    "Appearances": {
+      "differences": [],
+      "has_differences": false
+    },
+    "AwardsManagers": {
+      "differences": [],
+      "has_differences": false
+    },
+    "AwardsPlayers": {
+      "differences": [],
+      "has_differences": false
+    },
+    "AwardsShareManagers": {
+      "differences": [],
+      "has_differences": false
+    },
+    "AwardsSharePlayers": {
+      "differences": [],
+      "has_differences": false
+    },
+    "Batting": {
+      "differences": [
+        {
+          "python": "2B",
+          "readme": "2B",
+          "r": "X2B"
+        },
+        {
+          "python": "3B",
+          "readme": "3B",
+          "r": "X3B"
+        }
+      ],
+      "has_differences": true
+    },
+    "BattingPost": {
+      "differences": [
+        {
+          "python": "2B",
+          "readme": "2B",
+          "r": "X2B"
+        },
+        {
+          "python": "3B",
+          "readme": "3B",
+          "r": "X3B"
+        }
+      ],
+      "has_differences": true
+    },
+    "CollegePlaying": {
+      "differences": [
+        {
+          "python": "playerID",
+          "readme": "playerid",
+          "r": "playerID"
+        }
+      ],
+      "has_differences": true
+    },
+    "Fielding": {
+      "differences": [
+        {
+          "python": "POS",
+          "readme": "Pos",
+          "r": "POS"
+        }
+      ],
+      "has_differences": true
+    },
+    "FieldingOF": {
+      "differences": [],
+      "has_differences": false
+    },
+    "FieldingOFsplit": {
+      "differences": [
+        {
+          "python": "CS",
+          "readme": "",
+          "r": "CS"
+        },
+        {
+          "python": "PB",
+          "readme": "",
+          "r": "PB"
+        },
+        {
+          "python": "POS",
+          "readme": "Pos",
+          "r": "POS"
+        },
+        {
+          "python": "SB",
+          "readme": "",
+          "r": "SB"
+        },
+        {
+          "python": "WP",
+          "readme": "",
+          "r": "WP"
+        },
+        {
+          "python": "ZR",
+          "readme": "",
+          "r": "ZR"
+        }
+      ],
+      "has_differences": true
+    },
+    "FieldingPost": {
+      "differences": [
+        {
+          "python": "POS",
+          "readme": "Pos",
+          "r": "POS"
+        }
+      ],
+      "has_differences": true
+    },
+    "HallOfFame": {
+      "differences": [],
+      "has_differences": false
+    },
+    "HomeGames": {
+      "differences": [
+        {
+          "python": "leaguekey",
+          "readme": "leaguekey",
+          "r": "league.key"
+        },
+        {
+          "python": "parkkey",
+          "readme": "parkkey",
+          "r": "park.key"
+        },
+        {
+          "python": "spanfirst",
+          "readme": "spanfirst",
+          "r": "span.first"
+        },
+        {
+          "python": "spanlast",
+          "readme": "spanlast",
+          "r": "span.last"
+        },
+        {
+          "python": "teamkey",
+          "readme": "teamkey",
+          "r": "team.key"
+        },
+        {
+          "python": "yearkey",
+          "readme": "yearkey",
+          "r": "year.key"
+        }
+      ],
+      "has_differences": true
+    },
+    "Managers": {
+      "differences": [],
+      "has_differences": false
+    },
+    "ManagersHalf": {
+      "differences": [],
+      "has_differences": false
+    },
+    "Parks": {
+      "differences": [
+        {
+          "python": "parkalias",
+          "readme": "parkalias",
+          "r": "park.alias"
+        },
+        {
+          "python": "parkkey",
+          "readme": "parkkey",
+          "r": "park.key"
+        },
+        {
+          "python": "parkname",
+          "readme": "parkname",
+          "r": "park.name"
+        }
+      ],
+      "has_differences": true
+    },
+    "People": {
+      "differences": [
+        {
+          "python": "",
+          "readme": "",
+          "r": "birthDate"
+        },
+        {
+          "python": "",
+          "readme": "",
+          "r": "deathDate"
+        }
+      ],
+      "has_differences": true
+    },
+    "Pitching": {
+      "differences": [
+        {
+          "python": "IPOuts",
+          "readme": "IPOuts",
+          "r": "IPouts"
+        }
+      ],
+      "has_differences": true
+    },
+    "PitchingPost": {
+      "differences": [
+        {
+          "python": "IPOuts",
+          "readme": "IPOuts",
+          "r": "IPouts"
+        }
+      ],
+      "has_differences": true
+    },
+    "Salaries": {
+      "differences": [],
+      "has_differences": false
+    },
+    "Schools": {
+      "differences": [
+        {
+          "python": "city",
+          "readme": "",
+          "r": "city"
+        },
+        {
+          "python": "country",
+          "readme": "",
+          "r": "country"
+        },
+        {
+          "python": "",
+          "readme": "",
+          "r": "name_full"
+        },
+        {
+          "python": "nameFull",
+          "readme": "",
+          "r": ""
+        },
+        {
+          "python": "",
+          "readme": "schoolCity",
+          "r": ""
+        },
+        {
+          "python": "",
+          "readme": "schoolName",
+          "r": ""
+        },
+        {
+          "python": "",
+          "readme": "schoolNick",
+          "r": ""
+        },
+        {
+          "python": "",
+          "readme": "schoolState",
+          "r": ""
+        },
+        {
+          "python": "state",
+          "readme": "",
+          "r": "state"
+        }
+      ],
+      "has_differences": true
+    },
+    "SeriesPost": {
+      "differences": [],
+      "has_differences": false
+    },
+    "Teams": {
+      "differences": [
+        {
+          "python": "2B",
+          "readme": "2B",
+          "r": "X2B"
+        },
+        {
+          "python": "3B",
+          "readme": "3B",
+          "r": "X3B"
+        },
+        {
+          "python": "GHome",
+          "readme": "GHome",
+          "r": "Ghome"
+        },
+        {
+          "python": "IPOuts",
+          "readme": "IPOuts",
+          "r": "IPouts"
+        }
+      ],
+      "has_differences": true
+    },
+    "TeamsFranchises": {
+      "differences": [],
+      "has_differences": false
+    },
+    "TeamsHalf": {
+      "differences": [
+        {
+          "python": "half",
+          "readme": "half",
+          "r": "Half"
+        },
+        {
+          "python": "rank",
+          "readme": "rank",
+          "r": "Rank"
+        }
+      ],
+      "has_differences": true
+    }
+  }
+}
