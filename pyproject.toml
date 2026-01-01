@@ -1,6 +1,6 @@
 [project]
 name = "pylahman"
-version = "0.5.2"
+version = "0.5.3"
 authors = [
   { name="David Dalpiaz", email="dalpiaz2@illinois.edu" },
 ]
