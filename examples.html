@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.7.33">
+<meta name="generator" content="quarto-1.8.26">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -58,7 +58,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </style>
 
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script><script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js" integrity="sha384-ZvpUoO/+PpLXR1lu4jmpXWu80pZlYUAfxl5NsBMWOEPSjUn/6Z/hRTt8+pR6L4N2" crossorigin="anonymous"></script><script src="site_libs/quarto-nav/quarto-nav.js"></script>
 <script src="site_libs/quarto-nav/headroom.min.js"></script>
 <script src="site_libs/clipboard/clipboard.min.js"></script>
 <script src="site_libs/quarto-search/autocomplete.umd.js"></script>
@@ -67,14 +67,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <meta name="quarto:offset" content="./">
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-ea385d0e468b0dd5ea5bf0780b1290d9.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-6ef52b30d4130b5a8a6bc02bcd7e7872.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-8fd1faf6fd93e4e6d207ae0f9db51d78.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -102,7 +103,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     "search-label": "Search"
   }
 }</script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.min.js" integrity="sha512-c3Nl8+7g4LMSTdrm621y7kf9v3SDPnhxLNhcjFJbKECVnmZHTdo+IRO05sNLTH/D3vA6u1X32ehoLC7WFVdheg==" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/requirejs@2.3.6/require.min.js" integrity="sha384-c9c+LnTbwQ3aujuU7ULEPVvgLs+Fn6fJUvIGTsuu1ZcCf11fiEubah0ttpca4ntM sha384-6V1/AdqZRWk1KAlWbKBlGhN7VG4iE/yAZcO6NZPMF8od0vukrvr0tg4qY6NSrItx" crossorigin="anonymous"></script>
 
 <script type="application/javascript">define('jquery', [],function() {return window.jQuery;})</script>
 
@@ -130,6 +131,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li class="nav-item">
     <a class="nav-link" href="./reference/index.html"> 
 <span class="menu-text">API</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./compare.html"> 
+<span class="menu-text">Column Naming</span></a>
   </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
@@ -172,20 +177,19 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<div id="31eccaf6" class="cell" data-execution_count="1">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pylahman</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div id="2b3ce3ab" class="cell" data-execution_count="1">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pylahman</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
-<div id="1dc5d8f8" class="cell" data-execution_count="2">
-<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>pylahman.People()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div id="26ab69b1" class="cell" data-execution_count="2">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>pylahman.People()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="2">
 <div>
 
 
-<table class="dataframe caption-top table table-sm table-striped small" data-quarto-postprocess="true" data-border="1">
+<table class="dataframe caption-top table table-sm table-striped small" data-border="1">
 <thead>
 <tr class="header">
 <th data-quarto-table-cell-role="th"></th>
-<th data-quarto-table-cell-role="th">ID</th>
 <th data-quarto-table-cell-role="th">playerID</th>
 <th data-quarto-table-cell-role="th">birthYear</th>
 <th data-quarto-table-cell-role="th">birthMonth</th>
@@ -195,6 +199,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <th data-quarto-table-cell-role="th">birthState</th>
 <th data-quarto-table-cell-role="th">deathYear</th>
 <th data-quarto-table-cell-role="th">deathMonth</th>
+<th data-quarto-table-cell-role="th">deathDay</th>
 <th data-quarto-table-cell-role="th">...</th>
 <th data-quarto-table-cell-role="th">nameLast</th>
 <th data-quarto-table-cell-role="th">nameGiven</th>
@@ -210,8 +215,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </thead>
 <tbody>
 <tr class="odd">
-<td data-quarto-table-cell-role="th">0</td>
-<td>1</td>
+<th data-quarto-table-cell-role="th">0</th>
 <td>aardsda01</td>
 <td>1981</td>
 <td>12</td>
@@ -219,6 +223,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <td>Denver</td>
 <td>USA</td>
 <td>CO</td>
+<td>&lt;NA&gt;</td>
 <td>&lt;NA&gt;</td>
 <td>&lt;NA&gt;</td>
 <td>...</td>
@@ -234,8 +239,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <td>aardd001</td>
 </tr>
 <tr class="even">
-<td data-quarto-table-cell-role="th">1</td>
-<td>2</td>
+<th data-quarto-table-cell-role="th">1</th>
 <td>aaronha01</td>
 <td>1934</td>
 <td>2</td>
@@ -245,6 +249,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <td>AL</td>
 <td>2021</td>
 <td>1</td>
+<td>22</td>
 <td>...</td>
 <td>Aaron</td>
 <td>Henry Louis</td>
@@ -258,8 +263,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <td>aaroh101</td>
 </tr>
 <tr class="odd">
-<td data-quarto-table-cell-role="th">2</td>
-<td>3</td>
+<th data-quarto-table-cell-role="th">2</th>
 <td>aaronto01</td>
 <td>1939</td>
 <td>8</td>
@@ -269,6 +273,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <td>AL</td>
 <td>1984</td>
 <td>8</td>
+<td>16</td>
 <td>...</td>
 <td>Aaron</td>
 <td>Tommie Lee</td>
@@ -282,8 +287,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <td>aarot101</td>
 </tr>
 <tr class="even">
-<td data-quarto-table-cell-role="th">3</td>
-<td>4</td>
+<th data-quarto-table-cell-role="th">3</th>
 <td>aasedo01</td>
 <td>1954</td>
 <td>9</td>
@@ -291,6 +295,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <td>Orange</td>
 <td>USA</td>
 <td>CA</td>
+<td>&lt;NA&gt;</td>
 <td>&lt;NA&gt;</td>
 <td>&lt;NA&gt;</td>
 <td>...</td>
@@ -306,8 +311,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <td>aased001</td>
 </tr>
 <tr class="odd">
-<td data-quarto-table-cell-role="th">4</td>
-<td>5</td>
+<th data-quarto-table-cell-role="th">4</th>
 <td>abadan01</td>
 <td>1972</td>
 <td>8</td>
@@ -315,6 +319,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <td>Palm Beach</td>
 <td>USA</td>
 <td>FL</td>
+<td>&lt;NA&gt;</td>
 <td>&lt;NA&gt;</td>
 <td>&lt;NA&gt;</td>
 <td>...</td>
@@ -330,7 +335,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <td>abada001</td>
 </tr>
 <tr class="even">
-<td data-quarto-table-cell-role="th">...</td>
+<th data-quarto-table-cell-role="th">...</th>
 <td>...</td>
 <td>...</td>
 <td>...</td>
@@ -354,8 +359,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <td>...</td>
 </tr>
 <tr class="odd">
-<td data-quarto-table-cell-role="th">21266</td>
-<td>20672</td>
+<th data-quarto-table-cell-role="th">24018</th>
 <td>zupofr01</td>
 <td>1939</td>
 <td>8</td>
@@ -365,6 +369,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <td>CA</td>
 <td>2005</td>
 <td>3</td>
+<td>25</td>
 <td>...</td>
 <td>Zupo</td>
 <td>Frank Joseph</td>
@@ -378,8 +383,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <td>zupof101</td>
 </tr>
 <tr class="even">
-<td data-quarto-table-cell-role="th">21267</td>
-<td>20673</td>
+<th data-quarto-table-cell-role="th">24019</th>
 <td>zuvelpa01</td>
 <td>1958</td>
 <td>10</td>
@@ -387,6 +391,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <td>San Mateo</td>
 <td>USA</td>
 <td>CA</td>
+<td>&lt;NA&gt;</td>
 <td>&lt;NA&gt;</td>
 <td>&lt;NA&gt;</td>
 <td>...</td>
@@ -402,8 +407,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <td>zuvep001</td>
 </tr>
 <tr class="odd">
-<td data-quarto-table-cell-role="th">21268</td>
-<td>20674</td>
+<th data-quarto-table-cell-role="th">24020</th>
 <td>zuverge01</td>
 <td>1924</td>
 <td>8</td>
@@ -413,6 +417,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <td>MI</td>
 <td>2014</td>
 <td>9</td>
+<td>8</td>
 <td>...</td>
 <td>Zuverink</td>
 <td>George</td>
@@ -426,8 +431,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <td>zuveg101</td>
 </tr>
 <tr class="even">
-<td data-quarto-table-cell-role="th">21269</td>
-<td>20675</td>
+<th data-quarto-table-cell-role="th">24021</th>
 <td>zwilldu01</td>
 <td>1888</td>
 <td>11</td>
@@ -437,6 +441,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <td>MO</td>
 <td>1978</td>
 <td>3</td>
+<td>27</td>
 <td>...</td>
 <td>Zwilling</td>
 <td>Edward Harrison</td>
@@ -450,8 +455,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <td>zwild101</td>
 </tr>
 <tr class="odd">
-<td data-quarto-table-cell-role="th">21270</td>
-<td>20676</td>
+<th data-quarto-table-cell-role="th">24022</th>
 <td>zychto01</td>
 <td>1990</td>
 <td>8</td>
@@ -459,6 +463,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <td>Monee</td>
 <td>USA</td>
 <td>IL</td>
+<td>&lt;NA&gt;</td>
 <td>&lt;NA&gt;</td>
 <td>&lt;NA&gt;</td>
 <td>...</td>
@@ -476,7 +481,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </tbody>
 </table>
 
-<p>21271 rows × 25 columns</p>
+<p>24023 rows × 24 columns</p>
 </div>
 </div>
 </div>
@@ -535,13 +540,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       e.clearSelection();
     }
     const getTextToCopy = function(trigger) {
-        const codeEl = trigger.previousElementSibling.cloneNode(true);
-        for (const childEl of codeEl.children) {
-          if (isCodeAnnotation(childEl)) {
-            childEl.remove();
-          }
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
         }
-        return codeEl.innerText;
+      }
+      return codeEl.innerText;
     }
     const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
       text: getTextToCopy
