@@ -1,6 +1,6 @@
 process:
     @echo "Processing raw data..."
-    uv run scripts/process.py
+    uv run --no-group docs scripts/process.py
 
 build-sdist:
     @echo "Building sdist..."
@@ -19,12 +19,12 @@ docs:
 
 # run tests
 test:
-    uv run pytest tests/ -v
+    uv run --no-group docs pytest tests/ -v
 
 # compare data columns with README and R package
 compare-tables:
     Rscript scripts/extract-r-columns.R
-    uv run python scripts/compare-tables.py
+    uv run --no-group docs python scripts/compare-tables.py
 
 docs-index-to-readme:
     cp docs/index.qmd README.qmd

@@ -1353,11 +1353,6 @@ dependencies = [
 ]
 
 [package.dev-dependencies]
-dev = [
-    { name = "jupyter" },
-    { name = "pytest" },
-    { name = "quartodoc" },
-]
 docs = [
     { name = "jupyter" },
     { name = "quartodoc" },
@@ -1374,11 +1369,6 @@ requires-dist = [
 ]
 
 [package.metadata.requires-dev]
-dev = [
-    { name = "jupyter", specifier = ">=1.1.1" },
-    { name = "pytest", specifier = ">=8.3.2" },
-    { name = "quartodoc", specifier = ">=0.11.1" },
-]
 docs = [
     { name = "jupyter", specifier = ">=1.1.1" },
     { name = "quartodoc", specifier = ">=0.11.1" },
