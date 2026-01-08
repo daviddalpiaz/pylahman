@@ -8,14 +8,16 @@ Database](https://sabr.org/lahman-database/) via `pandas`.
 > [SABR](https://sabr.org/) and is licensed under [CC BY-SA
 > 3.0](https://creativecommons.org/licenses/by-sa/3.0/). The data was
 > last updated based on the source data available from
-> <https://sabr.org/lahman-database/> on 2025-07-18.
+> <https://sabr.org/lahman-database/> on 2026-01-08.
 >
-> The surrounding software is licensed under the [MIT
+> The surrounding **software** is licensed under the [MIT
 > License](https://opensource.org/licenses/MIT).
 
 ## Installation
 
-The `pylahman` package can be installed via `pip`.
+The `pylahman` package is available on
+[PyPI](https://pypi.org/project/pylahman/) and can be installed via
+`pip`.
 
 ``` bash
 pip install pylahman

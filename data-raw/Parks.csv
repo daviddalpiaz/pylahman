@@ -309,7 +309,7 @@ ID,parkalias,parkkey,parkname,city,state,country
 565,,MTG01,College Hill Park,Montgomery,AL,US
 566,Heinemann Park,NOL01,Pelican Stadium,New Orleans,LA,US
 567,Sulphur Spring Park; Athletic Park,NSH01,Sulphur Dell,Nashville,TN,US
-568,Tom Wilson Park,NSH01,Wilson Park,Nashville,TN,US
+568,Tom Wilson Park,NSH02,Wilson Park,Nashville,TN,US
 569,Ruppert Stadium; Davids' stadium,NWK02,Davids Stadium,Newark,NJ,US
 570,Ollemar Field,NWK03,Ollemar Stadium,Irvington,NJ,US
 571,,NYC22,Brighton Oval,Brooklyn,NY,US
@@ -341,3 +341,6 @@ ID,parkalias,parkkey,parkname,city,state,country
 597,,WBS01,Sprudel Park,West Baden Springs,IN,US
 598,,WIL03,Harlan Field,Wilmington,DE,US
 599,,YEA01,Hilldale Park,Yeadon,PA,US
+600,,SAC01,Sutter Health Field,West Sacramento,CA,US
+601,Legends Field,TAM02,George M. Steinbrenner Field,Tampa,FL,US
+602,Bristol International Raceway; Bristol International Speedway,BST01,Bristol Motor Speedway,Bristol,TN,US

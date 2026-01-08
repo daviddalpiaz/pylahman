@@ -1801,8 +1801,8 @@ wardco02,byu,1983
 wardco02,byu,1984
 wardco02,byu,1985
 wardco02,byu,1986
-woodsdi01,caallia,1964
-woodsdi01,caallia,1965
+woodsdi01,caallia1952,1964
+woodsdi01,caallia1952,1965
 andrast01,caameri,1998
 bradeda01,caameri,2002
 bradeda01,caameri,2003
@@ -3757,12 +3757,6 @@ walkepe01,ctconap,1988
 ellisjo01,ctmitch,1966
 bedarer01,ctnorwa,1998
 bedarer01,ctnorwa,1999
-frascjo01,ctpostu,1989
-frascjo01,ctpostu,1990
-frascjo01,ctpostu,1991
-scheiri01,ctpostu,1962
-scheiri01,ctpostu,1963
-scheiri01,ctpostu,1964
 farmeja01,cumbrlndtn,1913
 farmeja01,cumbrlndtn,1914
 heaveda01,cwashngton,1969
@@ -3772,6 +3766,12 @@ heaveda01,cwashngton,1972
 northbi01,cwashngton,1967
 northbi01,cwashngton,1968
 northbi01,cwashngton,1969
+frascjo01,cwpost,1989
+frascjo01,cwpost,1990
+frascjo01,cwpost,1991
+scheiri01,cwpost,1962
+scheiri01,cwpost,1963
+scheiri01,cwpost,1964
 bantzbr01,dallasbapt,2006
 bantzbr01,dallasbapt,2007
 bantzbr01,dallasbapt,2008
@@ -15107,7 +15107,7 @@ nelsobr01,txtexar,1994
 nortoph01,txtexar,1996
 pencehu01,txtexar,2002
 wellsja02,txtyler,2002
-gattiev01,txutper,2010
+gattiev01,txutper1973,2010
 huffau01,txverno,1996
 martira03,txverno,1991
 martira03,txverno,1992
